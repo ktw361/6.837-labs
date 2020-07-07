@@ -4,7 +4,8 @@ INCFLAGS += -I ../vecmath/include
 LINKFLAGS  = -lglut -lGL -lGLU
 LINKFLAGS += -L ../vecmath/lib -lvecmath
 
-CFLAGS    = -O2
+# CFLAGS    = -O2 -g
+CFLAGS    = -g
 CC        = g++
 SRCS      = main.cpp
 OBJS      = $(SRCS:.cpp=.o)
