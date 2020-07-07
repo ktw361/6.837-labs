@@ -1,0 +1,8 @@
+contents/
+
+vecmath/lib/libvecmath.a
+
+*.o
+zero/a0
+
+.tags
