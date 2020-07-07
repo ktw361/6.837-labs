@@ -3,6 +3,10 @@ contents/
 vecmath/lib/libvecmath.a
 
 *.o
-zero/a0
 
 .tags
+
+# For assignment 0
+zero/a0
+zero/.gl_tags
+zero/.gdb_history
