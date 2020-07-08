@@ -1,7 +1,5 @@
 contents/
 
-vecmath/lib/libvecmath.a
-
 *.o
 
 .tags
