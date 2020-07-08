@@ -23,16 +23,13 @@ vector<vector<unsigned> > vecf;
 using std::size_t;
 const size_t MAXCOLORS = 4;
 const size_t MAX_BUFFER_SIZE = 64;
+const GLfloat PI = 3.1415926531f;
 size_t color_selector = 0;
 GLfloat light_pos_0 = 1.0f; 
 GLfloat light_pos_1 = 1.0f;
 
 // extra credits
-// http://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
-GLfloat camera_obj_dist;
-GLfloat rotate_x = 0.0f;
-GLfloat rotate_y = 0.0f;
-GLfloat rotate_z = 0.0f;
+GLfloat  RotateFactor = 1.2f;
 Vector2f mouse_start;
 Vector2f mouse_end;
 
@@ -55,27 +52,50 @@ GLfloat get_dist(Vector3f v1, Vector3f v2)
     return diff.abs();
 }
 
+GLfloat radian2degree(GLfloat radians)
+{
+    return radians / PI * 360.0f;
+}
+
+GLfloat degree2radian(GLfloat degrees)
+{
+    return degrees / 360.0f * PI;
+}
+
 // Rotate:
 //  First rotate theta*cos(phi) along y-axis;
 //  Then rotate theta*sin(phi) along x-axis;
-Vector3f rotate(Vector3f v, GLfloat theta, GLfloat phi)
+//  theta and phi in radians
+Vector3f rotate(Vector3f v, 
+                GLfloat theta, 
+                GLfloat phi,
+                GLfloat y_forward,
+                GLfloat x_forward)
 {
     Vector4f vec(v, 1);
-    vec = Matrix4f::rotateX(theta * std::sin(phi)) *
-          Matrix4f::rotateY(theta * std::cos(phi)) *
+    theta *= 2;  // 
+    phi *= 2;    //
+    vec = Matrix4f::rotateX(x_forward * theta * sin(phi)) *
+          Matrix4f::rotateY(y_forward * theta * cos(phi)) *
           vec;
     return vec.xyz();
 }
 
+// Return in radians
 vector<GLfloat> get_theta_phi(Vector2f start, Vector2f end)
 {
     GLfloat w = glutGet( GLUT_WINDOW_WIDTH );
     GLfloat h = glutGet( GLUT_WINDOW_HEIGHT );
     GLfloat phi = (- end.y() + start.y()) / 
         (end.x() - start.x() + 1e-5);
-    phi = std::atan(phi) / 3.14 * 360;
-    GLfloat theta = (start - end).abs() / sqrt(w*w+h*h) * 0.1;
-    return {theta, phi};
+    phi = atan(phi) / 2;   
+    GLfloat theta = (start - end).abs() / sqrt(w*w+h*h);
+    theta *= RotateFactor;
+
+    GLfloat y_forward, x_forward;
+    y_forward = end.x() > start.x() ? -1 : 1;  // upside-down
+    x_forward = end.y() < start.y() ? 1 : -1;
+    return {abs(theta), abs(phi), y_forward, x_forward};
 }
 
 Vector3f get_rotated_camera(Vector3f camera, 
@@ -83,9 +103,7 @@ Vector3f get_rotated_camera(Vector3f camera,
                             Vector2f end)
 {
     auto angles = get_theta_phi(start, end);
-    cout << "Rotating phi: " << angles[1]
-        << " theta: " << angles[0] << endl;
-    return rotate(camera, angles[0], angles[1]);
+    return rotate(camera, angles[0], angles[1], angles[2], angles[3]);
 }
 
 
@@ -117,12 +135,9 @@ void keyboardFunc( unsigned char key, int x, int y )
         break;
     case 'd':
         // Debug mode
-        camera_pos = rotate(camera_pos, 0, 30);
+        /* camera_pos = rotate(camera_pos, degree2radian(90), degree2radian(90)); */
         /* camera_obj_dist = get_dist(looking_at, camera_pos); */
         /* cout << camera_obj_dist << endl; */
-        /* rotate_x += 0.5; */
-        /* /1* rotate_y += 0.5; *1/ */
-        /* /1* rotate_z += 0.5; *1/ */
 
         GLfloat matf[16];
         glGetFloatv(GL_MODELVIEW_MATRIX, matf);
@@ -170,7 +185,6 @@ void mouseFunc( int button, int state, int x, int y)
     //The button parameter is one of GLUT_LEFT_BUTTON, GLUT_MIDDLE_BUTTON, or GLUT_RIGHT_BUTTON.
     switch (button) {
     case GLUT_LEFT_BUTTON:
-        cout << x << ":" << y << endl;
         if (state == GLUT_DOWN) {
             mouse_start.x() = x;
             mouse_start.y() = y;
