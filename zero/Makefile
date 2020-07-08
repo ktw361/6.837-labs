@@ -6,6 +6,7 @@ LINKFLAGS += -L ../vecmath/lib -lvecmath
 
 # CFLAGS    = -O2 -g
 CFLAGS    = -g
+CFLAGS 	 += -std=c++11
 CC        = g++
 SRCS      = main.cpp
 OBJS      = $(SRCS:.cpp=.o)
