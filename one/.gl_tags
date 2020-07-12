@@ -1,0 +1,1333 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/4aed4f0/
+APIENTRY	/usr/include/GL/gl.h	/^#define APIENTRY /;"	d
+APIENTRYP	/usr/include/GL/gl.h	/^#define APIENTRYP /;"	d
+GLAPI	/usr/include/GL/gl.h	/^#    define GLAPI /;"	d
+GLAPI	/usr/include/GL/gl.h	/^#  define GLAPI /;"	d
+GLAPI	/usr/include/GL/gl.h	/^#define GLAPI /;"	d
+GLAPIENTRY	/usr/include/GL/gl.h	/^#    define GLAPIENTRY /;"	d
+GLAPIENTRY	/usr/include/GL/gl.h	/^#  define GLAPIENTRY /;"	d
+GLAPIENTRY	/usr/include/GL/gl.h	/^#  define GLAPIENTRY$/;"	d
+GLAPIENTRY	/usr/include/GL/gl.h	/^#define GLAPIENTRY$/;"	d
+GLAPIENTRYP	/usr/include/GL/gl.h	/^#define GLAPIENTRYP /;"	d
+GL_2D	/usr/include/GL/gl.h	/^#define GL_2D	/;"	d
+GL_2_BYTES	/usr/include/GL/gl.h	/^#define GL_2_BYTES	/;"	d
+GL_3D	/usr/include/GL/gl.h	/^#define GL_3D	/;"	d
+GL_3D_COLOR	/usr/include/GL/gl.h	/^#define GL_3D_COLOR	/;"	d
+GL_3D_COLOR_TEXTURE	/usr/include/GL/gl.h	/^#define GL_3D_COLOR_TEXTURE	/;"	d
+GL_3_BYTES	/usr/include/GL/gl.h	/^#define GL_3_BYTES	/;"	d
+GL_4D_COLOR_TEXTURE	/usr/include/GL/gl.h	/^#define GL_4D_COLOR_TEXTURE	/;"	d
+GL_4_BYTES	/usr/include/GL/gl.h	/^#define GL_4_BYTES	/;"	d
+GL_ACCUM	/usr/include/GL/gl.h	/^#define GL_ACCUM	/;"	d
+GL_ACCUM_ALPHA_BITS	/usr/include/GL/gl.h	/^#define GL_ACCUM_ALPHA_BITS	/;"	d
+GL_ACCUM_BLUE_BITS	/usr/include/GL/gl.h	/^#define GL_ACCUM_BLUE_BITS	/;"	d
+GL_ACCUM_BUFFER_BIT	/usr/include/GL/gl.h	/^#define GL_ACCUM_BUFFER_BIT	/;"	d
+GL_ACCUM_CLEAR_VALUE	/usr/include/GL/gl.h	/^#define GL_ACCUM_CLEAR_VALUE	/;"	d
+GL_ACCUM_GREEN_BITS	/usr/include/GL/gl.h	/^#define GL_ACCUM_GREEN_BITS	/;"	d
+GL_ACCUM_RED_BITS	/usr/include/GL/gl.h	/^#define GL_ACCUM_RED_BITS	/;"	d
+GL_ACTIVE_TEXTURE	/usr/include/GL/gl.h	/^#define GL_ACTIVE_TEXTURE	/;"	d
+GL_ACTIVE_TEXTURE_ARB	/usr/include/GL/gl.h	/^#define GL_ACTIVE_TEXTURE_ARB	/;"	d
+GL_ADD	/usr/include/GL/gl.h	/^#define GL_ADD	/;"	d
+GL_ADD_SIGNED	/usr/include/GL/gl.h	/^#define GL_ADD_SIGNED	/;"	d
+GL_ALIASED_LINE_WIDTH_RANGE	/usr/include/GL/gl.h	/^#define GL_ALIASED_LINE_WIDTH_RANGE	/;"	d
+GL_ALIASED_POINT_SIZE_RANGE	/usr/include/GL/gl.h	/^#define GL_ALIASED_POINT_SIZE_RANGE	/;"	d
+GL_ALL_ATTRIB_BITS	/usr/include/GL/gl.h	/^#define GL_ALL_ATTRIB_BITS	/;"	d
+GL_ALL_CLIENT_ATTRIB_BITS	/usr/include/GL/gl.h	/^#define GL_ALL_CLIENT_ATTRIB_BITS /;"	d
+GL_ALPHA	/usr/include/GL/gl.h	/^#define GL_ALPHA	/;"	d
+GL_ALPHA12	/usr/include/GL/gl.h	/^#define GL_ALPHA12	/;"	d
+GL_ALPHA16	/usr/include/GL/gl.h	/^#define GL_ALPHA16	/;"	d
+GL_ALPHA4	/usr/include/GL/gl.h	/^#define GL_ALPHA4	/;"	d
+GL_ALPHA8	/usr/include/GL/gl.h	/^#define GL_ALPHA8	/;"	d
+GL_ALPHA_BIAS	/usr/include/GL/gl.h	/^#define GL_ALPHA_BIAS	/;"	d
+GL_ALPHA_BITS	/usr/include/GL/gl.h	/^#define GL_ALPHA_BITS	/;"	d
+GL_ALPHA_BLEND_EQUATION_ATI	/usr/include/GL/gl.h	/^#define GL_ALPHA_BLEND_EQUATION_ATI	/;"	d
+GL_ALPHA_SCALE	/usr/include/GL/gl.h	/^#define GL_ALPHA_SCALE	/;"	d
+GL_ALPHA_TEST	/usr/include/GL/gl.h	/^#define GL_ALPHA_TEST	/;"	d
+GL_ALPHA_TEST_FUNC	/usr/include/GL/gl.h	/^#define GL_ALPHA_TEST_FUNC	/;"	d
+GL_ALPHA_TEST_REF	/usr/include/GL/gl.h	/^#define GL_ALPHA_TEST_REF	/;"	d
+GL_ALWAYS	/usr/include/GL/gl.h	/^#define GL_ALWAYS	/;"	d
+GL_AMBIENT	/usr/include/GL/gl.h	/^#define GL_AMBIENT	/;"	d
+GL_AMBIENT_AND_DIFFUSE	/usr/include/GL/gl.h	/^#define GL_AMBIENT_AND_DIFFUSE	/;"	d
+GL_AND	/usr/include/GL/gl.h	/^#define GL_AND	/;"	d
+GL_AND_INVERTED	/usr/include/GL/gl.h	/^#define GL_AND_INVERTED	/;"	d
+GL_AND_REVERSE	/usr/include/GL/gl.h	/^#define GL_AND_REVERSE	/;"	d
+GL_ARB_imaging	/usr/include/GL/gl.h	/^#define GL_ARB_imaging /;"	d
+GL_ARB_multitexture	/usr/include/GL/gl.h	/^#define GL_ARB_multitexture /;"	d
+GL_ATI_blend_equation_separate	/usr/include/GL/gl.h	/^#define GL_ATI_blend_equation_separate /;"	d
+GL_ATTRIB_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_ATTRIB_STACK_DEPTH	/;"	d
+GL_AUTO_NORMAL	/usr/include/GL/gl.h	/^#define GL_AUTO_NORMAL	/;"	d
+GL_AUX0	/usr/include/GL/gl.h	/^#define GL_AUX0	/;"	d
+GL_AUX1	/usr/include/GL/gl.h	/^#define GL_AUX1	/;"	d
+GL_AUX2	/usr/include/GL/gl.h	/^#define GL_AUX2	/;"	d
+GL_AUX3	/usr/include/GL/gl.h	/^#define GL_AUX3	/;"	d
+GL_AUX_BUFFERS	/usr/include/GL/gl.h	/^#define GL_AUX_BUFFERS	/;"	d
+GL_BACK	/usr/include/GL/gl.h	/^#define GL_BACK	/;"	d
+GL_BACK_LEFT	/usr/include/GL/gl.h	/^#define GL_BACK_LEFT	/;"	d
+GL_BACK_RIGHT	/usr/include/GL/gl.h	/^#define GL_BACK_RIGHT	/;"	d
+GL_BGR	/usr/include/GL/gl.h	/^#define GL_BGR	/;"	d
+GL_BGRA	/usr/include/GL/gl.h	/^#define GL_BGRA	/;"	d
+GL_BITMAP	/usr/include/GL/gl.h	/^#define GL_BITMAP	/;"	d
+GL_BITMAP_TOKEN	/usr/include/GL/gl.h	/^#define GL_BITMAP_TOKEN	/;"	d
+GL_BLEND	/usr/include/GL/gl.h	/^#define GL_BLEND	/;"	d
+GL_BLEND_COLOR	/usr/include/GL/gl.h	/^#define GL_BLEND_COLOR	/;"	d
+GL_BLEND_DST	/usr/include/GL/gl.h	/^#define GL_BLEND_DST	/;"	d
+GL_BLEND_EQUATION	/usr/include/GL/gl.h	/^#define GL_BLEND_EQUATION	/;"	d
+GL_BLEND_SRC	/usr/include/GL/gl.h	/^#define GL_BLEND_SRC	/;"	d
+GL_BLUE	/usr/include/GL/gl.h	/^#define GL_BLUE	/;"	d
+GL_BLUE_BIAS	/usr/include/GL/gl.h	/^#define GL_BLUE_BIAS	/;"	d
+GL_BLUE_BITS	/usr/include/GL/gl.h	/^#define GL_BLUE_BITS	/;"	d
+GL_BLUE_SCALE	/usr/include/GL/gl.h	/^#define GL_BLUE_SCALE	/;"	d
+GL_BYTE	/usr/include/GL/gl.h	/^#define GL_BYTE	/;"	d
+GL_C3F_V3F	/usr/include/GL/gl.h	/^#define GL_C3F_V3F	/;"	d
+GL_C4F_N3F_V3F	/usr/include/GL/gl.h	/^#define GL_C4F_N3F_V3F	/;"	d
+GL_C4UB_V2F	/usr/include/GL/gl.h	/^#define GL_C4UB_V2F	/;"	d
+GL_C4UB_V3F	/usr/include/GL/gl.h	/^#define GL_C4UB_V3F	/;"	d
+GL_CCW	/usr/include/GL/gl.h	/^#define GL_CCW	/;"	d
+GL_CLAMP	/usr/include/GL/gl.h	/^#define GL_CLAMP	/;"	d
+GL_CLAMP_TO_BORDER	/usr/include/GL/gl.h	/^#define GL_CLAMP_TO_BORDER	/;"	d
+GL_CLAMP_TO_EDGE	/usr/include/GL/gl.h	/^#define GL_CLAMP_TO_EDGE	/;"	d
+GL_CLEAR	/usr/include/GL/gl.h	/^#define GL_CLEAR	/;"	d
+GL_CLIENT_ACTIVE_TEXTURE	/usr/include/GL/gl.h	/^#define GL_CLIENT_ACTIVE_TEXTURE	/;"	d
+GL_CLIENT_ACTIVE_TEXTURE_ARB	/usr/include/GL/gl.h	/^#define GL_CLIENT_ACTIVE_TEXTURE_ARB	/;"	d
+GL_CLIENT_ALL_ATTRIB_BITS	/usr/include/GL/gl.h	/^#define GL_CLIENT_ALL_ATTRIB_BITS /;"	d
+GL_CLIENT_ATTRIB_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_CLIENT_ATTRIB_STACK_DEPTH	/;"	d
+GL_CLIENT_PIXEL_STORE_BIT	/usr/include/GL/gl.h	/^#define GL_CLIENT_PIXEL_STORE_BIT	/;"	d
+GL_CLIENT_VERTEX_ARRAY_BIT	/usr/include/GL/gl.h	/^#define GL_CLIENT_VERTEX_ARRAY_BIT	/;"	d
+GL_CLIP_PLANE0	/usr/include/GL/gl.h	/^#define GL_CLIP_PLANE0	/;"	d
+GL_CLIP_PLANE1	/usr/include/GL/gl.h	/^#define GL_CLIP_PLANE1	/;"	d
+GL_CLIP_PLANE2	/usr/include/GL/gl.h	/^#define GL_CLIP_PLANE2	/;"	d
+GL_CLIP_PLANE3	/usr/include/GL/gl.h	/^#define GL_CLIP_PLANE3	/;"	d
+GL_CLIP_PLANE4	/usr/include/GL/gl.h	/^#define GL_CLIP_PLANE4	/;"	d
+GL_CLIP_PLANE5	/usr/include/GL/gl.h	/^#define GL_CLIP_PLANE5	/;"	d
+GL_COEFF	/usr/include/GL/gl.h	/^#define GL_COEFF	/;"	d
+GL_COLOR	/usr/include/GL/gl.h	/^#define GL_COLOR	/;"	d
+GL_COLOR_ARRAY	/usr/include/GL/gl.h	/^#define GL_COLOR_ARRAY	/;"	d
+GL_COLOR_ARRAY_POINTER	/usr/include/GL/gl.h	/^#define GL_COLOR_ARRAY_POINTER	/;"	d
+GL_COLOR_ARRAY_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_ARRAY_SIZE	/;"	d
+GL_COLOR_ARRAY_STRIDE	/usr/include/GL/gl.h	/^#define GL_COLOR_ARRAY_STRIDE	/;"	d
+GL_COLOR_ARRAY_TYPE	/usr/include/GL/gl.h	/^#define GL_COLOR_ARRAY_TYPE	/;"	d
+GL_COLOR_BUFFER_BIT	/usr/include/GL/gl.h	/^#define GL_COLOR_BUFFER_BIT	/;"	d
+GL_COLOR_CLEAR_VALUE	/usr/include/GL/gl.h	/^#define GL_COLOR_CLEAR_VALUE	/;"	d
+GL_COLOR_INDEX	/usr/include/GL/gl.h	/^#define GL_COLOR_INDEX	/;"	d
+GL_COLOR_INDEXES	/usr/include/GL/gl.h	/^#define GL_COLOR_INDEXES	/;"	d
+GL_COLOR_LOGIC_OP	/usr/include/GL/gl.h	/^#define GL_COLOR_LOGIC_OP	/;"	d
+GL_COLOR_MATERIAL	/usr/include/GL/gl.h	/^#define GL_COLOR_MATERIAL	/;"	d
+GL_COLOR_MATERIAL_FACE	/usr/include/GL/gl.h	/^#define GL_COLOR_MATERIAL_FACE	/;"	d
+GL_COLOR_MATERIAL_PARAMETER	/usr/include/GL/gl.h	/^#define GL_COLOR_MATERIAL_PARAMETER	/;"	d
+GL_COLOR_MATRIX	/usr/include/GL/gl.h	/^#define GL_COLOR_MATRIX	/;"	d
+GL_COLOR_MATRIX_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_COLOR_MATRIX_STACK_DEPTH	/;"	d
+GL_COLOR_TABLE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE	/;"	d
+GL_COLOR_TABLE_ALPHA_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_ALPHA_SIZE	/;"	d
+GL_COLOR_TABLE_BIAS	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_BIAS	/;"	d
+GL_COLOR_TABLE_BLUE_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_BLUE_SIZE	/;"	d
+GL_COLOR_TABLE_FORMAT	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_FORMAT	/;"	d
+GL_COLOR_TABLE_GREEN_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_GREEN_SIZE	/;"	d
+GL_COLOR_TABLE_INTENSITY_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_INTENSITY_SIZE	/;"	d
+GL_COLOR_TABLE_LUMINANCE_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_LUMINANCE_SIZE	/;"	d
+GL_COLOR_TABLE_RED_SIZE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_RED_SIZE	/;"	d
+GL_COLOR_TABLE_SCALE	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_SCALE	/;"	d
+GL_COLOR_TABLE_WIDTH	/usr/include/GL/gl.h	/^#define GL_COLOR_TABLE_WIDTH	/;"	d
+GL_COLOR_WRITEMASK	/usr/include/GL/gl.h	/^#define GL_COLOR_WRITEMASK	/;"	d
+GL_COMBINE	/usr/include/GL/gl.h	/^#define GL_COMBINE	/;"	d
+GL_COMBINE_ALPHA	/usr/include/GL/gl.h	/^#define GL_COMBINE_ALPHA	/;"	d
+GL_COMBINE_RGB	/usr/include/GL/gl.h	/^#define GL_COMBINE_RGB	/;"	d
+GL_COMPILE	/usr/include/GL/gl.h	/^#define GL_COMPILE	/;"	d
+GL_COMPILE_AND_EXECUTE	/usr/include/GL/gl.h	/^#define GL_COMPILE_AND_EXECUTE	/;"	d
+GL_COMPRESSED_ALPHA	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_ALPHA	/;"	d
+GL_COMPRESSED_INTENSITY	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_INTENSITY	/;"	d
+GL_COMPRESSED_LUMINANCE	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_LUMINANCE	/;"	d
+GL_COMPRESSED_LUMINANCE_ALPHA	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_LUMINANCE_ALPHA	/;"	d
+GL_COMPRESSED_RGB	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_RGB	/;"	d
+GL_COMPRESSED_RGBA	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_RGBA	/;"	d
+GL_COMPRESSED_TEXTURE_FORMATS	/usr/include/GL/gl.h	/^#define GL_COMPRESSED_TEXTURE_FORMATS	/;"	d
+GL_CONSTANT	/usr/include/GL/gl.h	/^#define GL_CONSTANT	/;"	d
+GL_CONSTANT_ALPHA	/usr/include/GL/gl.h	/^#define GL_CONSTANT_ALPHA	/;"	d
+GL_CONSTANT_ATTENUATION	/usr/include/GL/gl.h	/^#define GL_CONSTANT_ATTENUATION	/;"	d
+GL_CONSTANT_BORDER	/usr/include/GL/gl.h	/^#define GL_CONSTANT_BORDER	/;"	d
+GL_CONSTANT_COLOR	/usr/include/GL/gl.h	/^#define GL_CONSTANT_COLOR	/;"	d
+GL_CONVOLUTION_1D	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_1D	/;"	d
+GL_CONVOLUTION_2D	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_2D	/;"	d
+GL_CONVOLUTION_BORDER_COLOR	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_BORDER_COLOR	/;"	d
+GL_CONVOLUTION_BORDER_MODE	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_BORDER_MODE	/;"	d
+GL_CONVOLUTION_FILTER_BIAS	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_FILTER_BIAS	/;"	d
+GL_CONVOLUTION_FILTER_SCALE	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_FILTER_SCALE	/;"	d
+GL_CONVOLUTION_FORMAT	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_FORMAT	/;"	d
+GL_CONVOLUTION_HEIGHT	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_HEIGHT	/;"	d
+GL_CONVOLUTION_WIDTH	/usr/include/GL/gl.h	/^#define GL_CONVOLUTION_WIDTH	/;"	d
+GL_COPY	/usr/include/GL/gl.h	/^#define GL_COPY	/;"	d
+GL_COPY_INVERTED	/usr/include/GL/gl.h	/^#define GL_COPY_INVERTED	/;"	d
+GL_COPY_PIXEL_TOKEN	/usr/include/GL/gl.h	/^#define GL_COPY_PIXEL_TOKEN	/;"	d
+GL_CULL_FACE	/usr/include/GL/gl.h	/^#define GL_CULL_FACE	/;"	d
+GL_CULL_FACE_MODE	/usr/include/GL/gl.h	/^#define GL_CULL_FACE_MODE	/;"	d
+GL_CURRENT_BIT	/usr/include/GL/gl.h	/^#define GL_CURRENT_BIT	/;"	d
+GL_CURRENT_COLOR	/usr/include/GL/gl.h	/^#define GL_CURRENT_COLOR	/;"	d
+GL_CURRENT_INDEX	/usr/include/GL/gl.h	/^#define GL_CURRENT_INDEX	/;"	d
+GL_CURRENT_NORMAL	/usr/include/GL/gl.h	/^#define GL_CURRENT_NORMAL	/;"	d
+GL_CURRENT_RASTER_COLOR	/usr/include/GL/gl.h	/^#define GL_CURRENT_RASTER_COLOR	/;"	d
+GL_CURRENT_RASTER_DISTANCE	/usr/include/GL/gl.h	/^#define GL_CURRENT_RASTER_DISTANCE	/;"	d
+GL_CURRENT_RASTER_INDEX	/usr/include/GL/gl.h	/^#define GL_CURRENT_RASTER_INDEX	/;"	d
+GL_CURRENT_RASTER_POSITION	/usr/include/GL/gl.h	/^#define GL_CURRENT_RASTER_POSITION	/;"	d
+GL_CURRENT_RASTER_POSITION_VALID	/usr/include/GL/gl.h	/^#define GL_CURRENT_RASTER_POSITION_VALID	/;"	d
+GL_CURRENT_RASTER_TEXTURE_COORDS	/usr/include/GL/gl.h	/^#define GL_CURRENT_RASTER_TEXTURE_COORDS	/;"	d
+GL_CURRENT_TEXTURE_COORDS	/usr/include/GL/gl.h	/^#define GL_CURRENT_TEXTURE_COORDS	/;"	d
+GL_CW	/usr/include/GL/gl.h	/^#define GL_CW	/;"	d
+GL_DECAL	/usr/include/GL/gl.h	/^#define GL_DECAL	/;"	d
+GL_DECR	/usr/include/GL/gl.h	/^#define GL_DECR	/;"	d
+GL_DEPTH	/usr/include/GL/gl.h	/^#define GL_DEPTH	/;"	d
+GL_DEPTH_BIAS	/usr/include/GL/gl.h	/^#define GL_DEPTH_BIAS	/;"	d
+GL_DEPTH_BITS	/usr/include/GL/gl.h	/^#define GL_DEPTH_BITS	/;"	d
+GL_DEPTH_BUFFER_BIT	/usr/include/GL/gl.h	/^#define GL_DEPTH_BUFFER_BIT	/;"	d
+GL_DEPTH_CLEAR_VALUE	/usr/include/GL/gl.h	/^#define GL_DEPTH_CLEAR_VALUE	/;"	d
+GL_DEPTH_COMPONENT	/usr/include/GL/gl.h	/^#define GL_DEPTH_COMPONENT	/;"	d
+GL_DEPTH_FUNC	/usr/include/GL/gl.h	/^#define GL_DEPTH_FUNC	/;"	d
+GL_DEPTH_RANGE	/usr/include/GL/gl.h	/^#define GL_DEPTH_RANGE	/;"	d
+GL_DEPTH_SCALE	/usr/include/GL/gl.h	/^#define GL_DEPTH_SCALE	/;"	d
+GL_DEPTH_STENCIL_MESA	/usr/include/GL/gl.h	/^#define GL_DEPTH_STENCIL_MESA	/;"	d
+GL_DEPTH_TEST	/usr/include/GL/gl.h	/^#define GL_DEPTH_TEST	/;"	d
+GL_DEPTH_WRITEMASK	/usr/include/GL/gl.h	/^#define GL_DEPTH_WRITEMASK	/;"	d
+GL_DIFFUSE	/usr/include/GL/gl.h	/^#define GL_DIFFUSE	/;"	d
+GL_DITHER	/usr/include/GL/gl.h	/^#define GL_DITHER	/;"	d
+GL_DOMAIN	/usr/include/GL/gl.h	/^#define GL_DOMAIN	/;"	d
+GL_DONT_CARE	/usr/include/GL/gl.h	/^#define GL_DONT_CARE	/;"	d
+GL_DOT3_RGB	/usr/include/GL/gl.h	/^#define GL_DOT3_RGB	/;"	d
+GL_DOT3_RGBA	/usr/include/GL/gl.h	/^#define GL_DOT3_RGBA	/;"	d
+GL_DOUBLE	/usr/include/GL/gl.h	/^#define GL_DOUBLE	/;"	d
+GL_DOUBLEBUFFER	/usr/include/GL/gl.h	/^#define GL_DOUBLEBUFFER	/;"	d
+GL_DRAW_BUFFER	/usr/include/GL/gl.h	/^#define GL_DRAW_BUFFER	/;"	d
+GL_DRAW_PIXEL_TOKEN	/usr/include/GL/gl.h	/^#define GL_DRAW_PIXEL_TOKEN	/;"	d
+GL_DST_ALPHA	/usr/include/GL/gl.h	/^#define GL_DST_ALPHA	/;"	d
+GL_DST_COLOR	/usr/include/GL/gl.h	/^#define GL_DST_COLOR	/;"	d
+GL_EDGE_FLAG	/usr/include/GL/gl.h	/^#define GL_EDGE_FLAG	/;"	d
+GL_EDGE_FLAG_ARRAY	/usr/include/GL/gl.h	/^#define GL_EDGE_FLAG_ARRAY	/;"	d
+GL_EDGE_FLAG_ARRAY_POINTER	/usr/include/GL/gl.h	/^#define GL_EDGE_FLAG_ARRAY_POINTER	/;"	d
+GL_EDGE_FLAG_ARRAY_STRIDE	/usr/include/GL/gl.h	/^#define GL_EDGE_FLAG_ARRAY_STRIDE	/;"	d
+GL_EMISSION	/usr/include/GL/gl.h	/^#define GL_EMISSION	/;"	d
+GL_ENABLE_BIT	/usr/include/GL/gl.h	/^#define GL_ENABLE_BIT	/;"	d
+GL_EQUAL	/usr/include/GL/gl.h	/^#define GL_EQUAL	/;"	d
+GL_EQUIV	/usr/include/GL/gl.h	/^#define GL_EQUIV	/;"	d
+GL_EVAL_BIT	/usr/include/GL/gl.h	/^#define GL_EVAL_BIT	/;"	d
+GL_EXP	/usr/include/GL/gl.h	/^#define GL_EXP	/;"	d
+GL_EXP2	/usr/include/GL/gl.h	/^#define GL_EXP2	/;"	d
+GL_EXTENSIONS	/usr/include/GL/gl.h	/^#define GL_EXTENSIONS	/;"	d
+GL_EYE_LINEAR	/usr/include/GL/gl.h	/^#define GL_EYE_LINEAR	/;"	d
+GL_EYE_PLANE	/usr/include/GL/gl.h	/^#define GL_EYE_PLANE	/;"	d
+GL_FALSE	/usr/include/GL/gl.h	/^#define GL_FALSE	/;"	d
+GL_FASTEST	/usr/include/GL/gl.h	/^#define GL_FASTEST	/;"	d
+GL_FEEDBACK	/usr/include/GL/gl.h	/^#define GL_FEEDBACK	/;"	d
+GL_FEEDBACK_BUFFER_POINTER	/usr/include/GL/gl.h	/^#define GL_FEEDBACK_BUFFER_POINTER	/;"	d
+GL_FEEDBACK_BUFFER_SIZE	/usr/include/GL/gl.h	/^#define GL_FEEDBACK_BUFFER_SIZE	/;"	d
+GL_FEEDBACK_BUFFER_TYPE	/usr/include/GL/gl.h	/^#define GL_FEEDBACK_BUFFER_TYPE	/;"	d
+GL_FILL	/usr/include/GL/gl.h	/^#define GL_FILL	/;"	d
+GL_FLAT	/usr/include/GL/gl.h	/^#define GL_FLAT	/;"	d
+GL_FLOAT	/usr/include/GL/gl.h	/^#define GL_FLOAT	/;"	d
+GL_FOG	/usr/include/GL/gl.h	/^#define GL_FOG	/;"	d
+GL_FOG_BIT	/usr/include/GL/gl.h	/^#define GL_FOG_BIT	/;"	d
+GL_FOG_COLOR	/usr/include/GL/gl.h	/^#define GL_FOG_COLOR	/;"	d
+GL_FOG_DENSITY	/usr/include/GL/gl.h	/^#define GL_FOG_DENSITY	/;"	d
+GL_FOG_END	/usr/include/GL/gl.h	/^#define GL_FOG_END	/;"	d
+GL_FOG_HINT	/usr/include/GL/gl.h	/^#define GL_FOG_HINT	/;"	d
+GL_FOG_INDEX	/usr/include/GL/gl.h	/^#define GL_FOG_INDEX	/;"	d
+GL_FOG_MODE	/usr/include/GL/gl.h	/^#define GL_FOG_MODE	/;"	d
+GL_FOG_START	/usr/include/GL/gl.h	/^#define GL_FOG_START	/;"	d
+GL_FRONT	/usr/include/GL/gl.h	/^#define GL_FRONT	/;"	d
+GL_FRONT_AND_BACK	/usr/include/GL/gl.h	/^#define GL_FRONT_AND_BACK	/;"	d
+GL_FRONT_FACE	/usr/include/GL/gl.h	/^#define GL_FRONT_FACE	/;"	d
+GL_FRONT_LEFT	/usr/include/GL/gl.h	/^#define GL_FRONT_LEFT	/;"	d
+GL_FRONT_RIGHT	/usr/include/GL/gl.h	/^#define GL_FRONT_RIGHT	/;"	d
+GL_FUNC_ADD	/usr/include/GL/gl.h	/^#define GL_FUNC_ADD	/;"	d
+GL_FUNC_REVERSE_SUBTRACT	/usr/include/GL/gl.h	/^#define GL_FUNC_REVERSE_SUBTRACT	/;"	d
+GL_FUNC_SUBTRACT	/usr/include/GL/gl.h	/^#define GL_FUNC_SUBTRACT	/;"	d
+GL_GEQUAL	/usr/include/GL/gl.h	/^#define GL_GEQUAL	/;"	d
+GL_GREATER	/usr/include/GL/gl.h	/^#define GL_GREATER	/;"	d
+GL_GREEN	/usr/include/GL/gl.h	/^#define GL_GREEN	/;"	d
+GL_GREEN_BIAS	/usr/include/GL/gl.h	/^#define GL_GREEN_BIAS	/;"	d
+GL_GREEN_BITS	/usr/include/GL/gl.h	/^#define GL_GREEN_BITS	/;"	d
+GL_GREEN_SCALE	/usr/include/GL/gl.h	/^#define GL_GREEN_SCALE	/;"	d
+GL_HINT_BIT	/usr/include/GL/gl.h	/^#define GL_HINT_BIT	/;"	d
+GL_HISTOGRAM	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM	/;"	d
+GL_HISTOGRAM_ALPHA_SIZE	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_ALPHA_SIZE	/;"	d
+GL_HISTOGRAM_BLUE_SIZE	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_BLUE_SIZE	/;"	d
+GL_HISTOGRAM_FORMAT	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_FORMAT	/;"	d
+GL_HISTOGRAM_GREEN_SIZE	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_GREEN_SIZE	/;"	d
+GL_HISTOGRAM_LUMINANCE_SIZE	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_LUMINANCE_SIZE	/;"	d
+GL_HISTOGRAM_RED_SIZE	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_RED_SIZE	/;"	d
+GL_HISTOGRAM_SINK	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_SINK	/;"	d
+GL_HISTOGRAM_WIDTH	/usr/include/GL/gl.h	/^#define GL_HISTOGRAM_WIDTH	/;"	d
+GL_INCR	/usr/include/GL/gl.h	/^#define GL_INCR	/;"	d
+GL_INDEX_ARRAY	/usr/include/GL/gl.h	/^#define GL_INDEX_ARRAY	/;"	d
+GL_INDEX_ARRAY_POINTER	/usr/include/GL/gl.h	/^#define GL_INDEX_ARRAY_POINTER	/;"	d
+GL_INDEX_ARRAY_STRIDE	/usr/include/GL/gl.h	/^#define GL_INDEX_ARRAY_STRIDE	/;"	d
+GL_INDEX_ARRAY_TYPE	/usr/include/GL/gl.h	/^#define GL_INDEX_ARRAY_TYPE	/;"	d
+GL_INDEX_BITS	/usr/include/GL/gl.h	/^#define GL_INDEX_BITS	/;"	d
+GL_INDEX_CLEAR_VALUE	/usr/include/GL/gl.h	/^#define GL_INDEX_CLEAR_VALUE	/;"	d
+GL_INDEX_LOGIC_OP	/usr/include/GL/gl.h	/^#define GL_INDEX_LOGIC_OP	/;"	d
+GL_INDEX_MODE	/usr/include/GL/gl.h	/^#define GL_INDEX_MODE	/;"	d
+GL_INDEX_OFFSET	/usr/include/GL/gl.h	/^#define GL_INDEX_OFFSET	/;"	d
+GL_INDEX_SHIFT	/usr/include/GL/gl.h	/^#define GL_INDEX_SHIFT	/;"	d
+GL_INDEX_WRITEMASK	/usr/include/GL/gl.h	/^#define GL_INDEX_WRITEMASK	/;"	d
+GL_INT	/usr/include/GL/gl.h	/^#define GL_INT	/;"	d
+GL_INTENSITY	/usr/include/GL/gl.h	/^#define GL_INTENSITY	/;"	d
+GL_INTENSITY12	/usr/include/GL/gl.h	/^#define GL_INTENSITY12	/;"	d
+GL_INTENSITY16	/usr/include/GL/gl.h	/^#define GL_INTENSITY16	/;"	d
+GL_INTENSITY4	/usr/include/GL/gl.h	/^#define GL_INTENSITY4	/;"	d
+GL_INTENSITY8	/usr/include/GL/gl.h	/^#define GL_INTENSITY8	/;"	d
+GL_INTERPOLATE	/usr/include/GL/gl.h	/^#define GL_INTERPOLATE	/;"	d
+GL_INVALID_ENUM	/usr/include/GL/gl.h	/^#define GL_INVALID_ENUM	/;"	d
+GL_INVALID_OPERATION	/usr/include/GL/gl.h	/^#define GL_INVALID_OPERATION	/;"	d
+GL_INVALID_VALUE	/usr/include/GL/gl.h	/^#define GL_INVALID_VALUE	/;"	d
+GL_INVERT	/usr/include/GL/gl.h	/^#define GL_INVERT	/;"	d
+GL_KEEP	/usr/include/GL/gl.h	/^#define GL_KEEP	/;"	d
+GL_LEFT	/usr/include/GL/gl.h	/^#define GL_LEFT	/;"	d
+GL_LEQUAL	/usr/include/GL/gl.h	/^#define GL_LEQUAL	/;"	d
+GL_LESS	/usr/include/GL/gl.h	/^#define GL_LESS	/;"	d
+GL_LIGHT0	/usr/include/GL/gl.h	/^#define GL_LIGHT0	/;"	d
+GL_LIGHT1	/usr/include/GL/gl.h	/^#define GL_LIGHT1	/;"	d
+GL_LIGHT2	/usr/include/GL/gl.h	/^#define GL_LIGHT2	/;"	d
+GL_LIGHT3	/usr/include/GL/gl.h	/^#define GL_LIGHT3	/;"	d
+GL_LIGHT4	/usr/include/GL/gl.h	/^#define GL_LIGHT4	/;"	d
+GL_LIGHT5	/usr/include/GL/gl.h	/^#define GL_LIGHT5	/;"	d
+GL_LIGHT6	/usr/include/GL/gl.h	/^#define GL_LIGHT6	/;"	d
+GL_LIGHT7	/usr/include/GL/gl.h	/^#define GL_LIGHT7	/;"	d
+GL_LIGHTING	/usr/include/GL/gl.h	/^#define GL_LIGHTING	/;"	d
+GL_LIGHTING_BIT	/usr/include/GL/gl.h	/^#define GL_LIGHTING_BIT	/;"	d
+GL_LIGHT_MODEL_AMBIENT	/usr/include/GL/gl.h	/^#define GL_LIGHT_MODEL_AMBIENT	/;"	d
+GL_LIGHT_MODEL_COLOR_CONTROL	/usr/include/GL/gl.h	/^#define GL_LIGHT_MODEL_COLOR_CONTROL	/;"	d
+GL_LIGHT_MODEL_LOCAL_VIEWER	/usr/include/GL/gl.h	/^#define GL_LIGHT_MODEL_LOCAL_VIEWER	/;"	d
+GL_LIGHT_MODEL_TWO_SIDE	/usr/include/GL/gl.h	/^#define GL_LIGHT_MODEL_TWO_SIDE	/;"	d
+GL_LINE	/usr/include/GL/gl.h	/^#define GL_LINE	/;"	d
+GL_LINEAR	/usr/include/GL/gl.h	/^#define GL_LINEAR	/;"	d
+GL_LINEAR_ATTENUATION	/usr/include/GL/gl.h	/^#define GL_LINEAR_ATTENUATION	/;"	d
+GL_LINEAR_MIPMAP_LINEAR	/usr/include/GL/gl.h	/^#define GL_LINEAR_MIPMAP_LINEAR	/;"	d
+GL_LINEAR_MIPMAP_NEAREST	/usr/include/GL/gl.h	/^#define GL_LINEAR_MIPMAP_NEAREST	/;"	d
+GL_LINES	/usr/include/GL/gl.h	/^#define GL_LINES	/;"	d
+GL_LINE_BIT	/usr/include/GL/gl.h	/^#define GL_LINE_BIT	/;"	d
+GL_LINE_LOOP	/usr/include/GL/gl.h	/^#define GL_LINE_LOOP	/;"	d
+GL_LINE_RESET_TOKEN	/usr/include/GL/gl.h	/^#define GL_LINE_RESET_TOKEN	/;"	d
+GL_LINE_SMOOTH	/usr/include/GL/gl.h	/^#define GL_LINE_SMOOTH	/;"	d
+GL_LINE_SMOOTH_HINT	/usr/include/GL/gl.h	/^#define GL_LINE_SMOOTH_HINT	/;"	d
+GL_LINE_STIPPLE	/usr/include/GL/gl.h	/^#define GL_LINE_STIPPLE	/;"	d
+GL_LINE_STIPPLE_PATTERN	/usr/include/GL/gl.h	/^#define GL_LINE_STIPPLE_PATTERN	/;"	d
+GL_LINE_STIPPLE_REPEAT	/usr/include/GL/gl.h	/^#define GL_LINE_STIPPLE_REPEAT	/;"	d
+GL_LINE_STRIP	/usr/include/GL/gl.h	/^#define GL_LINE_STRIP	/;"	d
+GL_LINE_TOKEN	/usr/include/GL/gl.h	/^#define GL_LINE_TOKEN	/;"	d
+GL_LINE_WIDTH	/usr/include/GL/gl.h	/^#define GL_LINE_WIDTH	/;"	d
+GL_LINE_WIDTH_GRANULARITY	/usr/include/GL/gl.h	/^#define GL_LINE_WIDTH_GRANULARITY	/;"	d
+GL_LINE_WIDTH_RANGE	/usr/include/GL/gl.h	/^#define GL_LINE_WIDTH_RANGE	/;"	d
+GL_LIST_BASE	/usr/include/GL/gl.h	/^#define GL_LIST_BASE	/;"	d
+GL_LIST_BIT	/usr/include/GL/gl.h	/^#define GL_LIST_BIT	/;"	d
+GL_LIST_INDEX	/usr/include/GL/gl.h	/^#define GL_LIST_INDEX	/;"	d
+GL_LIST_MODE	/usr/include/GL/gl.h	/^#define GL_LIST_MODE	/;"	d
+GL_LOAD	/usr/include/GL/gl.h	/^#define GL_LOAD	/;"	d
+GL_LOGIC_OP	/usr/include/GL/gl.h	/^#define GL_LOGIC_OP	/;"	d
+GL_LOGIC_OP_MODE	/usr/include/GL/gl.h	/^#define GL_LOGIC_OP_MODE	/;"	d
+GL_LUMINANCE	/usr/include/GL/gl.h	/^#define GL_LUMINANCE	/;"	d
+GL_LUMINANCE12	/usr/include/GL/gl.h	/^#define GL_LUMINANCE12	/;"	d
+GL_LUMINANCE12_ALPHA12	/usr/include/GL/gl.h	/^#define GL_LUMINANCE12_ALPHA12	/;"	d
+GL_LUMINANCE12_ALPHA4	/usr/include/GL/gl.h	/^#define GL_LUMINANCE12_ALPHA4	/;"	d
+GL_LUMINANCE16	/usr/include/GL/gl.h	/^#define GL_LUMINANCE16	/;"	d
+GL_LUMINANCE16_ALPHA16	/usr/include/GL/gl.h	/^#define GL_LUMINANCE16_ALPHA16	/;"	d
+GL_LUMINANCE4	/usr/include/GL/gl.h	/^#define GL_LUMINANCE4	/;"	d
+GL_LUMINANCE4_ALPHA4	/usr/include/GL/gl.h	/^#define GL_LUMINANCE4_ALPHA4	/;"	d
+GL_LUMINANCE6_ALPHA2	/usr/include/GL/gl.h	/^#define GL_LUMINANCE6_ALPHA2	/;"	d
+GL_LUMINANCE8	/usr/include/GL/gl.h	/^#define GL_LUMINANCE8	/;"	d
+GL_LUMINANCE8_ALPHA8	/usr/include/GL/gl.h	/^#define GL_LUMINANCE8_ALPHA8	/;"	d
+GL_LUMINANCE_ALPHA	/usr/include/GL/gl.h	/^#define GL_LUMINANCE_ALPHA	/;"	d
+GL_MAP1_COLOR_4	/usr/include/GL/gl.h	/^#define GL_MAP1_COLOR_4	/;"	d
+GL_MAP1_GRID_DOMAIN	/usr/include/GL/gl.h	/^#define GL_MAP1_GRID_DOMAIN	/;"	d
+GL_MAP1_GRID_SEGMENTS	/usr/include/GL/gl.h	/^#define GL_MAP1_GRID_SEGMENTS	/;"	d
+GL_MAP1_INDEX	/usr/include/GL/gl.h	/^#define GL_MAP1_INDEX	/;"	d
+GL_MAP1_NORMAL	/usr/include/GL/gl.h	/^#define GL_MAP1_NORMAL	/;"	d
+GL_MAP1_TEXTURE_COORD_1	/usr/include/GL/gl.h	/^#define GL_MAP1_TEXTURE_COORD_1	/;"	d
+GL_MAP1_TEXTURE_COORD_2	/usr/include/GL/gl.h	/^#define GL_MAP1_TEXTURE_COORD_2	/;"	d
+GL_MAP1_TEXTURE_COORD_3	/usr/include/GL/gl.h	/^#define GL_MAP1_TEXTURE_COORD_3	/;"	d
+GL_MAP1_TEXTURE_COORD_4	/usr/include/GL/gl.h	/^#define GL_MAP1_TEXTURE_COORD_4	/;"	d
+GL_MAP1_VERTEX_3	/usr/include/GL/gl.h	/^#define GL_MAP1_VERTEX_3	/;"	d
+GL_MAP1_VERTEX_4	/usr/include/GL/gl.h	/^#define GL_MAP1_VERTEX_4	/;"	d
+GL_MAP2_COLOR_4	/usr/include/GL/gl.h	/^#define GL_MAP2_COLOR_4	/;"	d
+GL_MAP2_GRID_DOMAIN	/usr/include/GL/gl.h	/^#define GL_MAP2_GRID_DOMAIN	/;"	d
+GL_MAP2_GRID_SEGMENTS	/usr/include/GL/gl.h	/^#define GL_MAP2_GRID_SEGMENTS	/;"	d
+GL_MAP2_INDEX	/usr/include/GL/gl.h	/^#define GL_MAP2_INDEX	/;"	d
+GL_MAP2_NORMAL	/usr/include/GL/gl.h	/^#define GL_MAP2_NORMAL	/;"	d
+GL_MAP2_TEXTURE_COORD_1	/usr/include/GL/gl.h	/^#define GL_MAP2_TEXTURE_COORD_1	/;"	d
+GL_MAP2_TEXTURE_COORD_2	/usr/include/GL/gl.h	/^#define GL_MAP2_TEXTURE_COORD_2	/;"	d
+GL_MAP2_TEXTURE_COORD_3	/usr/include/GL/gl.h	/^#define GL_MAP2_TEXTURE_COORD_3	/;"	d
+GL_MAP2_TEXTURE_COORD_4	/usr/include/GL/gl.h	/^#define GL_MAP2_TEXTURE_COORD_4	/;"	d
+GL_MAP2_VERTEX_3	/usr/include/GL/gl.h	/^#define GL_MAP2_VERTEX_3	/;"	d
+GL_MAP2_VERTEX_4	/usr/include/GL/gl.h	/^#define GL_MAP2_VERTEX_4	/;"	d
+GL_MAP_COLOR	/usr/include/GL/gl.h	/^#define GL_MAP_COLOR	/;"	d
+GL_MAP_STENCIL	/usr/include/GL/gl.h	/^#define GL_MAP_STENCIL	/;"	d
+GL_MATRIX_MODE	/usr/include/GL/gl.h	/^#define GL_MATRIX_MODE	/;"	d
+GL_MAX	/usr/include/GL/gl.h	/^#define GL_MAX	/;"	d
+GL_MAX_3D_TEXTURE_SIZE	/usr/include/GL/gl.h	/^#define GL_MAX_3D_TEXTURE_SIZE	/;"	d
+GL_MAX_ATTRIB_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_ATTRIB_STACK_DEPTH	/;"	d
+GL_MAX_CLIENT_ATTRIB_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_CLIENT_ATTRIB_STACK_DEPTH	/;"	d
+GL_MAX_CLIP_PLANES	/usr/include/GL/gl.h	/^#define GL_MAX_CLIP_PLANES	/;"	d
+GL_MAX_COLOR_MATRIX_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_COLOR_MATRIX_STACK_DEPTH	/;"	d
+GL_MAX_CONVOLUTION_HEIGHT	/usr/include/GL/gl.h	/^#define GL_MAX_CONVOLUTION_HEIGHT	/;"	d
+GL_MAX_CONVOLUTION_WIDTH	/usr/include/GL/gl.h	/^#define GL_MAX_CONVOLUTION_WIDTH	/;"	d
+GL_MAX_CUBE_MAP_TEXTURE_SIZE	/usr/include/GL/gl.h	/^#define GL_MAX_CUBE_MAP_TEXTURE_SIZE	/;"	d
+GL_MAX_ELEMENTS_INDICES	/usr/include/GL/gl.h	/^#define GL_MAX_ELEMENTS_INDICES	/;"	d
+GL_MAX_ELEMENTS_VERTICES	/usr/include/GL/gl.h	/^#define GL_MAX_ELEMENTS_VERTICES	/;"	d
+GL_MAX_EVAL_ORDER	/usr/include/GL/gl.h	/^#define GL_MAX_EVAL_ORDER	/;"	d
+GL_MAX_LIGHTS	/usr/include/GL/gl.h	/^#define GL_MAX_LIGHTS	/;"	d
+GL_MAX_LIST_NESTING	/usr/include/GL/gl.h	/^#define GL_MAX_LIST_NESTING	/;"	d
+GL_MAX_MODELVIEW_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_MODELVIEW_STACK_DEPTH	/;"	d
+GL_MAX_NAME_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_NAME_STACK_DEPTH	/;"	d
+GL_MAX_PIXEL_MAP_TABLE	/usr/include/GL/gl.h	/^#define GL_MAX_PIXEL_MAP_TABLE	/;"	d
+GL_MAX_PROJECTION_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_PROJECTION_STACK_DEPTH	/;"	d
+GL_MAX_TEXTURE_SIZE	/usr/include/GL/gl.h	/^#define GL_MAX_TEXTURE_SIZE	/;"	d
+GL_MAX_TEXTURE_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MAX_TEXTURE_STACK_DEPTH	/;"	d
+GL_MAX_TEXTURE_UNITS	/usr/include/GL/gl.h	/^#define GL_MAX_TEXTURE_UNITS	/;"	d
+GL_MAX_TEXTURE_UNITS_ARB	/usr/include/GL/gl.h	/^#define GL_MAX_TEXTURE_UNITS_ARB	/;"	d
+GL_MAX_VIEWPORT_DIMS	/usr/include/GL/gl.h	/^#define GL_MAX_VIEWPORT_DIMS	/;"	d
+GL_MESA_packed_depth_stencil	/usr/include/GL/gl.h	/^#define GL_MESA_packed_depth_stencil /;"	d
+GL_MIN	/usr/include/GL/gl.h	/^#define GL_MIN	/;"	d
+GL_MINMAX	/usr/include/GL/gl.h	/^#define GL_MINMAX	/;"	d
+GL_MINMAX_FORMAT	/usr/include/GL/gl.h	/^#define GL_MINMAX_FORMAT	/;"	d
+GL_MINMAX_SINK	/usr/include/GL/gl.h	/^#define GL_MINMAX_SINK	/;"	d
+GL_MODELVIEW	/usr/include/GL/gl.h	/^#define GL_MODELVIEW	/;"	d
+GL_MODELVIEW_MATRIX	/usr/include/GL/gl.h	/^#define GL_MODELVIEW_MATRIX	/;"	d
+GL_MODELVIEW_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_MODELVIEW_STACK_DEPTH	/;"	d
+GL_MODULATE	/usr/include/GL/gl.h	/^#define GL_MODULATE	/;"	d
+GL_MULT	/usr/include/GL/gl.h	/^#define GL_MULT	/;"	d
+GL_MULTISAMPLE	/usr/include/GL/gl.h	/^#define GL_MULTISAMPLE	/;"	d
+GL_MULTISAMPLE_BIT	/usr/include/GL/gl.h	/^#define GL_MULTISAMPLE_BIT	/;"	d
+GL_N3F_V3F	/usr/include/GL/gl.h	/^#define GL_N3F_V3F	/;"	d
+GL_NAME_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_NAME_STACK_DEPTH	/;"	d
+GL_NAND	/usr/include/GL/gl.h	/^#define GL_NAND	/;"	d
+GL_NEAREST	/usr/include/GL/gl.h	/^#define GL_NEAREST	/;"	d
+GL_NEAREST_MIPMAP_LINEAR	/usr/include/GL/gl.h	/^#define GL_NEAREST_MIPMAP_LINEAR	/;"	d
+GL_NEAREST_MIPMAP_NEAREST	/usr/include/GL/gl.h	/^#define GL_NEAREST_MIPMAP_NEAREST	/;"	d
+GL_NEVER	/usr/include/GL/gl.h	/^#define GL_NEVER	/;"	d
+GL_NICEST	/usr/include/GL/gl.h	/^#define GL_NICEST	/;"	d
+GL_NONE	/usr/include/GL/gl.h	/^#define GL_NONE	/;"	d
+GL_NOOP	/usr/include/GL/gl.h	/^#define GL_NOOP	/;"	d
+GL_NOR	/usr/include/GL/gl.h	/^#define GL_NOR	/;"	d
+GL_NORMALIZE	/usr/include/GL/gl.h	/^#define GL_NORMALIZE	/;"	d
+GL_NORMAL_ARRAY	/usr/include/GL/gl.h	/^#define GL_NORMAL_ARRAY	/;"	d
+GL_NORMAL_ARRAY_POINTER	/usr/include/GL/gl.h	/^#define GL_NORMAL_ARRAY_POINTER	/;"	d
+GL_NORMAL_ARRAY_STRIDE	/usr/include/GL/gl.h	/^#define GL_NORMAL_ARRAY_STRIDE	/;"	d
+GL_NORMAL_ARRAY_TYPE	/usr/include/GL/gl.h	/^#define GL_NORMAL_ARRAY_TYPE	/;"	d
+GL_NORMAL_MAP	/usr/include/GL/gl.h	/^#define GL_NORMAL_MAP	/;"	d
+GL_NOTEQUAL	/usr/include/GL/gl.h	/^#define GL_NOTEQUAL	/;"	d
+GL_NO_ERROR	/usr/include/GL/gl.h	/^#define GL_NO_ERROR /;"	d
+GL_NUM_COMPRESSED_TEXTURE_FORMATS	/usr/include/GL/gl.h	/^#define GL_NUM_COMPRESSED_TEXTURE_FORMATS	/;"	d
+GL_OBJECT_LINEAR	/usr/include/GL/gl.h	/^#define GL_OBJECT_LINEAR	/;"	d
+GL_OBJECT_PLANE	/usr/include/GL/gl.h	/^#define GL_OBJECT_PLANE	/;"	d
+GL_OES_EGL_image	/usr/include/GL/gl.h	/^#define GL_OES_EGL_image /;"	d
+GL_ONE	/usr/include/GL/gl.h	/^#define GL_ONE	/;"	d
+GL_ONE_MINUS_CONSTANT_ALPHA	/usr/include/GL/gl.h	/^#define GL_ONE_MINUS_CONSTANT_ALPHA	/;"	d
+GL_ONE_MINUS_CONSTANT_COLOR	/usr/include/GL/gl.h	/^#define GL_ONE_MINUS_CONSTANT_COLOR	/;"	d
+GL_ONE_MINUS_DST_ALPHA	/usr/include/GL/gl.h	/^#define GL_ONE_MINUS_DST_ALPHA	/;"	d
+GL_ONE_MINUS_DST_COLOR	/usr/include/GL/gl.h	/^#define GL_ONE_MINUS_DST_COLOR	/;"	d
+GL_ONE_MINUS_SRC_ALPHA	/usr/include/GL/gl.h	/^#define GL_ONE_MINUS_SRC_ALPHA	/;"	d
+GL_ONE_MINUS_SRC_COLOR	/usr/include/GL/gl.h	/^#define GL_ONE_MINUS_SRC_COLOR	/;"	d
+GL_OPERAND0_ALPHA	/usr/include/GL/gl.h	/^#define GL_OPERAND0_ALPHA	/;"	d
+GL_OPERAND0_RGB	/usr/include/GL/gl.h	/^#define GL_OPERAND0_RGB	/;"	d
+GL_OPERAND1_ALPHA	/usr/include/GL/gl.h	/^#define GL_OPERAND1_ALPHA	/;"	d
+GL_OPERAND1_RGB	/usr/include/GL/gl.h	/^#define GL_OPERAND1_RGB	/;"	d
+GL_OPERAND2_ALPHA	/usr/include/GL/gl.h	/^#define GL_OPERAND2_ALPHA	/;"	d
+GL_OPERAND2_RGB	/usr/include/GL/gl.h	/^#define GL_OPERAND2_RGB	/;"	d
+GL_OR	/usr/include/GL/gl.h	/^#define GL_OR	/;"	d
+GL_ORDER	/usr/include/GL/gl.h	/^#define GL_ORDER	/;"	d
+GL_OR_INVERTED	/usr/include/GL/gl.h	/^#define GL_OR_INVERTED	/;"	d
+GL_OR_REVERSE	/usr/include/GL/gl.h	/^#define GL_OR_REVERSE	/;"	d
+GL_OUT_OF_MEMORY	/usr/include/GL/gl.h	/^#define GL_OUT_OF_MEMORY	/;"	d
+GL_PACK_ALIGNMENT	/usr/include/GL/gl.h	/^#define GL_PACK_ALIGNMENT	/;"	d
+GL_PACK_IMAGE_HEIGHT	/usr/include/GL/gl.h	/^#define GL_PACK_IMAGE_HEIGHT	/;"	d
+GL_PACK_LSB_FIRST	/usr/include/GL/gl.h	/^#define GL_PACK_LSB_FIRST	/;"	d
+GL_PACK_ROW_LENGTH	/usr/include/GL/gl.h	/^#define GL_PACK_ROW_LENGTH	/;"	d
+GL_PACK_SKIP_IMAGES	/usr/include/GL/gl.h	/^#define GL_PACK_SKIP_IMAGES	/;"	d
+GL_PACK_SKIP_PIXELS	/usr/include/GL/gl.h	/^#define GL_PACK_SKIP_PIXELS	/;"	d
+GL_PACK_SKIP_ROWS	/usr/include/GL/gl.h	/^#define GL_PACK_SKIP_ROWS	/;"	d
+GL_PACK_SWAP_BYTES	/usr/include/GL/gl.h	/^#define GL_PACK_SWAP_BYTES	/;"	d
+GL_PASS_THROUGH_TOKEN	/usr/include/GL/gl.h	/^#define GL_PASS_THROUGH_TOKEN	/;"	d
+GL_PERSPECTIVE_CORRECTION_HINT	/usr/include/GL/gl.h	/^#define GL_PERSPECTIVE_CORRECTION_HINT	/;"	d
+GL_PIXEL_MAP_A_TO_A	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_A_TO_A	/;"	d
+GL_PIXEL_MAP_A_TO_A_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_A_TO_A_SIZE	/;"	d
+GL_PIXEL_MAP_B_TO_B	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_B_TO_B	/;"	d
+GL_PIXEL_MAP_B_TO_B_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_B_TO_B_SIZE	/;"	d
+GL_PIXEL_MAP_G_TO_G	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_G_TO_G	/;"	d
+GL_PIXEL_MAP_G_TO_G_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_G_TO_G_SIZE	/;"	d
+GL_PIXEL_MAP_I_TO_A	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_A	/;"	d
+GL_PIXEL_MAP_I_TO_A_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_A_SIZE	/;"	d
+GL_PIXEL_MAP_I_TO_B	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_B	/;"	d
+GL_PIXEL_MAP_I_TO_B_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_B_SIZE	/;"	d
+GL_PIXEL_MAP_I_TO_G	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_G	/;"	d
+GL_PIXEL_MAP_I_TO_G_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_G_SIZE	/;"	d
+GL_PIXEL_MAP_I_TO_I	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_I	/;"	d
+GL_PIXEL_MAP_I_TO_I_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_I_SIZE	/;"	d
+GL_PIXEL_MAP_I_TO_R	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_R	/;"	d
+GL_PIXEL_MAP_I_TO_R_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_I_TO_R_SIZE	/;"	d
+GL_PIXEL_MAP_R_TO_R	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_R_TO_R	/;"	d
+GL_PIXEL_MAP_R_TO_R_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_R_TO_R_SIZE	/;"	d
+GL_PIXEL_MAP_S_TO_S	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_S_TO_S	/;"	d
+GL_PIXEL_MAP_S_TO_S_SIZE	/usr/include/GL/gl.h	/^#define GL_PIXEL_MAP_S_TO_S_SIZE	/;"	d
+GL_PIXEL_MODE_BIT	/usr/include/GL/gl.h	/^#define GL_PIXEL_MODE_BIT	/;"	d
+GL_POINT	/usr/include/GL/gl.h	/^#define GL_POINT	/;"	d
+GL_POINTS	/usr/include/GL/gl.h	/^#define GL_POINTS	/;"	d
+GL_POINT_BIT	/usr/include/GL/gl.h	/^#define GL_POINT_BIT	/;"	d
+GL_POINT_SIZE	/usr/include/GL/gl.h	/^#define GL_POINT_SIZE	/;"	d
+GL_POINT_SIZE_GRANULARITY	/usr/include/GL/gl.h	/^#define GL_POINT_SIZE_GRANULARITY /;"	d
+GL_POINT_SIZE_RANGE	/usr/include/GL/gl.h	/^#define GL_POINT_SIZE_RANGE	/;"	d
+GL_POINT_SMOOTH	/usr/include/GL/gl.h	/^#define GL_POINT_SMOOTH	/;"	d
+GL_POINT_SMOOTH_HINT	/usr/include/GL/gl.h	/^#define GL_POINT_SMOOTH_HINT	/;"	d
+GL_POINT_TOKEN	/usr/include/GL/gl.h	/^#define GL_POINT_TOKEN	/;"	d
+GL_POLYGON	/usr/include/GL/gl.h	/^#define GL_POLYGON	/;"	d
+GL_POLYGON_BIT	/usr/include/GL/gl.h	/^#define GL_POLYGON_BIT	/;"	d
+GL_POLYGON_MODE	/usr/include/GL/gl.h	/^#define GL_POLYGON_MODE	/;"	d
+GL_POLYGON_OFFSET_FACTOR	/usr/include/GL/gl.h	/^#define GL_POLYGON_OFFSET_FACTOR	/;"	d
+GL_POLYGON_OFFSET_FILL	/usr/include/GL/gl.h	/^#define GL_POLYGON_OFFSET_FILL	/;"	d
+GL_POLYGON_OFFSET_LINE	/usr/include/GL/gl.h	/^#define GL_POLYGON_OFFSET_LINE	/;"	d
+GL_POLYGON_OFFSET_POINT	/usr/include/GL/gl.h	/^#define GL_POLYGON_OFFSET_POINT	/;"	d
+GL_POLYGON_OFFSET_UNITS	/usr/include/GL/gl.h	/^#define GL_POLYGON_OFFSET_UNITS	/;"	d
+GL_POLYGON_SMOOTH	/usr/include/GL/gl.h	/^#define GL_POLYGON_SMOOTH	/;"	d
+GL_POLYGON_SMOOTH_HINT	/usr/include/GL/gl.h	/^#define GL_POLYGON_SMOOTH_HINT	/;"	d
+GL_POLYGON_STIPPLE	/usr/include/GL/gl.h	/^#define GL_POLYGON_STIPPLE	/;"	d
+GL_POLYGON_STIPPLE_BIT	/usr/include/GL/gl.h	/^#define GL_POLYGON_STIPPLE_BIT	/;"	d
+GL_POLYGON_TOKEN	/usr/include/GL/gl.h	/^#define GL_POLYGON_TOKEN	/;"	d
+GL_POSITION	/usr/include/GL/gl.h	/^#define GL_POSITION	/;"	d
+GL_POST_COLOR_MATRIX_ALPHA_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_ALPHA_BIAS	/;"	d
+GL_POST_COLOR_MATRIX_ALPHA_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_ALPHA_SCALE	/;"	d
+GL_POST_COLOR_MATRIX_BLUE_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_BLUE_BIAS	/;"	d
+GL_POST_COLOR_MATRIX_BLUE_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_BLUE_SCALE	/;"	d
+GL_POST_COLOR_MATRIX_COLOR_TABLE	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_COLOR_TABLE	/;"	d
+GL_POST_COLOR_MATRIX_GREEN_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_GREEN_BIAS	/;"	d
+GL_POST_COLOR_MATRIX_GREEN_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_GREEN_SCALE	/;"	d
+GL_POST_COLOR_MATRIX_RED_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_RED_BIAS	/;"	d
+GL_POST_COLOR_MATRIX_RED_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_COLOR_MATRIX_RED_SCALE	/;"	d
+GL_POST_CONVOLUTION_ALPHA_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_ALPHA_BIAS	/;"	d
+GL_POST_CONVOLUTION_ALPHA_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_ALPHA_SCALE	/;"	d
+GL_POST_CONVOLUTION_BLUE_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_BLUE_BIAS	/;"	d
+GL_POST_CONVOLUTION_BLUE_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_BLUE_SCALE	/;"	d
+GL_POST_CONVOLUTION_COLOR_TABLE	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_COLOR_TABLE	/;"	d
+GL_POST_CONVOLUTION_GREEN_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_GREEN_BIAS	/;"	d
+GL_POST_CONVOLUTION_GREEN_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_GREEN_SCALE	/;"	d
+GL_POST_CONVOLUTION_RED_BIAS	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_RED_BIAS	/;"	d
+GL_POST_CONVOLUTION_RED_SCALE	/usr/include/GL/gl.h	/^#define GL_POST_CONVOLUTION_RED_SCALE	/;"	d
+GL_PREVIOUS	/usr/include/GL/gl.h	/^#define GL_PREVIOUS	/;"	d
+GL_PRIMARY_COLOR	/usr/include/GL/gl.h	/^#define GL_PRIMARY_COLOR	/;"	d
+GL_PROJECTION	/usr/include/GL/gl.h	/^#define GL_PROJECTION	/;"	d
+GL_PROJECTION_MATRIX	/usr/include/GL/gl.h	/^#define GL_PROJECTION_MATRIX	/;"	d
+GL_PROJECTION_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_PROJECTION_STACK_DEPTH	/;"	d
+GL_PROXY_COLOR_TABLE	/usr/include/GL/gl.h	/^#define GL_PROXY_COLOR_TABLE	/;"	d
+GL_PROXY_HISTOGRAM	/usr/include/GL/gl.h	/^#define GL_PROXY_HISTOGRAM	/;"	d
+GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE	/usr/include/GL/gl.h	/^#define GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE	/;"	d
+GL_PROXY_POST_CONVOLUTION_COLOR_TABLE	/usr/include/GL/gl.h	/^#define GL_PROXY_POST_CONVOLUTION_COLOR_TABLE	/;"	d
+GL_PROXY_TEXTURE_1D	/usr/include/GL/gl.h	/^#define GL_PROXY_TEXTURE_1D	/;"	d
+GL_PROXY_TEXTURE_2D	/usr/include/GL/gl.h	/^#define GL_PROXY_TEXTURE_2D	/;"	d
+GL_PROXY_TEXTURE_3D	/usr/include/GL/gl.h	/^#define GL_PROXY_TEXTURE_3D	/;"	d
+GL_PROXY_TEXTURE_CUBE_MAP	/usr/include/GL/gl.h	/^#define GL_PROXY_TEXTURE_CUBE_MAP	/;"	d
+GL_Q	/usr/include/GL/gl.h	/^#define GL_Q	/;"	d
+GL_QUADRATIC_ATTENUATION	/usr/include/GL/gl.h	/^#define GL_QUADRATIC_ATTENUATION	/;"	d
+GL_QUADS	/usr/include/GL/gl.h	/^#define GL_QUADS	/;"	d
+GL_QUAD_STRIP	/usr/include/GL/gl.h	/^#define GL_QUAD_STRIP	/;"	d
+GL_R	/usr/include/GL/gl.h	/^#define GL_R	/;"	d
+GL_R3_G3_B2	/usr/include/GL/gl.h	/^#define GL_R3_G3_B2	/;"	d
+GL_READ_BUFFER	/usr/include/GL/gl.h	/^#define GL_READ_BUFFER	/;"	d
+GL_RED	/usr/include/GL/gl.h	/^#define GL_RED	/;"	d
+GL_REDUCE	/usr/include/GL/gl.h	/^#define GL_REDUCE	/;"	d
+GL_RED_BIAS	/usr/include/GL/gl.h	/^#define GL_RED_BIAS	/;"	d
+GL_RED_BITS	/usr/include/GL/gl.h	/^#define GL_RED_BITS	/;"	d
+GL_RED_SCALE	/usr/include/GL/gl.h	/^#define GL_RED_SCALE	/;"	d
+GL_REFLECTION_MAP	/usr/include/GL/gl.h	/^#define GL_REFLECTION_MAP	/;"	d
+GL_RENDER	/usr/include/GL/gl.h	/^#define GL_RENDER	/;"	d
+GL_RENDERER	/usr/include/GL/gl.h	/^#define GL_RENDERER	/;"	d
+GL_RENDER_MODE	/usr/include/GL/gl.h	/^#define GL_RENDER_MODE	/;"	d
+GL_REPEAT	/usr/include/GL/gl.h	/^#define GL_REPEAT	/;"	d
+GL_REPLACE	/usr/include/GL/gl.h	/^#define GL_REPLACE	/;"	d
+GL_REPLICATE_BORDER	/usr/include/GL/gl.h	/^#define GL_REPLICATE_BORDER	/;"	d
+GL_RESCALE_NORMAL	/usr/include/GL/gl.h	/^#define GL_RESCALE_NORMAL	/;"	d
+GL_RETURN	/usr/include/GL/gl.h	/^#define GL_RETURN	/;"	d
+GL_RGB	/usr/include/GL/gl.h	/^#define GL_RGB	/;"	d
+GL_RGB10	/usr/include/GL/gl.h	/^#define GL_RGB10	/;"	d
+GL_RGB10_A2	/usr/include/GL/gl.h	/^#define GL_RGB10_A2	/;"	d
+GL_RGB12	/usr/include/GL/gl.h	/^#define GL_RGB12	/;"	d
+GL_RGB16	/usr/include/GL/gl.h	/^#define GL_RGB16	/;"	d
+GL_RGB4	/usr/include/GL/gl.h	/^#define GL_RGB4	/;"	d
+GL_RGB5	/usr/include/GL/gl.h	/^#define GL_RGB5	/;"	d
+GL_RGB5_A1	/usr/include/GL/gl.h	/^#define GL_RGB5_A1	/;"	d
+GL_RGB8	/usr/include/GL/gl.h	/^#define GL_RGB8	/;"	d
+GL_RGBA	/usr/include/GL/gl.h	/^#define GL_RGBA	/;"	d
+GL_RGBA12	/usr/include/GL/gl.h	/^#define GL_RGBA12	/;"	d
+GL_RGBA16	/usr/include/GL/gl.h	/^#define GL_RGBA16	/;"	d
+GL_RGBA2	/usr/include/GL/gl.h	/^#define GL_RGBA2	/;"	d
+GL_RGBA4	/usr/include/GL/gl.h	/^#define GL_RGBA4	/;"	d
+GL_RGBA8	/usr/include/GL/gl.h	/^#define GL_RGBA8	/;"	d
+GL_RGBA_MODE	/usr/include/GL/gl.h	/^#define GL_RGBA_MODE	/;"	d
+GL_RGB_SCALE	/usr/include/GL/gl.h	/^#define GL_RGB_SCALE	/;"	d
+GL_RIGHT	/usr/include/GL/gl.h	/^#define GL_RIGHT	/;"	d
+GL_S	/usr/include/GL/gl.h	/^#define GL_S	/;"	d
+GL_SAMPLES	/usr/include/GL/gl.h	/^#define GL_SAMPLES	/;"	d
+GL_SAMPLE_ALPHA_TO_COVERAGE	/usr/include/GL/gl.h	/^#define GL_SAMPLE_ALPHA_TO_COVERAGE	/;"	d
+GL_SAMPLE_ALPHA_TO_ONE	/usr/include/GL/gl.h	/^#define GL_SAMPLE_ALPHA_TO_ONE	/;"	d
+GL_SAMPLE_BUFFERS	/usr/include/GL/gl.h	/^#define GL_SAMPLE_BUFFERS	/;"	d
+GL_SAMPLE_COVERAGE	/usr/include/GL/gl.h	/^#define GL_SAMPLE_COVERAGE	/;"	d
+GL_SAMPLE_COVERAGE_INVERT	/usr/include/GL/gl.h	/^#define GL_SAMPLE_COVERAGE_INVERT	/;"	d
+GL_SAMPLE_COVERAGE_VALUE	/usr/include/GL/gl.h	/^#define GL_SAMPLE_COVERAGE_VALUE	/;"	d
+GL_SCISSOR_BIT	/usr/include/GL/gl.h	/^#define GL_SCISSOR_BIT	/;"	d
+GL_SCISSOR_BOX	/usr/include/GL/gl.h	/^#define GL_SCISSOR_BOX	/;"	d
+GL_SCISSOR_TEST	/usr/include/GL/gl.h	/^#define GL_SCISSOR_TEST	/;"	d
+GL_SELECT	/usr/include/GL/gl.h	/^#define GL_SELECT	/;"	d
+GL_SELECTION_BUFFER_POINTER	/usr/include/GL/gl.h	/^#define GL_SELECTION_BUFFER_POINTER	/;"	d
+GL_SELECTION_BUFFER_SIZE	/usr/include/GL/gl.h	/^#define GL_SELECTION_BUFFER_SIZE	/;"	d
+GL_SEPARABLE_2D	/usr/include/GL/gl.h	/^#define GL_SEPARABLE_2D	/;"	d
+GL_SEPARATE_SPECULAR_COLOR	/usr/include/GL/gl.h	/^#define GL_SEPARATE_SPECULAR_COLOR	/;"	d
+GL_SET	/usr/include/GL/gl.h	/^#define GL_SET	/;"	d
+GL_SHADE_MODEL	/usr/include/GL/gl.h	/^#define GL_SHADE_MODEL	/;"	d
+GL_SHININESS	/usr/include/GL/gl.h	/^#define GL_SHININESS	/;"	d
+GL_SHORT	/usr/include/GL/gl.h	/^#define GL_SHORT	/;"	d
+GL_SINGLE_COLOR	/usr/include/GL/gl.h	/^#define GL_SINGLE_COLOR	/;"	d
+GL_SMOOTH	/usr/include/GL/gl.h	/^#define GL_SMOOTH	/;"	d
+GL_SMOOTH_LINE_WIDTH_GRANULARITY	/usr/include/GL/gl.h	/^#define GL_SMOOTH_LINE_WIDTH_GRANULARITY	/;"	d
+GL_SMOOTH_LINE_WIDTH_RANGE	/usr/include/GL/gl.h	/^#define GL_SMOOTH_LINE_WIDTH_RANGE	/;"	d
+GL_SMOOTH_POINT_SIZE_GRANULARITY	/usr/include/GL/gl.h	/^#define GL_SMOOTH_POINT_SIZE_GRANULARITY	/;"	d
+GL_SMOOTH_POINT_SIZE_RANGE	/usr/include/GL/gl.h	/^#define GL_SMOOTH_POINT_SIZE_RANGE	/;"	d
+GL_SOURCE0_ALPHA	/usr/include/GL/gl.h	/^#define GL_SOURCE0_ALPHA	/;"	d
+GL_SOURCE0_RGB	/usr/include/GL/gl.h	/^#define GL_SOURCE0_RGB	/;"	d
+GL_SOURCE1_ALPHA	/usr/include/GL/gl.h	/^#define GL_SOURCE1_ALPHA	/;"	d
+GL_SOURCE1_RGB	/usr/include/GL/gl.h	/^#define GL_SOURCE1_RGB	/;"	d
+GL_SOURCE2_ALPHA	/usr/include/GL/gl.h	/^#define GL_SOURCE2_ALPHA	/;"	d
+GL_SOURCE2_RGB	/usr/include/GL/gl.h	/^#define GL_SOURCE2_RGB	/;"	d
+GL_SPECULAR	/usr/include/GL/gl.h	/^#define GL_SPECULAR	/;"	d
+GL_SPHERE_MAP	/usr/include/GL/gl.h	/^#define GL_SPHERE_MAP	/;"	d
+GL_SPOT_CUTOFF	/usr/include/GL/gl.h	/^#define GL_SPOT_CUTOFF	/;"	d
+GL_SPOT_DIRECTION	/usr/include/GL/gl.h	/^#define GL_SPOT_DIRECTION	/;"	d
+GL_SPOT_EXPONENT	/usr/include/GL/gl.h	/^#define GL_SPOT_EXPONENT	/;"	d
+GL_SRC_ALPHA	/usr/include/GL/gl.h	/^#define GL_SRC_ALPHA	/;"	d
+GL_SRC_ALPHA_SATURATE	/usr/include/GL/gl.h	/^#define GL_SRC_ALPHA_SATURATE	/;"	d
+GL_SRC_COLOR	/usr/include/GL/gl.h	/^#define GL_SRC_COLOR	/;"	d
+GL_STACK_OVERFLOW	/usr/include/GL/gl.h	/^#define GL_STACK_OVERFLOW	/;"	d
+GL_STACK_UNDERFLOW	/usr/include/GL/gl.h	/^#define GL_STACK_UNDERFLOW	/;"	d
+GL_STENCIL	/usr/include/GL/gl.h	/^#define GL_STENCIL	/;"	d
+GL_STENCIL_BITS	/usr/include/GL/gl.h	/^#define GL_STENCIL_BITS	/;"	d
+GL_STENCIL_BUFFER_BIT	/usr/include/GL/gl.h	/^#define GL_STENCIL_BUFFER_BIT	/;"	d
+GL_STENCIL_CLEAR_VALUE	/usr/include/GL/gl.h	/^#define GL_STENCIL_CLEAR_VALUE	/;"	d
+GL_STENCIL_FAIL	/usr/include/GL/gl.h	/^#define GL_STENCIL_FAIL	/;"	d
+GL_STENCIL_FUNC	/usr/include/GL/gl.h	/^#define GL_STENCIL_FUNC	/;"	d
+GL_STENCIL_INDEX	/usr/include/GL/gl.h	/^#define GL_STENCIL_INDEX	/;"	d
+GL_STENCIL_PASS_DEPTH_FAIL	/usr/include/GL/gl.h	/^#define GL_STENCIL_PASS_DEPTH_FAIL	/;"	d
+GL_STENCIL_PASS_DEPTH_PASS	/usr/include/GL/gl.h	/^#define GL_STENCIL_PASS_DEPTH_PASS	/;"	d
+GL_STENCIL_REF	/usr/include/GL/gl.h	/^#define GL_STENCIL_REF	/;"	d
+GL_STENCIL_TEST	/usr/include/GL/gl.h	/^#define GL_STENCIL_TEST	/;"	d
+GL_STENCIL_VALUE_MASK	/usr/include/GL/gl.h	/^#define GL_STENCIL_VALUE_MASK	/;"	d
+GL_STENCIL_WRITEMASK	/usr/include/GL/gl.h	/^#define GL_STENCIL_WRITEMASK	/;"	d
+GL_STEREO	/usr/include/GL/gl.h	/^#define GL_STEREO	/;"	d
+GL_SUBPIXEL_BITS	/usr/include/GL/gl.h	/^#define GL_SUBPIXEL_BITS	/;"	d
+GL_SUBTRACT	/usr/include/GL/gl.h	/^#define GL_SUBTRACT	/;"	d
+GL_T	/usr/include/GL/gl.h	/^#define GL_T	/;"	d
+GL_T2F_C3F_V3F	/usr/include/GL/gl.h	/^#define GL_T2F_C3F_V3F	/;"	d
+GL_T2F_C4F_N3F_V3F	/usr/include/GL/gl.h	/^#define GL_T2F_C4F_N3F_V3F	/;"	d
+GL_T2F_C4UB_V3F	/usr/include/GL/gl.h	/^#define GL_T2F_C4UB_V3F	/;"	d
+GL_T2F_N3F_V3F	/usr/include/GL/gl.h	/^#define GL_T2F_N3F_V3F	/;"	d
+GL_T2F_V3F	/usr/include/GL/gl.h	/^#define GL_T2F_V3F	/;"	d
+GL_T4F_C4F_N3F_V4F	/usr/include/GL/gl.h	/^#define GL_T4F_C4F_N3F_V4F	/;"	d
+GL_T4F_V4F	/usr/include/GL/gl.h	/^#define GL_T4F_V4F	/;"	d
+GL_TABLE_TOO_LARGE	/usr/include/GL/gl.h	/^#define GL_TABLE_TOO_LARGE	/;"	d
+GL_TEXTURE	/usr/include/GL/gl.h	/^#define GL_TEXTURE	/;"	d
+GL_TEXTURE0	/usr/include/GL/gl.h	/^#define GL_TEXTURE0	/;"	d
+GL_TEXTURE0_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE0_ARB	/;"	d
+GL_TEXTURE1	/usr/include/GL/gl.h	/^#define GL_TEXTURE1	/;"	d
+GL_TEXTURE10	/usr/include/GL/gl.h	/^#define GL_TEXTURE10	/;"	d
+GL_TEXTURE10_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE10_ARB	/;"	d
+GL_TEXTURE11	/usr/include/GL/gl.h	/^#define GL_TEXTURE11	/;"	d
+GL_TEXTURE11_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE11_ARB	/;"	d
+GL_TEXTURE12	/usr/include/GL/gl.h	/^#define GL_TEXTURE12	/;"	d
+GL_TEXTURE12_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE12_ARB	/;"	d
+GL_TEXTURE13	/usr/include/GL/gl.h	/^#define GL_TEXTURE13	/;"	d
+GL_TEXTURE13_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE13_ARB	/;"	d
+GL_TEXTURE14	/usr/include/GL/gl.h	/^#define GL_TEXTURE14	/;"	d
+GL_TEXTURE14_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE14_ARB	/;"	d
+GL_TEXTURE15	/usr/include/GL/gl.h	/^#define GL_TEXTURE15	/;"	d
+GL_TEXTURE15_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE15_ARB	/;"	d
+GL_TEXTURE16	/usr/include/GL/gl.h	/^#define GL_TEXTURE16	/;"	d
+GL_TEXTURE16_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE16_ARB	/;"	d
+GL_TEXTURE17	/usr/include/GL/gl.h	/^#define GL_TEXTURE17	/;"	d
+GL_TEXTURE17_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE17_ARB	/;"	d
+GL_TEXTURE18	/usr/include/GL/gl.h	/^#define GL_TEXTURE18	/;"	d
+GL_TEXTURE18_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE18_ARB	/;"	d
+GL_TEXTURE19	/usr/include/GL/gl.h	/^#define GL_TEXTURE19	/;"	d
+GL_TEXTURE19_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE19_ARB	/;"	d
+GL_TEXTURE1_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE1_ARB	/;"	d
+GL_TEXTURE2	/usr/include/GL/gl.h	/^#define GL_TEXTURE2	/;"	d
+GL_TEXTURE20	/usr/include/GL/gl.h	/^#define GL_TEXTURE20	/;"	d
+GL_TEXTURE20_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE20_ARB	/;"	d
+GL_TEXTURE21	/usr/include/GL/gl.h	/^#define GL_TEXTURE21	/;"	d
+GL_TEXTURE21_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE21_ARB	/;"	d
+GL_TEXTURE22	/usr/include/GL/gl.h	/^#define GL_TEXTURE22	/;"	d
+GL_TEXTURE22_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE22_ARB	/;"	d
+GL_TEXTURE23	/usr/include/GL/gl.h	/^#define GL_TEXTURE23	/;"	d
+GL_TEXTURE23_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE23_ARB	/;"	d
+GL_TEXTURE24	/usr/include/GL/gl.h	/^#define GL_TEXTURE24	/;"	d
+GL_TEXTURE24_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE24_ARB	/;"	d
+GL_TEXTURE25	/usr/include/GL/gl.h	/^#define GL_TEXTURE25	/;"	d
+GL_TEXTURE25_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE25_ARB	/;"	d
+GL_TEXTURE26	/usr/include/GL/gl.h	/^#define GL_TEXTURE26	/;"	d
+GL_TEXTURE26_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE26_ARB	/;"	d
+GL_TEXTURE27	/usr/include/GL/gl.h	/^#define GL_TEXTURE27	/;"	d
+GL_TEXTURE27_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE27_ARB	/;"	d
+GL_TEXTURE28	/usr/include/GL/gl.h	/^#define GL_TEXTURE28	/;"	d
+GL_TEXTURE28_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE28_ARB	/;"	d
+GL_TEXTURE29	/usr/include/GL/gl.h	/^#define GL_TEXTURE29	/;"	d
+GL_TEXTURE29_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE29_ARB	/;"	d
+GL_TEXTURE2_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE2_ARB	/;"	d
+GL_TEXTURE3	/usr/include/GL/gl.h	/^#define GL_TEXTURE3	/;"	d
+GL_TEXTURE30	/usr/include/GL/gl.h	/^#define GL_TEXTURE30	/;"	d
+GL_TEXTURE30_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE30_ARB	/;"	d
+GL_TEXTURE31	/usr/include/GL/gl.h	/^#define GL_TEXTURE31	/;"	d
+GL_TEXTURE31_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE31_ARB	/;"	d
+GL_TEXTURE3_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE3_ARB	/;"	d
+GL_TEXTURE4	/usr/include/GL/gl.h	/^#define GL_TEXTURE4	/;"	d
+GL_TEXTURE4_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE4_ARB	/;"	d
+GL_TEXTURE5	/usr/include/GL/gl.h	/^#define GL_TEXTURE5	/;"	d
+GL_TEXTURE5_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE5_ARB	/;"	d
+GL_TEXTURE6	/usr/include/GL/gl.h	/^#define GL_TEXTURE6	/;"	d
+GL_TEXTURE6_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE6_ARB	/;"	d
+GL_TEXTURE7	/usr/include/GL/gl.h	/^#define GL_TEXTURE7	/;"	d
+GL_TEXTURE7_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE7_ARB	/;"	d
+GL_TEXTURE8	/usr/include/GL/gl.h	/^#define GL_TEXTURE8	/;"	d
+GL_TEXTURE8_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE8_ARB	/;"	d
+GL_TEXTURE9	/usr/include/GL/gl.h	/^#define GL_TEXTURE9	/;"	d
+GL_TEXTURE9_ARB	/usr/include/GL/gl.h	/^#define GL_TEXTURE9_ARB	/;"	d
+GL_TEXTURE_1D	/usr/include/GL/gl.h	/^#define GL_TEXTURE_1D	/;"	d
+GL_TEXTURE_2D	/usr/include/GL/gl.h	/^#define GL_TEXTURE_2D	/;"	d
+GL_TEXTURE_3D	/usr/include/GL/gl.h	/^#define GL_TEXTURE_3D	/;"	d
+GL_TEXTURE_ALPHA_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_ALPHA_SIZE	/;"	d
+GL_TEXTURE_BASE_LEVEL	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BASE_LEVEL	/;"	d
+GL_TEXTURE_BINDING_1D	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BINDING_1D	/;"	d
+GL_TEXTURE_BINDING_2D	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BINDING_2D	/;"	d
+GL_TEXTURE_BINDING_3D	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BINDING_3D	/;"	d
+GL_TEXTURE_BINDING_CUBE_MAP	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BINDING_CUBE_MAP	/;"	d
+GL_TEXTURE_BIT	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BIT	/;"	d
+GL_TEXTURE_BLUE_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BLUE_SIZE	/;"	d
+GL_TEXTURE_BORDER	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BORDER	/;"	d
+GL_TEXTURE_BORDER_COLOR	/usr/include/GL/gl.h	/^#define GL_TEXTURE_BORDER_COLOR	/;"	d
+GL_TEXTURE_COMPONENTS	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COMPONENTS	/;"	d
+GL_TEXTURE_COMPRESSED	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COMPRESSED	/;"	d
+GL_TEXTURE_COMPRESSED_IMAGE_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COMPRESSED_IMAGE_SIZE	/;"	d
+GL_TEXTURE_COMPRESSION_HINT	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COMPRESSION_HINT	/;"	d
+GL_TEXTURE_COORD_ARRAY	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COORD_ARRAY	/;"	d
+GL_TEXTURE_COORD_ARRAY_POINTER	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COORD_ARRAY_POINTER	/;"	d
+GL_TEXTURE_COORD_ARRAY_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COORD_ARRAY_SIZE	/;"	d
+GL_TEXTURE_COORD_ARRAY_STRIDE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COORD_ARRAY_STRIDE	/;"	d
+GL_TEXTURE_COORD_ARRAY_TYPE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_COORD_ARRAY_TYPE	/;"	d
+GL_TEXTURE_CUBE_MAP	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP	/;"	d
+GL_TEXTURE_CUBE_MAP_NEGATIVE_X	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP_NEGATIVE_X	/;"	d
+GL_TEXTURE_CUBE_MAP_NEGATIVE_Y	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP_NEGATIVE_Y	/;"	d
+GL_TEXTURE_CUBE_MAP_NEGATIVE_Z	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP_NEGATIVE_Z	/;"	d
+GL_TEXTURE_CUBE_MAP_POSITIVE_X	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP_POSITIVE_X	/;"	d
+GL_TEXTURE_CUBE_MAP_POSITIVE_Y	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP_POSITIVE_Y	/;"	d
+GL_TEXTURE_CUBE_MAP_POSITIVE_Z	/usr/include/GL/gl.h	/^#define GL_TEXTURE_CUBE_MAP_POSITIVE_Z	/;"	d
+GL_TEXTURE_DEPTH	/usr/include/GL/gl.h	/^#define GL_TEXTURE_DEPTH	/;"	d
+GL_TEXTURE_ENV	/usr/include/GL/gl.h	/^#define GL_TEXTURE_ENV	/;"	d
+GL_TEXTURE_ENV_COLOR	/usr/include/GL/gl.h	/^#define GL_TEXTURE_ENV_COLOR	/;"	d
+GL_TEXTURE_ENV_MODE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_ENV_MODE	/;"	d
+GL_TEXTURE_GEN_MODE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_GEN_MODE	/;"	d
+GL_TEXTURE_GEN_Q	/usr/include/GL/gl.h	/^#define GL_TEXTURE_GEN_Q	/;"	d
+GL_TEXTURE_GEN_R	/usr/include/GL/gl.h	/^#define GL_TEXTURE_GEN_R	/;"	d
+GL_TEXTURE_GEN_S	/usr/include/GL/gl.h	/^#define GL_TEXTURE_GEN_S	/;"	d
+GL_TEXTURE_GEN_T	/usr/include/GL/gl.h	/^#define GL_TEXTURE_GEN_T	/;"	d
+GL_TEXTURE_GREEN_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_GREEN_SIZE	/;"	d
+GL_TEXTURE_HEIGHT	/usr/include/GL/gl.h	/^#define GL_TEXTURE_HEIGHT	/;"	d
+GL_TEXTURE_INTENSITY_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_INTENSITY_SIZE	/;"	d
+GL_TEXTURE_INTERNAL_FORMAT	/usr/include/GL/gl.h	/^#define GL_TEXTURE_INTERNAL_FORMAT	/;"	d
+GL_TEXTURE_LUMINANCE_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_LUMINANCE_SIZE	/;"	d
+GL_TEXTURE_MAG_FILTER	/usr/include/GL/gl.h	/^#define GL_TEXTURE_MAG_FILTER	/;"	d
+GL_TEXTURE_MATRIX	/usr/include/GL/gl.h	/^#define GL_TEXTURE_MATRIX	/;"	d
+GL_TEXTURE_MAX_LEVEL	/usr/include/GL/gl.h	/^#define GL_TEXTURE_MAX_LEVEL	/;"	d
+GL_TEXTURE_MAX_LOD	/usr/include/GL/gl.h	/^#define GL_TEXTURE_MAX_LOD	/;"	d
+GL_TEXTURE_MIN_FILTER	/usr/include/GL/gl.h	/^#define GL_TEXTURE_MIN_FILTER	/;"	d
+GL_TEXTURE_MIN_LOD	/usr/include/GL/gl.h	/^#define GL_TEXTURE_MIN_LOD	/;"	d
+GL_TEXTURE_PRIORITY	/usr/include/GL/gl.h	/^#define GL_TEXTURE_PRIORITY	/;"	d
+GL_TEXTURE_RED_SIZE	/usr/include/GL/gl.h	/^#define GL_TEXTURE_RED_SIZE	/;"	d
+GL_TEXTURE_RESIDENT	/usr/include/GL/gl.h	/^#define GL_TEXTURE_RESIDENT	/;"	d
+GL_TEXTURE_STACK_DEPTH	/usr/include/GL/gl.h	/^#define GL_TEXTURE_STACK_DEPTH	/;"	d
+GL_TEXTURE_WIDTH	/usr/include/GL/gl.h	/^#define GL_TEXTURE_WIDTH	/;"	d
+GL_TEXTURE_WRAP_R	/usr/include/GL/gl.h	/^#define GL_TEXTURE_WRAP_R	/;"	d
+GL_TEXTURE_WRAP_S	/usr/include/GL/gl.h	/^#define GL_TEXTURE_WRAP_S	/;"	d
+GL_TEXTURE_WRAP_T	/usr/include/GL/gl.h	/^#define GL_TEXTURE_WRAP_T	/;"	d
+GL_TRANSFORM_BIT	/usr/include/GL/gl.h	/^#define GL_TRANSFORM_BIT	/;"	d
+GL_TRANSPOSE_COLOR_MATRIX	/usr/include/GL/gl.h	/^#define GL_TRANSPOSE_COLOR_MATRIX	/;"	d
+GL_TRANSPOSE_MODELVIEW_MATRIX	/usr/include/GL/gl.h	/^#define GL_TRANSPOSE_MODELVIEW_MATRIX	/;"	d
+GL_TRANSPOSE_PROJECTION_MATRIX	/usr/include/GL/gl.h	/^#define GL_TRANSPOSE_PROJECTION_MATRIX	/;"	d
+GL_TRANSPOSE_TEXTURE_MATRIX	/usr/include/GL/gl.h	/^#define GL_TRANSPOSE_TEXTURE_MATRIX	/;"	d
+GL_TRIANGLES	/usr/include/GL/gl.h	/^#define GL_TRIANGLES	/;"	d
+GL_TRIANGLE_FAN	/usr/include/GL/gl.h	/^#define GL_TRIANGLE_FAN	/;"	d
+GL_TRIANGLE_STRIP	/usr/include/GL/gl.h	/^#define GL_TRIANGLE_STRIP	/;"	d
+GL_TRUE	/usr/include/GL/gl.h	/^#define GL_TRUE	/;"	d
+GL_UNPACK_ALIGNMENT	/usr/include/GL/gl.h	/^#define GL_UNPACK_ALIGNMENT	/;"	d
+GL_UNPACK_IMAGE_HEIGHT	/usr/include/GL/gl.h	/^#define GL_UNPACK_IMAGE_HEIGHT	/;"	d
+GL_UNPACK_LSB_FIRST	/usr/include/GL/gl.h	/^#define GL_UNPACK_LSB_FIRST	/;"	d
+GL_UNPACK_ROW_LENGTH	/usr/include/GL/gl.h	/^#define GL_UNPACK_ROW_LENGTH	/;"	d
+GL_UNPACK_SKIP_IMAGES	/usr/include/GL/gl.h	/^#define GL_UNPACK_SKIP_IMAGES	/;"	d
+GL_UNPACK_SKIP_PIXELS	/usr/include/GL/gl.h	/^#define GL_UNPACK_SKIP_PIXELS	/;"	d
+GL_UNPACK_SKIP_ROWS	/usr/include/GL/gl.h	/^#define GL_UNPACK_SKIP_ROWS	/;"	d
+GL_UNPACK_SWAP_BYTES	/usr/include/GL/gl.h	/^#define GL_UNPACK_SWAP_BYTES	/;"	d
+GL_UNSIGNED_BYTE	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_BYTE	/;"	d
+GL_UNSIGNED_BYTE_2_3_3_REV	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_BYTE_2_3_3_REV	/;"	d
+GL_UNSIGNED_BYTE_3_3_2	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_BYTE_3_3_2	/;"	d
+GL_UNSIGNED_INT	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT	/;"	d
+GL_UNSIGNED_INT_10_10_10_2	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT_10_10_10_2	/;"	d
+GL_UNSIGNED_INT_24_8_MESA	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT_24_8_MESA	/;"	d
+GL_UNSIGNED_INT_2_10_10_10_REV	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT_2_10_10_10_REV	/;"	d
+GL_UNSIGNED_INT_8_24_REV_MESA	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT_8_24_REV_MESA	/;"	d
+GL_UNSIGNED_INT_8_8_8_8	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT_8_8_8_8	/;"	d
+GL_UNSIGNED_INT_8_8_8_8_REV	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_INT_8_8_8_8_REV	/;"	d
+GL_UNSIGNED_SHORT	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT	/;"	d
+GL_UNSIGNED_SHORT_15_1_MESA	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_15_1_MESA	/;"	d
+GL_UNSIGNED_SHORT_1_15_REV_MESA	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_1_15_REV_MESA	/;"	d
+GL_UNSIGNED_SHORT_1_5_5_5_REV	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_1_5_5_5_REV	/;"	d
+GL_UNSIGNED_SHORT_4_4_4_4	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_4_4_4_4	/;"	d
+GL_UNSIGNED_SHORT_4_4_4_4_REV	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_4_4_4_4_REV	/;"	d
+GL_UNSIGNED_SHORT_5_5_5_1	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_5_5_5_1	/;"	d
+GL_UNSIGNED_SHORT_5_6_5	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_5_6_5	/;"	d
+GL_UNSIGNED_SHORT_5_6_5_REV	/usr/include/GL/gl.h	/^#define GL_UNSIGNED_SHORT_5_6_5_REV	/;"	d
+GL_V2F	/usr/include/GL/gl.h	/^#define GL_V2F	/;"	d
+GL_V3F	/usr/include/GL/gl.h	/^#define GL_V3F	/;"	d
+GL_VENDOR	/usr/include/GL/gl.h	/^#define GL_VENDOR	/;"	d
+GL_VERSION	/usr/include/GL/gl.h	/^#define GL_VERSION	/;"	d
+GL_VERSION_1_1	/usr/include/GL/gl.h	/^#define GL_VERSION_1_1 /;"	d
+GL_VERSION_1_2	/usr/include/GL/gl.h	/^#define GL_VERSION_1_2 /;"	d
+GL_VERSION_1_3	/usr/include/GL/gl.h	/^#define GL_VERSION_1_3 /;"	d
+GL_VERTEX_ARRAY	/usr/include/GL/gl.h	/^#define GL_VERTEX_ARRAY	/;"	d
+GL_VERTEX_ARRAY_POINTER	/usr/include/GL/gl.h	/^#define GL_VERTEX_ARRAY_POINTER	/;"	d
+GL_VERTEX_ARRAY_SIZE	/usr/include/GL/gl.h	/^#define GL_VERTEX_ARRAY_SIZE	/;"	d
+GL_VERTEX_ARRAY_STRIDE	/usr/include/GL/gl.h	/^#define GL_VERTEX_ARRAY_STRIDE	/;"	d
+GL_VERTEX_ARRAY_TYPE	/usr/include/GL/gl.h	/^#define GL_VERTEX_ARRAY_TYPE	/;"	d
+GL_VIEWPORT	/usr/include/GL/gl.h	/^#define GL_VIEWPORT	/;"	d
+GL_VIEWPORT_BIT	/usr/include/GL/gl.h	/^#define GL_VIEWPORT_BIT	/;"	d
+GL_XOR	/usr/include/GL/gl.h	/^#define GL_XOR	/;"	d
+GL_ZERO	/usr/include/GL/gl.h	/^#define GL_ZERO	/;"	d
+GL_ZOOM_X	/usr/include/GL/gl.h	/^#define GL_ZOOM_X	/;"	d
+GL_ZOOM_Y	/usr/include/GL/gl.h	/^#define GL_ZOOM_Y	/;"	d
+GLbitfield	/usr/include/GL/gl.h	/^typedef unsigned int	GLbitfield;$/;"	t	typeref:typename:unsigned int
+GLboolean	/usr/include/GL/gl.h	/^typedef unsigned char	GLboolean;$/;"	t	typeref:typename:unsigned char
+GLbyte	/usr/include/GL/gl.h	/^typedef signed char	GLbyte;		\/* 1-byte signed *\/$/;"	t	typeref:typename:signed char
+GLclampd	/usr/include/GL/gl.h	/^typedef double		GLclampd;	\/* double precision float in [0,1] *\/$/;"	t	typeref:typename:double
+GLclampf	/usr/include/GL/gl.h	/^typedef float		GLclampf;	\/* single precision float in [0,1] *\/$/;"	t	typeref:typename:float
+GLdouble	/usr/include/GL/gl.h	/^typedef double		GLdouble;	\/* double precision float *\/$/;"	t	typeref:typename:double
+GLeglImageOES	/usr/include/GL/gl.h	/^typedef void* GLeglImageOES;$/;"	t	typeref:typename:void *
+GLenum	/usr/include/GL/gl.h	/^typedef unsigned int	GLenum;$/;"	t	typeref:typename:unsigned int
+GLfloat	/usr/include/GL/gl.h	/^typedef float		GLfloat;	\/* single precision float *\/$/;"	t	typeref:typename:float
+GLint	/usr/include/GL/gl.h	/^typedef int		GLint;		\/* 4-byte signed *\/$/;"	t	typeref:typename:int
+GLshort	/usr/include/GL/gl.h	/^typedef short		GLshort;	\/* 2-byte signed *\/$/;"	t	typeref:typename:short
+GLsizei	/usr/include/GL/gl.h	/^typedef int		GLsizei;	\/* 4-byte signed *\/$/;"	t	typeref:typename:int
+GLubyte	/usr/include/GL/gl.h	/^typedef unsigned char	GLubyte;	\/* 1-byte unsigned *\/$/;"	t	typeref:typename:unsigned char
+GLuint	/usr/include/GL/gl.h	/^typedef unsigned int	GLuint;		\/* 4-byte unsigned *\/$/;"	t	typeref:typename:unsigned int
+GLushort	/usr/include/GL/gl.h	/^typedef unsigned short	GLushort;	\/* 2-byte unsigned *\/$/;"	t	typeref:typename:unsigned short
+GLvoid	/usr/include/GL/gl.h	/^typedef void		GLvoid;$/;"	t	typeref:typename:void
+PFNGLACTIVETEXTUREARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLACTIVETEXTUREARBPROC) (GLenum texture);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum texture)
+PFNGLACTIVETEXTUREPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLACTIVETEXTUREPROC) (GLenum texture);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum texture)
+PFNGLBLENDEQUATIONSEPARATEATIPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLBLENDEQUATIONSEPARATEATIPROC) (GLenum modeRGB, GLenum modeA);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum modeRGB,GLenum modeA)
+PFNGLCLIENTACTIVETEXTUREARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCLIENTACTIVETEXTUREARBPROC) (GLenum texture);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum texture)
+PFNGLCOMPRESSEDTEXIMAGE1DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOMPRESSEDTEXIMAGE1DPROC) (GLenum target, GLint level, GLenum inter/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLenum internalformat,GLsizei width,GLint border,GLsizei imageSize,const GLvoid * data)
+PFNGLCOMPRESSEDTEXIMAGE2DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOMPRESSEDTEXIMAGE2DPROC) (GLenum target, GLint level, GLenum inter/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLenum internalformat,GLsizei width,GLsizei height,GLint border,GLsizei imageSize,const GLvoid * data)
+PFNGLCOMPRESSEDTEXIMAGE3DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOMPRESSEDTEXIMAGE3DPROC) (GLenum target, GLint level, GLenum inter/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLenum internalformat,GLsizei width,GLsizei height,GLsizei depth,GLint border,GLsizei imageSize,const GLvoid * data)
+PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC) (GLenum target, GLint level, GLint xof/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLint xoffset,GLsizei width,GLenum format,GLsizei imageSize,const GLvoid * data)
+PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC) (GLenum target, GLint level, GLint xof/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLint xoffset,GLint yoffset,GLsizei width,GLsizei height,GLenum format,GLsizei imageSize,const GLvoid * data)
+PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC) (GLenum target, GLint level, GLint xof/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLint xoffset,GLint yoffset,GLint zoffset,GLsizei width,GLsizei height,GLsizei depth,GLenum format,GLsizei imageSize,const GLvoid * data)
+PFNGLCOPYTEXSUBIMAGE3DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLCOPYTEXSUBIMAGE3DPROC) (GLenum target, GLint level, GLint xoffset, /;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLint xoffset,GLint yoffset,GLint zoffset,GLint x,GLint y,GLsizei width,GLsizei height)
+PFNGLDRAWRANGEELEMENTSPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLDRAWRANGEELEMENTSPROC) (GLenum mode, GLuint start, GLuint end, GLsi/;"	t	typeref:typename:void (APIENTRYP)(GLenum mode,GLuint start,GLuint end,GLsizei count,GLenum type,const GLvoid * indices)
+PFNGLEGLIMAGETARGETRENDERBUFFERSTORAGEOESPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLEGLIMAGETARGETRENDERBUFFERSTORAGEOESPROC) (GLenum target, GLeglImag/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLeglImageOES image)
+PFNGLEGLIMAGETARGETTEXTURE2DOESPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLEGLIMAGETARGETTEXTURE2DOESPROC) (GLenum target, GLeglImageOES image/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLeglImageOES image)
+PFNGLGETCOMPRESSEDTEXIMAGEPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLGETCOMPRESSEDTEXIMAGEPROC) (GLenum target, GLint level, GLvoid *img/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLvoid * img)
+PFNGLMULTITEXCOORD1DARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1DARBPROC) (GLenum target, GLdouble s);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLdouble s)
+PFNGLMULTITEXCOORD1DVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1DVARBPROC) (GLenum target, const GLdouble *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLdouble * v)
+PFNGLMULTITEXCOORD1FARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1FARBPROC) (GLenum target, GLfloat s);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLfloat s)
+PFNGLMULTITEXCOORD1FVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1FVARBPROC) (GLenum target, const GLfloat *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLfloat * v)
+PFNGLMULTITEXCOORD1IARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1IARBPROC) (GLenum target, GLint s);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint s)
+PFNGLMULTITEXCOORD1IVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1IVARBPROC) (GLenum target, const GLint *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLint * v)
+PFNGLMULTITEXCOORD1SARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1SARBPROC) (GLenum target, GLshort s);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLshort s)
+PFNGLMULTITEXCOORD1SVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD1SVARBPROC) (GLenum target, const GLshort *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLshort * v)
+PFNGLMULTITEXCOORD2DARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2DARBPROC) (GLenum target, GLdouble s, GLdouble t);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLdouble s,GLdouble t)
+PFNGLMULTITEXCOORD2DVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2DVARBPROC) (GLenum target, const GLdouble *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLdouble * v)
+PFNGLMULTITEXCOORD2FARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2FARBPROC) (GLenum target, GLfloat s, GLfloat t);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLfloat s,GLfloat t)
+PFNGLMULTITEXCOORD2FVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2FVARBPROC) (GLenum target, const GLfloat *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLfloat * v)
+PFNGLMULTITEXCOORD2IARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2IARBPROC) (GLenum target, GLint s, GLint t);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint s,GLint t)
+PFNGLMULTITEXCOORD2IVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2IVARBPROC) (GLenum target, const GLint *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLint * v)
+PFNGLMULTITEXCOORD2SARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2SARBPROC) (GLenum target, GLshort s, GLshort t);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLshort s,GLshort t)
+PFNGLMULTITEXCOORD2SVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD2SVARBPROC) (GLenum target, const GLshort *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLshort * v)
+PFNGLMULTITEXCOORD3DARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3DARBPROC) (GLenum target, GLdouble s, GLdouble t, GLd/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLdouble s,GLdouble t,GLdouble r)
+PFNGLMULTITEXCOORD3DVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3DVARBPROC) (GLenum target, const GLdouble *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLdouble * v)
+PFNGLMULTITEXCOORD3FARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3FARBPROC) (GLenum target, GLfloat s, GLfloat t, GLflo/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLfloat s,GLfloat t,GLfloat r)
+PFNGLMULTITEXCOORD3FVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3FVARBPROC) (GLenum target, const GLfloat *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLfloat * v)
+PFNGLMULTITEXCOORD3IARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3IARBPROC) (GLenum target, GLint s, GLint t, GLint r);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint s,GLint t,GLint r)
+PFNGLMULTITEXCOORD3IVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3IVARBPROC) (GLenum target, const GLint *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLint * v)
+PFNGLMULTITEXCOORD3SARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3SARBPROC) (GLenum target, GLshort s, GLshort t, GLsho/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLshort s,GLshort t,GLshort r)
+PFNGLMULTITEXCOORD3SVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD3SVARBPROC) (GLenum target, const GLshort *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLshort * v)
+PFNGLMULTITEXCOORD4DARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4DARBPROC) (GLenum target, GLdouble s, GLdouble t, GLd/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLdouble s,GLdouble t,GLdouble r,GLdouble q)
+PFNGLMULTITEXCOORD4DVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4DVARBPROC) (GLenum target, const GLdouble *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLdouble * v)
+PFNGLMULTITEXCOORD4FARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4FARBPROC) (GLenum target, GLfloat s, GLfloat t, GLflo/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLfloat s,GLfloat t,GLfloat r,GLfloat q)
+PFNGLMULTITEXCOORD4FVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4FVARBPROC) (GLenum target, const GLfloat *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLfloat * v)
+PFNGLMULTITEXCOORD4IARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4IARBPROC) (GLenum target, GLint s, GLint t, GLint r, /;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint s,GLint t,GLint r,GLint q)
+PFNGLMULTITEXCOORD4IVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4IVARBPROC) (GLenum target, const GLint *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLint * v)
+PFNGLMULTITEXCOORD4SARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4SARBPROC) (GLenum target, GLshort s, GLshort t, GLsho/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLshort s,GLshort t,GLshort r,GLshort q)
+PFNGLMULTITEXCOORD4SVARBPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLMULTITEXCOORD4SVARBPROC) (GLenum target, const GLshort *v);$/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,const GLshort * v)
+PFNGLSAMPLECOVERAGEPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLSAMPLECOVERAGEPROC) (GLclampf value, GLboolean invert);$/;"	t	typeref:typename:void (APIENTRYP)(GLclampf value,GLboolean invert)
+PFNGLTEXIMAGE3DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLTEXIMAGE3DPROC) (GLenum target, GLint level, GLint internalformat, /;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLint internalformat,GLsizei width,GLsizei height,GLsizei depth,GLint border,GLenum format,GLenum type,const GLvoid * pixels)
+PFNGLTEXSUBIMAGE3DPROC	/usr/include/GL/gl.h	/^typedef void (APIENTRYP PFNGLTEXSUBIMAGE3DPROC) (GLenum target, GLint level, GLint xoffset, GLin/;"	t	typeref:typename:void (APIENTRYP)(GLenum target,GLint level,GLint xoffset,GLint yoffset,GLint zoffset,GLsizei width,GLsizei height,GLsizei depth,GLenum format,GLenum type,const GLvoid * pixels)
+WIN32_LEAN_AND_MEAN	/usr/include/GL/gl.h	/^#define WIN32_LEAN_AND_MEAN /;"	d
+__WIN32__	/usr/include/GL/gl.h	/^#define __WIN32__$/;"	d
+__gl_h_	/usr/include/GL/gl.h	/^#define __gl_h_$/;"	d
+glAccum	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glAccum( GLenum op, GLfloat value );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glActiveTexture	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glActiveTexture( GLenum texture );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glActiveTextureARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glActiveTextureARB(GLenum texture);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glAlphaFunc	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glAlphaFunc( GLenum func, GLclampf ref );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glAreTexturesResident	/usr/include/GL/gl.h	/^GLAPI GLboolean GLAPIENTRY glAreTexturesResident( GLsizei n,$/;"	p	typeref:typename:GLAPI GLboolean GLAPIENTRY
+glArrayElement	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glArrayElement( GLint i );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBegin	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBegin( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBindTexture	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBindTexture( GLenum target, GLuint texture );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBitmap	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBitmap( GLsizei width, GLsizei height,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBlendColor	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBlendColor( GLclampf red, GLclampf green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBlendEquation	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBlendEquation( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBlendEquationSeparateATI	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBlendEquationSeparateATI( GLenum modeRGB, GLenum modeA );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glBlendFunc	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glBlendFunc( GLenum sfactor, GLenum dfactor );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCallList	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCallList( GLuint list );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCallLists	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCallLists( GLsizei n, GLenum type,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClear	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClear( GLbitfield mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClearAccum	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClearAccum( GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClearColor	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClearColor( GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha /;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClearDepth	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClearDepth( GLclampd depth );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClearIndex	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClearIndex( GLfloat c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClearStencil	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClearStencil( GLint s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClientActiveTexture	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClientActiveTexture( GLenum texture );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClientActiveTextureARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClientActiveTextureARB(GLenum texture);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glClipPlane	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glClipPlane( GLenum plane, const GLdouble *equation );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3b	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3b( GLbyte red, GLbyte green, GLbyte blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3bv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3bv( const GLbyte *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3d( GLdouble red, GLdouble green, GLdouble blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3f( GLfloat red, GLfloat green, GLfloat blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3i( GLint red, GLint green, GLint blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3s( GLshort red, GLshort green, GLshort blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3ub	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3ub( GLubyte red, GLubyte green, GLubyte blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3ubv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3ubv( const GLubyte *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3ui	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3ui( GLuint red, GLuint green, GLuint blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3uiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3uiv( const GLuint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3us	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3us( GLushort red, GLushort green, GLushort blue );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor3usv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor3usv( const GLushort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4b	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4b( GLbyte red, GLbyte green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4bv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4bv( const GLbyte *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4d( GLdouble red, GLdouble green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4f( GLfloat red, GLfloat green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4i( GLint red, GLint green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4s( GLshort red, GLshort green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4ub	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4ub( GLubyte red, GLubyte green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4ubv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4ubv( const GLubyte *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4ui	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4ui( GLuint red, GLuint green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4uiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4uiv( const GLuint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4us	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4us( GLushort red, GLushort green,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColor4usv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColor4usv( const GLushort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorMask	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorMask( GLboolean red, GLboolean green, GLboolean blue, GLboolean alp/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorMaterial	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorMaterial( GLenum face, GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorPointer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorPointer( GLint size, GLenum type,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorSubTable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorSubTable( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorTable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorTable( GLenum target, GLenum internalformat,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorTableParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorTableParameterfv(GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glColorTableParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glColorTableParameteriv(GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCompressedTexImage1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCompressedTexImage1D( GLenum target, GLint level, GLenum internalformat,/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCompressedTexImage2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCompressedTexImage2D( GLenum target, GLint level, GLenum internalformat,/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCompressedTexImage3D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCompressedTexImage3D( GLenum target, GLint level, GLenum internalformat,/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCompressedTexSubImage1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCompressedTexSubImage1D( GLenum target, GLint level, GLint xoffset, GLsi/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCompressedTexSubImage2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCompressedTexSubImage2D( GLenum target, GLint level, GLint xoffset, GLin/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCompressedTexSubImage3D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCompressedTexSubImage3D( GLenum target, GLint level, GLint xoffset, GLin/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glConvolutionFilter1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glConvolutionFilter1D( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glConvolutionFilter2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glConvolutionFilter2D( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glConvolutionParameterf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glConvolutionParameterf( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glConvolutionParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glConvolutionParameterfv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glConvolutionParameteri	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glConvolutionParameteri( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glConvolutionParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glConvolutionParameteriv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyColorSubTable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyColorSubTable( GLenum target, GLsizei start,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyColorTable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyColorTable( GLenum target, GLenum internalformat,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyConvolutionFilter1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyConvolutionFilter1D( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyConvolutionFilter2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyConvolutionFilter2D( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyPixels	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyPixels( GLint x, GLint y,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyTexImage1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyTexImage1D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyTexImage2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyTexImage2D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyTexSubImage1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyTexSubImage1D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyTexSubImage2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyTexSubImage2D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCopyTexSubImage3D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCopyTexSubImage3D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glCullFace	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glCullFace( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDeleteLists	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDeleteLists( GLuint list, GLsizei range );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDeleteTextures	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDeleteTextures( GLsizei n, const GLuint *textures);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDepthFunc	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDepthFunc( GLenum func );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDepthMask	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDepthMask( GLboolean flag );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDepthRange	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDepthRange( GLclampd near_val, GLclampd far_val );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDisable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDisable( GLenum cap );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDisableClientState	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDisableClientState( GLenum cap );  \/* 1.1 *\/$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDrawArrays	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDrawArrays( GLenum mode, GLint first, GLsizei count );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDrawBuffer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDrawBuffer( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDrawElements	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDrawElements( GLenum mode, GLsizei count,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDrawPixels	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDrawPixels( GLsizei width, GLsizei height,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glDrawRangeElements	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glDrawRangeElements( GLenum mode, GLuint start,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEGLImageTargetRenderbufferStorageOES	/usr/include/GL/gl.h	/^GLAPI void APIENTRY glEGLImageTargetRenderbufferStorageOES (GLenum target, GLeglImageOES image);$/;"	p	typeref:typename:GLAPI void APIENTRY
+glEGLImageTargetTexture2DOES	/usr/include/GL/gl.h	/^GLAPI void APIENTRY glEGLImageTargetTexture2DOES (GLenum target, GLeglImageOES image);$/;"	p	typeref:typename:GLAPI void APIENTRY
+glEdgeFlag	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEdgeFlag( GLboolean flag );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEdgeFlagPointer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEdgeFlagPointer( GLsizei stride, const GLvoid *ptr );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEdgeFlagv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEdgeFlagv( const GLboolean *flag );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEnable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEnable( GLenum cap );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEnableClientState	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEnableClientState( GLenum cap );  \/* 1.1 *\/$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEnd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEnd( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEndList	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEndList( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord1d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord1d( GLdouble u );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord1dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord1dv( const GLdouble *u );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord1f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord1f( GLfloat u );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord1fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord1fv( const GLfloat *u );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord2d( GLdouble u, GLdouble v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord2dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord2dv( const GLdouble *u );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord2f( GLfloat u, GLfloat v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalCoord2fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalCoord2fv( const GLfloat *u );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalMesh1	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalMesh1( GLenum mode, GLint i1, GLint i2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalMesh2	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalMesh2( GLenum mode, GLint i1, GLint i2, GLint j1, GLint j2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalPoint1	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalPoint1( GLint i );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glEvalPoint2	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glEvalPoint2( GLint i, GLint j );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFeedbackBuffer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFeedbackBuffer( GLsizei size, GLenum type, GLfloat *buffer );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFinish	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFinish( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFlush	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFlush( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFogf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFogf( GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFogfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFogfv( GLenum pname, const GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFogi	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFogi( GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFogiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFogiv( GLenum pname, const GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFrontFace	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFrontFace( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glFrustum	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glFrustum( GLdouble left, GLdouble right,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGenLists	/usr/include/GL/gl.h	/^GLAPI GLuint GLAPIENTRY glGenLists( GLsizei range );$/;"	p	typeref:typename:GLAPI GLuint GLAPIENTRY
+glGenTextures	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGenTextures( GLsizei n, GLuint *textures );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetBooleanv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetBooleanv( GLenum pname, GLboolean *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetClipPlane	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetClipPlane( GLenum plane, GLdouble *equation );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetColorTable	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetColorTable( GLenum target, GLenum format,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetColorTableParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetColorTableParameterfv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetColorTableParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetColorTableParameteriv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetCompressedTexImage	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetCompressedTexImage( GLenum target, GLint lod, GLvoid *img );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetConvolutionFilter	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetConvolutionFilter( GLenum target, GLenum format,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetConvolutionParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetConvolutionParameterfv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetConvolutionParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetConvolutionParameteriv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetDoublev	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetDoublev( GLenum pname, GLdouble *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetError	/usr/include/GL/gl.h	/^GLAPI GLenum GLAPIENTRY glGetError( void );$/;"	p	typeref:typename:GLAPI GLenum GLAPIENTRY
+glGetFloatv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetFloatv( GLenum pname, GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetHistogram	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetHistogram( GLenum target, GLboolean reset,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetHistogramParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetHistogramParameterfv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetHistogramParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetHistogramParameteriv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetIntegerv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetIntegerv( GLenum pname, GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetLightfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetLightfv( GLenum light, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetLightiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetLightiv( GLenum light, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMapdv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMapdv( GLenum target, GLenum query, GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMapfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMapfv( GLenum target, GLenum query, GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMapiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMapiv( GLenum target, GLenum query, GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMaterialfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMaterialfv( GLenum face, GLenum pname, GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMaterialiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMaterialiv( GLenum face, GLenum pname, GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMinmax	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMinmax( GLenum target, GLboolean reset,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMinmaxParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMinmaxParameterfv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetMinmaxParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetMinmaxParameteriv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetPixelMapfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetPixelMapfv( GLenum map, GLfloat *values );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetPixelMapuiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetPixelMapuiv( GLenum map, GLuint *values );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetPixelMapusv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetPixelMapusv( GLenum map, GLushort *values );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetPointerv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetPointerv( GLenum pname, GLvoid **params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetPolygonStipple	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetPolygonStipple( GLubyte *mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetSeparableFilter	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetSeparableFilter( GLenum target, GLenum format,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetString	/usr/include/GL/gl.h	/^GLAPI const GLubyte * GLAPIENTRY glGetString( GLenum name );$/;"	p	typeref:typename:GLAPI const GLubyte * GLAPIENTRY
+glGetTexEnvfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexEnvfv( GLenum target, GLenum pname, GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexEnviv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexEnviv( GLenum target, GLenum pname, GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexGendv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexGendv( GLenum coord, GLenum pname, GLdouble *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexGenfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexGenfv( GLenum coord, GLenum pname, GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexGeniv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexGeniv( GLenum coord, GLenum pname, GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexImage	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexImage( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexLevelParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexLevelParameterfv( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexLevelParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexLevelParameteriv( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexParameterfv( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glGetTexParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glGetTexParameteriv( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glHint	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glHint( GLenum target, GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glHistogram	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glHistogram( GLenum target, GLsizei width,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexMask	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexMask( GLuint mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexPointer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexPointer( GLenum type, GLsizei stride,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexd( GLdouble c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexdv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexdv( const GLdouble *c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexf( GLfloat c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexfv( const GLfloat *c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexi	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexi( GLint c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexiv( const GLint *c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexs	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexs( GLshort c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexsv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexsv( const GLshort *c );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexub	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexub( GLubyte c );  \/* 1.1 *\/$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIndexubv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glIndexubv( const GLubyte *c );  \/* 1.1 *\/$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glInitNames	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glInitNames( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glInterleavedArrays	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glInterleavedArrays( GLenum format, GLsizei stride,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glIsEnabled	/usr/include/GL/gl.h	/^GLAPI GLboolean GLAPIENTRY glIsEnabled( GLenum cap );$/;"	p	typeref:typename:GLAPI GLboolean GLAPIENTRY
+glIsList	/usr/include/GL/gl.h	/^GLAPI GLboolean GLAPIENTRY glIsList( GLuint list );$/;"	p	typeref:typename:GLAPI GLboolean GLAPIENTRY
+glIsTexture	/usr/include/GL/gl.h	/^GLAPI GLboolean GLAPIENTRY glIsTexture( GLuint texture );$/;"	p	typeref:typename:GLAPI GLboolean GLAPIENTRY
+glLightModelf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightModelf( GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLightModelfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightModelfv( GLenum pname, const GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLightModeli	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightModeli( GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLightModeliv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightModeliv( GLenum pname, const GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLightf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightf( GLenum light, GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLightfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightfv( GLenum light, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLighti	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLighti( GLenum light, GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLightiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLightiv( GLenum light, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLineStipple	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLineStipple( GLint factor, GLushort pattern );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLineWidth	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLineWidth( GLfloat width );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glListBase	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glListBase( GLuint base );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLoadIdentity	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLoadIdentity( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLoadMatrixd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLoadMatrixd( const GLdouble *m );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLoadMatrixf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLoadMatrixf( const GLfloat *m );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLoadName	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLoadName( GLuint name );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLoadTransposeMatrixd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLoadTransposeMatrixd( const GLdouble m[16] );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLoadTransposeMatrixf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLoadTransposeMatrixf( const GLfloat m[16] );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glLogicOp	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glLogicOp( GLenum opcode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMap1d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMap1d( GLenum target, GLdouble u1, GLdouble u2,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMap1f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMap1f( GLenum target, GLfloat u1, GLfloat u2,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMap2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMap2d( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMap2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMap2f( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMapGrid1d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMapGrid1d( GLint un, GLdouble u1, GLdouble u2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMapGrid1f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMapGrid1f( GLint un, GLfloat u1, GLfloat u2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMapGrid2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMapGrid2d( GLint un, GLdouble u1, GLdouble u2,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMapGrid2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMapGrid2f( GLint un, GLfloat u1, GLfloat u2,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMaterialf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMaterialf( GLenum face, GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMaterialfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMaterialfv( GLenum face, GLenum pname, const GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMateriali	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMateriali( GLenum face, GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMaterialiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMaterialiv( GLenum face, GLenum pname, const GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMatrixMode	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMatrixMode( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMinmax	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMinmax( GLenum target, GLenum internalformat,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultMatrixd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultMatrixd( const GLdouble *m );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultMatrixf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultMatrixf( const GLfloat *m );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultTransposeMatrixd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultTransposeMatrixd( const GLdouble m[16] );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultTransposeMatrixf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultTransposeMatrixf( const GLfloat m[16] );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1d( GLenum target, GLdouble s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1dARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1dARB(GLenum target, GLdouble s);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1dv( GLenum target, const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1dvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1dvARB(GLenum target, const GLdouble *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1f( GLenum target, GLfloat s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1fARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1fARB(GLenum target, GLfloat s);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1fv( GLenum target, const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1fvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1fvARB(GLenum target, const GLfloat *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1i( GLenum target, GLint s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1iARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1iARB(GLenum target, GLint s);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1iv( GLenum target, const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1ivARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1ivARB(GLenum target, const GLint *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1s( GLenum target, GLshort s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1sARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1sARB(GLenum target, GLshort s);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1sv( GLenum target, const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord1svARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord1svARB(GLenum target, const GLshort *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2d( GLenum target, GLdouble s, GLdouble t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2dARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2dARB(GLenum target, GLdouble s, GLdouble t);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2dv( GLenum target, const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2dvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2dvARB(GLenum target, const GLdouble *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2f( GLenum target, GLfloat s, GLfloat t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2fARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2fARB(GLenum target, GLfloat s, GLfloat t);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2fv( GLenum target, const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2fvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2fvARB(GLenum target, const GLfloat *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2i( GLenum target, GLint s, GLint t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2iARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2iARB(GLenum target, GLint s, GLint t);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2iv( GLenum target, const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2ivARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2ivARB(GLenum target, const GLint *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2s( GLenum target, GLshort s, GLshort t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2sARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2sARB(GLenum target, GLshort s, GLshort t);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2sv( GLenum target, const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord2svARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord2svARB(GLenum target, const GLshort *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3d( GLenum target, GLdouble s, GLdouble t, GLdouble r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3dARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3dARB(GLenum target, GLdouble s, GLdouble t, GLdouble r);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3dv( GLenum target, const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3dvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3dvARB(GLenum target, const GLdouble *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3f( GLenum target, GLfloat s, GLfloat t, GLfloat r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3fARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3fARB(GLenum target, GLfloat s, GLfloat t, GLfloat r);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3fv( GLenum target, const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3fvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3fvARB(GLenum target, const GLfloat *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3i( GLenum target, GLint s, GLint t, GLint r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3iARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3iARB(GLenum target, GLint s, GLint t, GLint r);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3iv( GLenum target, const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3ivARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3ivARB(GLenum target, const GLint *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3s( GLenum target, GLshort s, GLshort t, GLshort r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3sARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3sARB(GLenum target, GLshort s, GLshort t, GLshort r);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3sv( GLenum target, const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord3svARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord3svARB(GLenum target, const GLshort *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4d( GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdo/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4dARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4dARB(GLenum target, GLdouble s, GLdouble t, GLdouble r, GL/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4dv( GLenum target, const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4dvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4dvARB(GLenum target, const GLdouble *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4f( GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4fARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4fARB(GLenum target, GLfloat s, GLfloat t, GLfloat r, GLflo/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4fv( GLenum target, const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4fvARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4fvARB(GLenum target, const GLfloat *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4i( GLenum target, GLint s, GLint t, GLint r, GLint q );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4iARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4iARB(GLenum target, GLint s, GLint t, GLint r, GLint q);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4iv( GLenum target, const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4ivARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4ivARB(GLenum target, const GLint *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4s( GLenum target, GLshort s, GLshort t, GLshort r, GLshort/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4sARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4sARB(GLenum target, GLshort s, GLshort t, GLshort r, GLsho/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4sv( GLenum target, const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glMultiTexCoord4svARB	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glMultiTexCoord4svARB(GLenum target, const GLshort *v);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNewList	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNewList( GLuint list, GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3b	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3b( GLbyte nx, GLbyte ny, GLbyte nz );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3bv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3bv( const GLbyte *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3d( GLdouble nx, GLdouble ny, GLdouble nz );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3f( GLfloat nx, GLfloat ny, GLfloat nz );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3i( GLint nx, GLint ny, GLint nz );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3s( GLshort nx, GLshort ny, GLshort nz );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormal3sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormal3sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glNormalPointer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glNormalPointer( GLenum type, GLsizei stride,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glOrtho	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glOrtho( GLdouble left, GLdouble right,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPassThrough	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPassThrough( GLfloat token );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelMapfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelMapfv( GLenum map, GLsizei mapsize,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelMapuiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelMapuiv( GLenum map, GLsizei mapsize,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelMapusv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelMapusv( GLenum map, GLsizei mapsize,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelStoref	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelStoref( GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelStorei	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelStorei( GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelTransferf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelTransferf( GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelTransferi	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelTransferi( GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPixelZoom	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPixelZoom( GLfloat xfactor, GLfloat yfactor );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPointSize	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPointSize( GLfloat size );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPolygonMode	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPolygonMode( GLenum face, GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPolygonOffset	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPolygonOffset( GLfloat factor, GLfloat units );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPolygonStipple	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPolygonStipple( const GLubyte *mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPopAttrib	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPopAttrib( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPopClientAttrib	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPopClientAttrib( void );  \/* 1.1 *\/$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPopMatrix	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPopMatrix( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPopName	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPopName( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPrioritizeTextures	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPrioritizeTextures( GLsizei n,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPushAttrib	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPushAttrib( GLbitfield mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPushClientAttrib	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPushClientAttrib( GLbitfield mask );  \/* 1.1 *\/$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPushMatrix	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPushMatrix( void );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glPushName	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glPushName( GLuint name );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2d( GLdouble x, GLdouble y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2f( GLfloat x, GLfloat y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2i( GLint x, GLint y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2s( GLshort x, GLshort y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos2sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos2sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3d( GLdouble x, GLdouble y, GLdouble z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3f( GLfloat x, GLfloat y, GLfloat z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3i( GLint x, GLint y, GLint z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3s( GLshort x, GLshort y, GLshort z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos3sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos3sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4d( GLdouble x, GLdouble y, GLdouble z, GLdouble w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4f( GLfloat x, GLfloat y, GLfloat z, GLfloat w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4i( GLint x, GLint y, GLint z, GLint w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4s( GLshort x, GLshort y, GLshort z, GLshort w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRasterPos4sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRasterPos4sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glReadBuffer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glReadBuffer( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glReadPixels	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glReadPixels( GLint x, GLint y,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRectd	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRectd( GLdouble x1, GLdouble y1, GLdouble x2, GLdouble y2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRectdv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRectdv( const GLdouble *v1, const GLdouble *v2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRectf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRectf( GLfloat x1, GLfloat y1, GLfloat x2, GLfloat y2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRectfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRectfv( const GLfloat *v1, const GLfloat *v2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRecti	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRecti( GLint x1, GLint y1, GLint x2, GLint y2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRectiv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRectiv( const GLint *v1, const GLint *v2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRects	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRects( GLshort x1, GLshort y1, GLshort x2, GLshort y2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRectsv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRectsv( const GLshort *v1, const GLshort *v2 );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRenderMode	/usr/include/GL/gl.h	/^GLAPI GLint GLAPIENTRY glRenderMode( GLenum mode );$/;"	p	typeref:typename:GLAPI GLint GLAPIENTRY
+glResetHistogram	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glResetHistogram( GLenum target );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glResetMinmax	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glResetMinmax( GLenum target );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRotated	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRotated( GLdouble angle,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glRotatef	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glRotatef( GLfloat angle,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glSampleCoverage	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glSampleCoverage( GLclampf value, GLboolean invert );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glScaled	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glScaled( GLdouble x, GLdouble y, GLdouble z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glScalef	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glScalef( GLfloat x, GLfloat y, GLfloat z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glScissor	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glScissor( GLint x, GLint y, GLsizei width, GLsizei height);$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glSelectBuffer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glSelectBuffer( GLsizei size, GLuint *buffer );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glSeparableFilter2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glSeparableFilter2D( GLenum target,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glShadeModel	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glShadeModel( GLenum mode );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glStencilFunc	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glStencilFunc( GLenum func, GLint ref, GLuint mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glStencilMask	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glStencilMask( GLuint mask );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glStencilOp	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glStencilOp( GLenum fail, GLenum zfail, GLenum zpass );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1d( GLdouble s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1f( GLfloat s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1i( GLint s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1s( GLshort s );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord1sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord1sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2d( GLdouble s, GLdouble t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2f( GLfloat s, GLfloat t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2i( GLint s, GLint t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2s( GLshort s, GLshort t );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord2sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord2sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3d( GLdouble s, GLdouble t, GLdouble r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3f( GLfloat s, GLfloat t, GLfloat r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3i( GLint s, GLint t, GLint r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3s( GLshort s, GLshort t, GLshort r );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord3sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord3sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4d( GLdouble s, GLdouble t, GLdouble r, GLdouble q );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4f( GLfloat s, GLfloat t, GLfloat r, GLfloat q );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4i( GLint s, GLint t, GLint r, GLint q );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4s( GLshort s, GLshort t, GLshort r, GLshort q );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoord4sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoord4sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexCoordPointer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexCoordPointer( GLint size, GLenum type,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexEnvf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexEnvf( GLenum target, GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexEnvfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexEnvfv( GLenum target, GLenum pname, const GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexEnvi	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexEnvi( GLenum target, GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexEnviv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexEnviv( GLenum target, GLenum pname, const GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexGend	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexGend( GLenum coord, GLenum pname, GLdouble param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexGendv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexGendv( GLenum coord, GLenum pname, const GLdouble *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexGenf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexGenf( GLenum coord, GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexGenfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexGenfv( GLenum coord, GLenum pname, const GLfloat *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexGeni	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexGeni( GLenum coord, GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexGeniv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexGeniv( GLenum coord, GLenum pname, const GLint *params );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexImage1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexImage1D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexImage2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexImage2D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexImage3D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexImage3D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexParameterf	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexParameterf( GLenum target, GLenum pname, GLfloat param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexParameterfv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexParameterfv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexParameteri	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexParameteri( GLenum target, GLenum pname, GLint param );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexParameteriv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexParameteriv( GLenum target, GLenum pname,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexSubImage1D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexSubImage1D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexSubImage2D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexSubImage2D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTexSubImage3D	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTexSubImage3D( GLenum target, GLint level,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTranslated	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTranslated( GLdouble x, GLdouble y, GLdouble z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glTranslatef	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glTranslatef( GLfloat x, GLfloat y, GLfloat z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2d( GLdouble x, GLdouble y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2f( GLfloat x, GLfloat y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2i( GLint x, GLint y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2s( GLshort x, GLshort y );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex2sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex2sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3d( GLdouble x, GLdouble y, GLdouble z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3f( GLfloat x, GLfloat y, GLfloat z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3i( GLint x, GLint y, GLint z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3s( GLshort x, GLshort y, GLshort z );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex3sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex3sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4d	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4d( GLdouble x, GLdouble y, GLdouble z, GLdouble w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4dv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4dv( const GLdouble *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4f	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4f( GLfloat x, GLfloat y, GLfloat z, GLfloat w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4fv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4fv( const GLfloat *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4i	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4i( GLint x, GLint y, GLint z, GLint w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4iv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4iv( const GLint *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4s	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4s( GLshort x, GLshort y, GLshort z, GLshort w );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertex4sv	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertex4sv( const GLshort *v );$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glVertexPointer	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glVertexPointer( GLint size, GLenum type,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
+glViewport	/usr/include/GL/gl.h	/^GLAPI void GLAPIENTRY glViewport( GLint x, GLint y,$/;"	p	typeref:typename:GLAPI void GLAPIENTRY
