@@ -1,6 +1,6 @@
 command! MakeTags :AsyncRun ctags -f .tags -R . --c++-kinds=+p
 
-" .gl_tags: generated from `ctags -f .tags --c++-kinds=+p /usr/include/GL/gl.h`
+" .gl_tags: generated from `ctags -f .gl_tags --c++-kinds=+p  -R /usr/include/GL/`
 set tags+=.gl_tags
 
 nnoremap <F4> :w<cr>:AsyncRun make<cr>
