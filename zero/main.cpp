@@ -37,14 +37,18 @@ Vector3f camera_pos(0.0, 0.0, 5.0);
 Vector3f looking_at(0.0, 0.0, 0.0);
 Vector3f up_direction(0.0, 1.0, 0.0);
 
+#ifdef DEBUG
 void display_modelview(GLfloat mat[16])
 {
+    // Column-based
+    cout << "ModelView: " << endl;
     for (int i = 0; i != 4; ++i) {
         for (int j = 0; j != 4; ++j)
-            cout << mat[i*4+j] << " ";
+            cout << mat[j*4+i] << " ";
         cout << endl;
     }
 }
+#endif
 
 GLfloat get_dist(Vector3f v1, Vector3f v2) 
 {
@@ -133,6 +137,7 @@ void keyboardFunc( unsigned char key, int x, int y )
         color_selector = ++color_selector >= MAXCOLORS ? 0 : color_selector;
         cout << "Changing to color " << color_selector << "." << endl;        
         break;
+#ifdef DEBUG
     case 'd':
         // Debug mode
         /* camera_pos = rotate(camera_pos, degree2radian(90), degree2radian(90)); */
@@ -143,6 +148,7 @@ void keyboardFunc( unsigned char key, int x, int y )
         glGetFloatv(GL_MODELVIEW_MATRIX, matf);
         display_modelview(matf);
         break;
+#endif
     default:
         cout << "Unhandled key press " << key << "." << endl;        
     }
