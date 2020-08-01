@@ -1,4 +1,6 @@
-contents/
+contents/assignments/*.zip
+contents/assignments/*.gz
+contents/assignments/*.tgz
 
 *.o
 
