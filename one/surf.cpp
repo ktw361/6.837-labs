@@ -64,7 +64,7 @@ void buildFace(std::vector<Tup3u> & VF,
     }
 #ifdef DEBUG
     for (size_t i = 0; i != VF.size(); ++i)
-        printf("F[%lu]: %d, %d, %d\n", VF.size(), i1, i2, i3);
+        printf("F[%lu]: %d, %d, %d\n", i, VF[i][0], VF[i][1], VF[i][2]);
 #endif
 }
 
@@ -125,24 +125,30 @@ Matrix4f makeFrame(const CurvePoint &cp) {
             Vector4f(cp.V, 1), true);
 }
 
+// B_loc // T_loc'  // T_swp
+// T_loc // -B_swp' // -B_swp
+// N_loc // -N_loc' // -N_swp
+//
+// We first map Point to F_loc', then to F_swp
+//
 // For point:
-//   P_abs_1 = F_loc * C where P_abs_1, F_loc known
+//   P_abs_1 = F_loc * C
+//   P_abs_1' = F_loc' * C
 //   P_abs_2 = F_swp * C where we need to find P_abs_2
 //   =>
-//   P_abs_2 = F_swp * F_loc^-1 * P_abs_1
+//   P_abs_2 = F_swp * F_loc' * F_loc^-1 * P_abs_1
 //   and,
-//   F = [T N B V]  for profile and sweep frames
+//   F = [N B T V]  for profile and sweep frames
 //   C = [c1 c2 c3 1]^T
 //
 // For normal vector
 //   N1 = M_loc * C 
+//   N1' = M_loc' * C
 //   N2 = M_swp * C
 //   =>
-//   N2 = M_swp * M_loc^-1 * N1
+//   N2 = M_swp * M_loc' * M_loc^-1 * N1
 Surface makeGenCyl(const Curve &profile, const Curve &sweep )
 {
-    /* std::vector<Vector3f> VV, VN; */
-    /* std::vector<Tup3u> VF; */
     Surface surface;
     auto & VV = surface.VV;
     auto & VN = surface.VN;
@@ -161,16 +167,27 @@ Surface makeGenCyl(const Curve &profile, const Curve &sweep )
     bool isSingular = true;
 
     for (size_t i = 0; i != lenSweep; ++i) {
+        CurvePoint sp = sweep[i];    // sweep point
+        Matrix4f F_swp(makeFrame(sp));
+#ifdef DEBUG
+        cout << "F_swp: " << endl;
+        F_swp.print();
+#endif
         for (size_t j = 0; j != lenProfile; ++j) {
             CurvePoint pp = profile[j];  // profile point
-            CurvePoint sp = sweep[i];    // sweep point
 
             // VV
-            Matrix4f F_loc(makeFrame(pp)), F_swp(makeFrame(sp));
+            Matrix4f F_loc(makeFrame(pp));
+            Matrix4f F_loc_p(
+                    F_loc.getCol(0) * -1,
+                    F_loc.getCol(2) * -1,
+                    F_loc.getCol(1),
+                    F_loc.getCol(3));
             Vector4f P_abs_1(sp.V, 1);
             // TODO, parenthesis doesn't matter?
             // It's faster to do mat-vec product first
-            Vector4f P_abs_2 = F_swp * (F_loc.inverse(&isSingular) * P_abs_1);
+            Vector4f P_abs_2 = F_swp * (
+                    F_loc_p * (F_loc.inverse(&isSingular) * P_abs_1));
 #ifdef DEBUG
             assert(!isSingular);
 #endif
@@ -178,12 +195,20 @@ Surface makeGenCyl(const Curve &profile, const Curve &sweep )
 
             // VN
             Vector3f N = F_swp.getSubmatrix3x3(0, 0) *
-                (F_loc.getSubmatrix3x3(0, 0).inverse() * sp.N);
+                (F_loc_p.getSubmatrix3x3(0, 0) * 
+                 (F_loc.getSubmatrix3x3(0, 0).inverse() * sp.N));
             N *= -1;  // reverse for pointing out
             VN.push_back(N);
         }
-
     }
+#ifdef DEBUG
+    for (size_t i = 0; i != VN.size(); ++i)
+        printf("V[%lu]: %.2f %.2f %.2f\n",
+                i, VV[i][0], VV[i][1], VV[i][2]);
+    for (size_t i = 0; i != VN.size(); ++i)
+        printf("N[%lu]: %.2f %.2f %.2f\n",
+                i, VN[i][0], VN[i][1], VN[i][2]);
+#endif
 
     buildFace(VF, lenSweep, lenProfile, true);
 
