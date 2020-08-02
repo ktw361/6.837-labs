@@ -69,6 +69,17 @@ namespace
     void loadObjects(int argc, char *argv[]);
     void makeDisplayLists();
 
+#ifdef DEBUG
+    void display_modelview(GLfloat mat[16]) {
+        cout << "ModelView Matrix: " << endl;
+        for (int i = 0; i != 4; ++i) {
+            for (int j = 0; j != 4; ++j)
+                cout << mat[j*4+i] << " "; // col-based
+            cout << endl;
+        }
+    }
+#endif
+
     // This function is called whenever a "Normal" key press is
     // received.
     void keyboardFunc( unsigned char key, int x, int y )
@@ -89,6 +100,13 @@ namespace
         case 'C':
             gCurveMode = (gCurveMode+1)%3;
             break;
+#ifdef DEBUG
+        case 'd':
+            GLfloat matf[16];
+            glGetFloatv(GL_MODELVIEW_MATRIX, matf);
+            display_modelview(matf);
+            break;
+#endif
         case 's':
         case 'S':
             gSurfaceMode = (gSurfaceMode+1)%3;

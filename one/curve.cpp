@@ -1,3 +1,4 @@
+#include <cassert>
 #include "curve.h"
 #include "extra.h"
 #ifdef WIN32
@@ -46,19 +47,67 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
     // receive have G1 continuity.  Otherwise, the TNB will not be
     // be defined at points where this does not hold.
 
-    cerr << "\t>>> evalBezier has been called with the following input:" << endl;
+    Curve result;
 
-    cerr << "\t>>> Control points (type vector< Vector3f >): "<< endl;
-    for( unsigned i = 0; i < P.size(); ++i )
-    {
-        cerr << "\t>>> " << P[i] << endl;
+    // for every 4 points:
+    //  P(t) = Geomery G x Spline Basis B x Power Basis T(t)
+    //
+    //  then for every i in steps:
+    //    t = i / steps;
+    //    V_i = P(i)
+    //    T_i = P'(i).normalized()
+    //    N_i = (B_{i-1} x T_i).normalized()
+    //    B_i = (T_i x N_i).normalized()
+    for (size_t i = 0; i < P.size() - 3; ++i) {
+        Matrix4f B(1, -3, 3, -1,
+                   0,  3,-6,  3,
+                   0,  0, 3, -3,
+                   0,  0, 0,  1);
+        Matrix4f G(Vector4f(P[i], 0), 
+                   Vector4f(P[i+1], 0),
+                   Vector4f(P[i+2], 0),
+                   Vector4f(P[i+3], 0), true);
+
+        Vector3f Bino(0, 0, 1);  // B_0
+        for (size_t t = 0; t != steps; ++t) {
+            float _t = (float)t / (float)steps;
+            Vector4f T(1, _t, _t*_t, _t*_t*_t);
+            Vector4f dT(0, 1, 2*_t, 3*_t*_t);
+
+            Vector3f Vert = (G * B * T).xyz();
+            Vector3f Tang = (G * B * dT).xyz().normalized();
+            // Test B_0, until parallel to T1: add 1 unit to a axis
+            if (t == 0) {
+                for (   int i = 0;
+                        approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO);
+                        ++i
+                    ) {
+                    Bino[i%3] += 1;
+                    Bino = Bino.normalized();
+                }
+#ifdef DEBUG
+            } else {
+                assert(!approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO));
+#endif 
+            }
+            Vector3f Norm = (Bino * Tang).normalized();
+            Vector3f Bino = (Tang * Norm).normalized();
+            result.push_back( {Vert, Tang, Norm, Bino} );
+        }
     }
 
-    cerr << "\t>>> Steps (type steps): " << steps << endl;
-    cerr << "\t>>> Returning empty curve." << endl;
+    // cerr << "\t>>> evalBezier has been called with the following input:" << endl;
 
-    // Right now this will just return this empty curve.
-    return Curve();
+    // cerr << "\t>>> Control points (type vector< Vector3f >): "<< endl;
+    // for( unsigned i = 0; i < P.size(); ++i )
+    // {
+    //     cerr << "\t>>> " << P[i] << endl;
+    // }
+
+    // cerr << "\t>>> Steps (type steps): " << steps << endl;
+    // cerr << "\t>>> Returning empty curve." << endl;
+
+    return result;
 }
 
 Curve evalBspline( const vector< Vector3f >& P, unsigned steps )

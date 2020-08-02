@@ -4,7 +4,8 @@ INCFLAGS += -I ../vecmath/include
 LINKFLAGS = -lglut -lGL -lGLU
 LINKFLAGS += -L ../vecmath/lib -lvecmath
 
-CFLAGS    = -Wall -ansi -DSOLN
+# CFLAGS    = -Wall -ansi -DSOLN
+CFLAGS    = -Wall -std=c++11 -DSOLN
 DEBUG 	 ?= 1
 ifeq ($(DEBUG), 1)
 	CFLAGS += -O0 -g -DDEBUG
