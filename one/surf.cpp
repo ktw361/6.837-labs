@@ -29,13 +29,52 @@ namespace
     }
 }
 
+// Build VF for faces, two triangles per quadrilateral
+// set closeProfile to true will connect profile's begin and end points.
+void buildFace(std::vector<Tup3u> & VF, 
+               size_t steps, 
+               size_t lenProfile, 
+               bool closeProfile) 
+{
+    unsigned i1, i2, i3, i4;
+    for (size_t i = 0; i != steps; ++i) {
+        for (size_t j = 0; j != lenProfile - 1; ++j) {
+            //
+            //  i1 -- i4
+            //  |   / |
+            //  |  /  |
+            //  | /   |
+            //  i2 -- i3
+            //
+            i1 = i * lenProfile + j;
+            i2 = i1 + 1;
+            i4 = (i != steps-1) ? i1 + lenProfile : j;
+            i3 = (i != steps-1) ? i2 + lenProfile : j+1;
+            VF.push_back({i1, i2, i4});
+            VF.push_back({i4, i2, i3});
+        }
+        if (closeProfile) {
+            i1 = (i * lenProfile) + lenProfile - 1;
+            i2 = i * lenProfile;
+            i4 = (i != steps-1) ? i1 + lenProfile : lenProfile - 1;
+            i3 = (i != steps-1) ? i2 + lenProfile : 0;
+            VF.push_back({i1, i2, i4});
+            VF.push_back({i4, i2, i3});
+        }
+    }
+#ifdef DEBUG
+    for (size_t i = 0; i != VF.size(); ++i)
+        printf("F[%lu]: %d, %d, %d\n", VF.size(), i1, i2, i3);
+#endif
+}
+
 Surface makeSurfRev(const Curve &profile, unsigned steps)
 {
     Surface surface;
     auto & VV = surface.VV;
     auto & VN = surface.VN;
     auto & VF = surface.VF;
-    size_t len_profile = profile.size();
+    size_t lenProfile = profile.size();
     
     if (!checkFlat(profile))
     {
@@ -54,7 +93,7 @@ Surface makeSurfRev(const Curve &profile, unsigned steps)
 #ifdef DEBUG
         assert(!isSingular);
 #endif
-        for (size_t j = 0; j != len_profile; ++j) {
+        for (size_t j = 0; j != lenProfile; ++j) {
             Vector3f V = Ry * profile[j].V;
             // -1 reverses the norm so that it points OUT of face
             // Note, put -1 outside parenthesis, 
@@ -73,38 +112,43 @@ Surface makeSurfRev(const Curve &profile, unsigned steps)
                 i, VN[i][0], VN[i][1], VN[i][2]);
 #endif
 
-    // Build VF for face, two triangles per quadrilateral
-    //  The -1 in inner loop is important! Only N-1 triangles
-    for (size_t i = 0; i != steps; ++i) {
-        for (size_t j = 0; j != len_profile - 1; ++j) {
-            // Top-left triangle
-            unsigned i1 = i * len_profile + j,
-                     i2 = i * len_profile + j + 1,
-                     i3 = (i+1) * len_profile + j;  // counterclock index
-            i3 = (i != steps-1) ? i3 : j;
-            VF.push_back({i1, i2, i3});
-#ifdef DEBUG
-            printf("F[%lu]: %d, %d, %d\n", VF.size(), i1, i2, i3);
-#endif
-            // Bottom right triangle
-            i1 = (i+1) * len_profile + j;
-            i2 = i * len_profile + j + 1;
-            i3 = (i+1) * len_profile + j + 1;
-            i1 = (i != steps-1) ? i1 : j;
-            i3 = (i != steps-1) ? i3 : j+1;
-            VF.push_back({i1, i2, i3});
-#ifdef DEBUG
-            printf("F[%lu]: %d, %d, %d\n", VF.size(), i1, i2, i3);
-#endif
-        }
-    }
+    buildFace(VF, steps, lenProfile, false);
 
     return surface;
 }
 
+Matrix4f makeFrame(const CurvePoint &cp) {
+    return Matrix4f(
+            Vector4f(cp.N, 0),
+            Vector4f(cp.B, 0),
+            Vector4f(cp.T, 0),
+            Vector4f(cp.V, 1), true);
+}
+
+// For point:
+//   P_abs_1 = F_loc * C where P_abs_1, F_loc known
+//   P_abs_2 = F_swp * C where we need to find P_abs_2
+//   =>
+//   P_abs_2 = F_swp * F_loc^-1 * P_abs_1
+//   and,
+//   F = [T N B V]  for profile and sweep frames
+//   C = [c1 c2 c3 1]^T
+//
+// For normal vector
+//   N1 = M_loc * C 
+//   N2 = M_swp * C
+//   =>
+//   N2 = M_swp * M_loc^-1 * N1
 Surface makeGenCyl(const Curve &profile, const Curve &sweep )
 {
+    /* std::vector<Vector3f> VV, VN; */
+    /* std::vector<Tup3u> VF; */
     Surface surface;
+    auto & VV = surface.VV;
+    auto & VN = surface.VN;
+    auto & VF = surface.VF;
+    size_t lenProfile = profile.size();
+    size_t lenSweep = sweep.size();
 
     if (!checkFlat(profile))
     {
@@ -112,11 +156,38 @@ Surface makeGenCyl(const Curve &profile, const Curve &sweep )
         exit(0);
     }
 
-    // TODO: Here you should build the surface.  See surf.h for details.
+    // Here you should build the surface.  See surf.h for details.
 
-    cerr << "\t>>> makeGenCyl called (but not implemented).\n\t>>> Returning empty surface." <<endl;
+    bool isSingular = true;
 
-    return surface;
+    for (size_t i = 0; i != lenSweep; ++i) {
+        for (size_t j = 0; j != lenProfile; ++j) {
+            CurvePoint pp = profile[j];  // profile point
+            CurvePoint sp = sweep[i];    // sweep point
+
+            // VV
+            Matrix4f F_loc(makeFrame(pp)), F_swp(makeFrame(sp));
+            Vector4f P_abs_1(sp.V, 1);
+            // TODO, parenthesis doesn't matter?
+            // It's faster to do mat-vec product first
+            Vector4f P_abs_2 = F_swp * (F_loc.inverse(&isSingular) * P_abs_1);
+#ifdef DEBUG
+            assert(!isSingular);
+#endif
+            VV.push_back(P_abs_2.xyz());
+
+            // VN
+            Vector3f N = F_swp.getSubmatrix3x3(0, 0) *
+                (F_loc.getSubmatrix3x3(0, 0).inverse() * sp.N);
+            N *= -1;  // reverse for pointing out
+            VN.push_back(N);
+        }
+
+    }
+
+    buildFace(VF, lenSweep, lenProfile, true);
+
+    return {VV, VN, VF};
 }
 
 void drawSurface(const Surface &surface, bool shaded)
