@@ -19,7 +19,64 @@ namespace
 
     
 }
-    
+
+
+// Common function, to be called in evalBezier and evalBspline
+//
+// For Bezier, p_step = 3; For Bspline p_step = 1
+//
+// For every 4 points:
+//  P(t) = Geomery G x Spline Basis B x Power Basis T(t)
+//
+//  then for every i in [step_begin, step_end):
+//    t = i / num_steps;
+//    V_i = P(i)
+//    T_i = P'(i).normalized()
+//    N_i = (B_{i-1} x T_i).normalized()
+//    B_i = (T_i x N_i).normalized()
+Curve evalCommon( const vector< Vector3f >& P, 
+                  Matrix4f & B,
+                  unsigned p_step,
+                  unsigned step_bgn,
+                  unsigned step_end,
+                  unsigned num_steps ) 
+{
+    Curve result;
+    for (size_t i = 0; i < P.size() - 3; i += p_step) {
+        Matrix4f G(Vector4f(P[i], 0), 
+                Vector4f(P[i+1], 0),
+                Vector4f(P[i+2], 0),
+                Vector4f(P[i+3], 0), true);
+
+        Vector3f Bino(0, 0, 1);  // B_0
+        for (size_t t = step_bgn; t != step_end; ++t) {
+            float _t = (float)t / (float)num_steps;
+            Vector4f T(1, _t, _t*_t, _t*_t*_t);
+            Vector4f dT(0, 1, 2*_t, 3*_t*_t);
+
+            Vector3f Vert = (G * B * T).xyz();
+            Vector3f Tang = (G * B * dT).xyz().normalized();
+            // Test B_0, until parallel to T1: add 1 unit to a axis
+            if (t == 0) {
+                for (   int i = 0;
+                        approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO);
+                        ++i
+                    ) {
+                    Bino[i%3] += 1;
+                    Bino = Bino.normalized();
+                }
+#ifdef DEBUG
+            } else {
+                assert(!approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO));
+#endif 
+            }
+            Vector3f Norm = (Bino * Tang).normalized();
+            Vector3f Bino = (Tang * Norm).normalized();
+            result.push_back( {Vert, Tang, Norm, Bino} );
+        }
+    }
+    return result;
+}
 
 Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
 {
@@ -49,52 +106,11 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
 
     Curve result;
 
-    // for every 4 points:
-    //  P(t) = Geomery G x Spline Basis B x Power Basis T(t)
-    //
-    //  then for every i in steps:
-    //    t = i / steps;
-    //    V_i = P(i)
-    //    T_i = P'(i).normalized()
-    //    N_i = (B_{i-1} x T_i).normalized()
-    //    B_i = (T_i x N_i).normalized()
-    for (size_t i = 0; i < P.size() - 3; ++i) {
-        Matrix4f B(1, -3, 3, -1,
-                   0,  3,-6,  3,
-                   0,  0, 3, -3,
-                   0,  0, 0,  1);
-        Matrix4f G(Vector4f(P[i], 0), 
-                   Vector4f(P[i+1], 0),
-                   Vector4f(P[i+2], 0),
-                   Vector4f(P[i+3], 0), true);
-
-        Vector3f Bino(0, 0, 1);  // B_0
-        for (size_t t = 0; t != steps; ++t) {
-            float _t = (float)t / (float)steps;
-            Vector4f T(1, _t, _t*_t, _t*_t*_t);
-            Vector4f dT(0, 1, 2*_t, 3*_t*_t);
-
-            Vector3f Vert = (G * B * T).xyz();
-            Vector3f Tang = (G * B * dT).xyz().normalized();
-            // Test B_0, until parallel to T1: add 1 unit to a axis
-            if (t == 0) {
-                for (   int i = 0;
-                        approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO);
-                        ++i
-                    ) {
-                    Bino[i%3] += 1;
-                    Bino = Bino.normalized();
-                }
-#ifdef DEBUG
-            } else {
-                assert(!approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO));
-#endif 
-            }
-            Vector3f Norm = (Bino * Tang).normalized();
-            Vector3f Bino = (Tang * Norm).normalized();
-            result.push_back( {Vert, Tang, Norm, Bino} );
-        }
-    }
+    Matrix4f B(1, -3, 3, -1,
+               0,  3,-6,  3,
+               0,  0, 3, -3,
+               0,  0, 0,  1);
+    return evalCommon(P, B, 3, 0, steps, steps);
 
     // cerr << "\t>>> evalBezier has been called with the following input:" << endl;
 
@@ -106,8 +122,6 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
 
     // cerr << "\t>>> Steps (type steps): " << steps << endl;
     // cerr << "\t>>> Returning empty curve." << endl;
-
-    return result;
 }
 
 Curve evalBspline( const vector< Vector3f >& P, unsigned steps )
@@ -123,20 +137,29 @@ Curve evalBspline( const vector< Vector3f >& P, unsigned steps )
     // It is suggested that you implement this function by changing
     // basis from B-spline to Bezier.  That way, you can just call
     // your evalBezier function.
+    Matrix4f B(1, -3,  3, -1,
+               4,  0, -6,  3,
+               1,  3,  3, -3,
+               0,  0,  0,  1);
+    // The problem with Matrix4f::uniformScaling is that is doesn't set
+    //   B[3][3] = B[3][3] / 6
+    B /= 6.0f;
 
-    cerr << "\t>>> evalBSpline has been called with the following input:" << endl;
+    return evalCommon(P, B, 1, 0, steps, steps);
 
-    cerr << "\t>>> Control points (type vector< Vector3f >): "<< endl;
-    for( unsigned i = 0; i < P.size(); ++i )
-    {
-        cerr << "\t>>> " << P[i] << endl;
-    }
+    // cerr << "\t>>> evalBSpline has been called with the following input:" << endl;
 
-    cerr << "\t>>> Steps (type steps): " << steps << endl;
-    cerr << "\t>>> Returning empty curve." << endl;
+    // cerr << "\t>>> Control points (type vector< Vector3f >): "<< endl;
+    // for( unsigned i = 0; i < P.size(); ++i )
+    // {
+    //     cerr << "\t>>> " << P[i] << endl;
+    // }
 
-    // Return an empty curve right now.
-    return Curve();
+    // cerr << "\t>>> Steps (type steps): " << steps << endl;
+    // cerr << "\t>>> Returning empty curve." << endl;
+
+    // // Return an empty curve right now.
+    // return Curve();
 }
 
 Curve evalCircle( float radius, unsigned steps )

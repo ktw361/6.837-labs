@@ -7,4 +7,5 @@ set tags+=.gl_tags
 
 nnoremap <F4> :w<cr>:AsyncRun make DEBUG=1<cr>
 nnoremap <F5> :w<cr>:AsyncRun make DEBUG=1 && ./a1 swp/core.swp<CR>
+nnoremap <F6> :w<cr>:AsyncRun make DEBUG=1 && ./a1 swp/mycore.swp<CR>
 " nnoremap <F6> :w<cr>:AsyncRun make && ./a0 < garg.obj<CR>
