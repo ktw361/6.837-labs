@@ -125,28 +125,17 @@ Matrix4f makeFrame(const CurvePoint &cp) {
             Vector4f(cp.V, 1), true);
 }
 
-// B_loc // T_loc'  // T_swp
-// T_loc // -B_swp' // -B_swp
-// N_loc // -N_loc' // -N_swp
+// Originally, we have Point P_abs;
+//   P_abs = F_xyz * C
+//   P_swp = F_swp * C
+//  =>
+//   P_swp = F_swp * (F_xyz^-1 * P_abs)
 //
-// We first map Point to F_loc', then to F_swp
-//
-// For point:
-//   P_abs_1 = F_loc * C
-//   P_abs_1' = F_loc' * C
-//   P_abs_2 = F_swp * C where we need to find P_abs_2
-//   =>
-//   P_abs_2 = F_swp * F_loc' * F_loc^-1 * P_abs_1
-//   and,
-//   F = [N B T V]  for profile and sweep frames
-//   C = [c1 c2 c3 1]^T
-//
-// For normal vector
-//   N1 = M_loc * C 
-//   N1' = M_loc' * C
+// For normal vector, N1 is norm in local frame
+//   N1 = M_xyz * C
 //   N2 = M_swp * C
 //   =>
-//   N2 = M_swp * M_loc' * M_loc^-1 * N1
+//   N2 = M_swp * (M_xyz^-1 * N1)
 Surface makeGenCyl(const Curve &profile, const Curve &sweep )
 {
     Surface surface;
@@ -164,7 +153,7 @@ Surface makeGenCyl(const Curve &profile, const Curve &sweep )
 
     // Here you should build the surface.  See surf.h for details.
 
-    bool isSingular = true;
+    Matrix4f F_xyz_inv = Matrix4f::identity().inverse();
 
     for (size_t i = 0; i != lenSweep; ++i) {
         CurvePoint sp = sweep[i];    // sweep point
@@ -177,26 +166,21 @@ Surface makeGenCyl(const Curve &profile, const Curve &sweep )
             CurvePoint pp = profile[j];  // profile point
 
             // VV
-            Matrix4f F_loc(makeFrame(pp));
-            Matrix4f F_loc_p(
-                    F_loc.getCol(0) * -1,
-                    F_loc.getCol(2) * -1,
-                    F_loc.getCol(1),
-                    F_loc.getCol(3));
-            Vector4f P_abs_1(sp.V, 1);
-            // TODO, parenthesis doesn't matter?
+            Vector4f P_abs_1(pp.V, 1);
             // It's faster to do mat-vec product first
-            Vector4f P_abs_2 = F_swp * (
-                    F_loc_p * (F_loc.inverse(&isSingular) * P_abs_1));
+            Vector4f P_swp = F_swp * (F_xyz_inv * P_abs_1);
 #ifdef DEBUG
-            assert(!isSingular);
-#endif
-            VV.push_back(P_abs_2.xyz());
+            cout << "P_abs_1: " << endl;
+            P_abs_1.print();
+            cout << "P_swp: " << endl;
+            P_swp.print();
+#endif 
+            VV.push_back(P_swp.xyz());
 
             // VN
-            Vector3f N = F_swp.getSubmatrix3x3(0, 0) *
-                (F_loc_p.getSubmatrix3x3(0, 0) * 
-                 (F_loc.getSubmatrix3x3(0, 0).inverse() * sp.N));
+            Vector3f N = 
+                F_swp.getSubmatrix3x3(0,0) *
+                (F_xyz_inv.getSubmatrix3x3(0,0) * pp.N);
             N *= -1;  // reverse for pointing out
             VN.push_back(N);
         }
