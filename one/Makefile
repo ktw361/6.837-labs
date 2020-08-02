@@ -6,7 +6,7 @@ LINKFLAGS += -L ../vecmath/lib -lvecmath
 
 # CFLAGS    = -Wall -ansi -DSOLN
 CFLAGS    = -Wall -std=c++11 -DSOLN
-DEBUG 	 ?= 1
+DEBUG 	 ?= 0
 ifeq ($(DEBUG), 1)
 	CFLAGS += -O0 -g -DDEBUG
 else

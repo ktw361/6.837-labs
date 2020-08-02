@@ -1,8 +1,10 @@
-#include <cassert>
 #include "curve.h"
 #include "extra.h"
 #ifdef WIN32
 #include <windows.h>
+#endif
+#ifdef DEBUG
+#include <cassert>
 #endif
 #include <GL/gl.h>
 using namespace std;
@@ -55,14 +57,15 @@ Curve evalCommon( const vector< Vector3f >& P,
             Vector4f dT(0, 1, 2*_t, 3*_t*_t);
 
             Vector3f Vert = (G * B * T).xyz();
-            Vector3f Tang = (G * B * dT).xyz().normalized();
+            Vector3f Tang = (G * B * dT).xyz();
+            Tang = Tang.normalized();
             // Test B_0, until parallel to T1: add 1 unit to a axis
             if (t == 0) {
-                for (   int i = 0;
+                for (   int l = 0;
                         approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO);
                         ++i
                     ) {
-                    Bino[i%3] += 1;
+                    Bino[l%3] += 1;
                     Bino = Bino.normalized();
                 }
 #ifdef DEBUG
@@ -70,9 +73,16 @@ Curve evalCommon( const vector< Vector3f >& P,
                 assert(!approx(Vector3f::cross(Bino, Tang), Vector3f::ZERO));
 #endif 
             }
-            Vector3f Norm = (Bino * Tang).normalized();
-            Vector3f Bino = (Tang * Norm).normalized();
+            Vector3f Norm = Vector3f::cross(Bino, Tang).normalized();
+            Vector3f Bino = Vector3f::cross(Tang, Norm).normalized();
             result.push_back( {Vert, Tang, Norm, Bino} );
+#ifdef DEBUG
+            printf("curve[%lu]:\n", i*(step_end-step_bgn) + t);
+            printf("\tV = %.2f %.2f %.2f\n", Vert[0], Vert[1], Vert[2]);
+            printf("\tT = %.2f %.2f %.2f\n", Tang[0], Tang[1], Tang[2]);
+            printf("\tN = %.2f %.2f %.2f\n", Norm[0], Norm[1], Norm[2]);
+            printf("\tB = %.2f %.2f %.2f\n", Bino[0], Bino[1], Bino[2]);
+#endif
         }
     }
     return result;
@@ -87,7 +97,7 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
         exit( 0 );
     }
 
-    // TODO:
+    // My code here:
     // You should implement this function so that it returns a Curve
     // (e.g., a vector< CurvePoint >).  The variable "steps" tells you
     // the number of points to generate on each piece of the spline.
@@ -111,17 +121,6 @@ Curve evalBezier( const vector< Vector3f >& P, unsigned steps )
                0,  0, 3, -3,
                0,  0, 0,  1);
     return evalCommon(P, B, 3, 0, steps, steps);
-
-    // cerr << "\t>>> evalBezier has been called with the following input:" << endl;
-
-    // cerr << "\t>>> Control points (type vector< Vector3f >): "<< endl;
-    // for( unsigned i = 0; i < P.size(); ++i )
-    // {
-    //     cerr << "\t>>> " << P[i] << endl;
-    // }
-
-    // cerr << "\t>>> Steps (type steps): " << steps << endl;
-    // cerr << "\t>>> Returning empty curve." << endl;
 }
 
 Curve evalBspline( const vector< Vector3f >& P, unsigned steps )
@@ -133,7 +132,7 @@ Curve evalBspline( const vector< Vector3f >& P, unsigned steps )
         exit( 0 );
     }
 
-    // TODO:
+    // My code here:
     // It is suggested that you implement this function by changing
     // basis from B-spline to Bezier.  That way, you can just call
     // your evalBezier function.
@@ -146,20 +145,6 @@ Curve evalBspline( const vector< Vector3f >& P, unsigned steps )
     B /= 6.0f;
 
     return evalCommon(P, B, 1, 0, steps, steps);
-
-    // cerr << "\t>>> evalBSpline has been called with the following input:" << endl;
-
-    // cerr << "\t>>> Control points (type vector< Vector3f >): "<< endl;
-    // for( unsigned i = 0; i < P.size(); ++i )
-    // {
-    //     cerr << "\t>>> " << P[i] << endl;
-    // }
-
-    // cerr << "\t>>> Steps (type steps): " << steps << endl;
-    // cerr << "\t>>> Returning empty curve." << endl;
-
-    // // Return an empty curve right now.
-    // return Curve();
 }
 
 Curve evalCircle( float radius, unsigned steps )

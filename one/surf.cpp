@@ -1,5 +1,9 @@
 #include "surf.h"
 #include "extra.h"
+#ifdef DEBUG
+#include <cstdio>
+#include <cassert>
+#endif
 using namespace std;
 
 namespace
@@ -13,7 +17,13 @@ namespace
             if (profile[i].V[2] != 0.0 ||
                 profile[i].T[2] != 0.0 ||
                 profile[i].N[2] != 0.0)
+#ifdef DEBUG
+                printf("profile[%u]: Vz=%f, Tz=%f, Nz=%f\n",
+                        i, profile[i].V[2], profile[i].T[2],
+                        profile[i].N[2]);
+#else
                 return false;
+#endif
     
         return true;
     }
@@ -22,6 +32,10 @@ namespace
 Surface makeSurfRev(const Curve &profile, unsigned steps)
 {
     Surface surface;
+    auto & VV = surface.VV;
+    auto & VN = surface.VN;
+    auto & VF = surface.VF;
+    size_t len_profile = profile.size();
     
     if (!checkFlat(profile))
     {
@@ -29,10 +43,62 @@ Surface makeSurfRev(const Curve &profile, unsigned steps)
         exit(0);
     }
 
-    // TODO: Here you should build the surface.  See surf.h for details.
+    // Here you should build the surface.  See surf.h for details.
 
-    cerr << "\t>>> makeSurfRev called (but not implemented).\n\t>>> Returning empty surface." << endl;
- 
+    // Build VV and VN
+    for (size_t i = 0; i != steps; ++i) {
+        bool isSingular = true;
+        float ang = i * 2*M_PI / (float)steps;
+        Matrix3f Ry = Matrix3f::rotateY(ang);  // by default counterclock
+        Matrix3f Ry_inv_t = Ry.inverse(&isSingular).transposed();
+#ifdef DEBUG
+        assert(!isSingular);
+#endif
+        for (size_t j = 0; j != len_profile; ++j) {
+            Vector3f V = Ry * profile[j].V;
+            // -1 reverses the norm so that it points OUT of face
+            // Note, put -1 outside parenthesis, 
+            //  otherwise N_0 will be zero, weird behavior
+            Vector3f N = -1 * (Ry_inv_t * profile[j].N);
+            VV.push_back(V);
+            VN.push_back(N);
+        }
+    }
+#ifdef DEBUG
+    for (size_t i = 0; i != VN.size(); ++i)
+        printf("V[%lu]: %.2f %.2f %.2f\n",
+                i, VV[i][0], VV[i][1], VV[i][2]);
+    for (size_t i = 0; i != VN.size(); ++i)
+        printf("N[%lu]: %.2f %.2f %.2f\n",
+                i, VN[i][0], VN[i][1], VN[i][2]);
+#endif
+
+    // Build VF for face, two triangles per quadrilateral
+    //  The -1 in inner loop is important! Only N-1 triangles
+    for (size_t i = 0; i != steps; ++i) {
+        for (size_t j = 0; j != len_profile - 1; ++j) {
+            // Top-left triangle
+            unsigned i1 = i * len_profile + j,
+                     i2 = i * len_profile + j + 1,
+                     i3 = (i+1) * len_profile + j;  // counterclock index
+            i3 = (i != steps-1) ? i3 : j;
+            VF.push_back({i1, i2, i3});
+#ifdef DEBUG
+            printf("F[%lu]: %d, %d, %d\n", VF.size(), i1, i2, i3);
+#endif
+            // Bottom right triangle
+            i1 = (i+1) * len_profile + j;
+            i2 = i * len_profile + j + 1;
+            i3 = (i+1) * len_profile + j + 1;
+            i1 = (i != steps-1) ? i1 : j;
+            i3 = (i != steps-1) ? i3 : j+1;
+            VF.push_back({i1, i2, i3});
+#ifdef DEBUG
+            printf("F[%lu]: %d, %d, %d\n", VF.size(), i1, i2, i3);
+#endif
+        }
+    }
+
     return surface;
 }
 

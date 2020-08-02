@@ -5,7 +5,7 @@ LINKFLAGS  = -lglut -lGL -lGLU
 LINKFLAGS += -L ../vecmath/lib -lvecmath
 
 CFLAGS    = -O2 -std=c++11
-DEBUG 	 ?= 1
+DEBUG 	 ?= 0
 ifeq ($(DEBUG), 1)
 	CFLAGS += -O0 -g -DDEBUG
 else
