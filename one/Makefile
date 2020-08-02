@@ -4,7 +4,13 @@ INCFLAGS += -I ../vecmath/include
 LINKFLAGS = -lglut -lGL -lGLU
 LINKFLAGS += -L ../vecmath/lib -lvecmath
 
-CFLAGS    = -O2 -Wall -ansi -DSOLN
+CFLAGS    = -Wall -ansi -DSOLN
+DEBUG 	 ?= 1
+ifeq ($(DEBUG), 1)
+	CFLAGS += -O0 -g -DDEBUG
+else
+	CFLAGS += -O2
+endif
 CC        = g++
 SRCS      = main.cpp parse.cpp curve.cpp surf.cpp camera.cpp
 OBJS      = $(SRCS:.cpp=.o)
