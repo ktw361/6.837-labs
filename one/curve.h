@@ -38,6 +38,10 @@ Curve evalBezier( const std::vector< Vector3f >& P, unsigned steps );
 // Bsplines only require that there are at least 4 control points.
 Curve evalBspline( const std::vector< Vector3f >& P, unsigned steps );
 
+// Cammull-Roms require that there are at least 4 control points,
+// and an extra parameter tau, usually 0.5 
+Curve evalCatmullRom( const std::vector< Vector3f >& P, unsigned steps, float tau );
+
 // Create a circle on the xy-plane of radius and steps
 Curve evalCircle( float radius, unsigned steps);
 

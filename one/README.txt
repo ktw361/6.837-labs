@@ -11,7 +11,4 @@ makeGenCyl()
    the key is to make sure what is changing & what is not changing,
    e.g., if sweep coor match xyz, then Coefficient C is not chaning.
 
-Artifacts: created in swp/artif{1,2,3}.swp
-
-TODO
-3. extra credits, maybe easy?
+Artifacts: created in swp/artif{1,2,3}.swp, using `idraw`

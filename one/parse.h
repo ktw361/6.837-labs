@@ -12,19 +12,22 @@
    A SWP file allows you to describe spline curves and swept surfaces.
    To specify a curve, you use the following syntax:
 
-   TYPE NAME STEPS NUMPOINTS
+   TYPE NAME [OPTION] STEPS NUMPOINTS
    [ CONTROLPOINT ]
    [ CONTROLPOINT ]
    ...
 
    ---CURVES---
    
-   TYPE can be Bez2, Bez3, Bsp2, Bsp3 which specify Bezier/Bspline
-   curves in 2/3 dimensions.
+   TYPE can be Bez2, Bez3, Cr2, Bsp2, Bsp3, Cr3 
+   which specify Bezier/Bspline/CatmullRom curves in 2/3 dimensions.
 
    NAME is just a term that can be used later to refer to the curve.
    You can create an anonymous curve by giving '.' (period) as the
    name.
+
+   OPTION is for cr2/cr3 only, in which OPTION stands for tau.
+   tau controls how sharply the curve bends at the control points.
 
    STEPS controls how finely the curve is discretized.  Specifically,
    each cubic piece (not the whole curve) will be discretized into

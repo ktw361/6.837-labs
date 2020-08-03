@@ -147,6 +147,28 @@ Curve evalBspline( const vector< Vector3f >& P, unsigned steps )
     return evalCommon(P, B, 1, 0, steps, steps);
 }
 
+// Extra credits(easy)
+// Catmull-Rom
+//  tunable parameter tau
+// http://graphics.cs.cmu.edu/nsp/course/15-462/Fall04/assts/catmullRom.pdf
+Curve evalCatmullRom( const vector< Vector3f >& P, 
+                      unsigned steps, 
+                      float tau = 0.5f)
+{
+    // Check
+    if( P.size() < 4 )
+    {
+        cerr << "evalCatmullRom must be called with 4 or more control points." << endl;
+        exit( 0 );
+    }
+    Matrix4f B(0, -tau,  2*tau, -tau,
+               1,    0,  tau-3, 2-tau,
+               0,  tau, 3-2*tau, tau-2,
+               0,    0,   -tau,   tau);
+
+    return evalCommon(P, B, 1, 0, steps, steps);
+}
+
 Curve evalCircle( float radius, unsigned steps )
 {
     // This is a sample function on how to properly initialize a Curve

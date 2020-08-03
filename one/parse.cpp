@@ -116,6 +116,16 @@ bool parseFile(istream &in,
             dims.push_back(2);
             if (named) curveIndex[objName] = dims.size()-1;
         }
+        else if (objType == "cr2")
+        {
+            cerr << " reading cr2 " << "[" << objName << "]" << endl;
+            float tau;
+            in >> tau >> steps;
+            curves.push_back( evalCatmullRom(cpsToAdd = readCps(in, 2), steps, tau) );
+            curveNames.push_back(objName);
+            dims.push_back(2);
+            if (named) curveIndex[objName] = dims.size()-1;
+        }
         else if (objType == "bez3")
         {
             cerr << " reading bez3 " << "[" << objName << "]" << endl;
@@ -131,6 +141,16 @@ bool parseFile(istream &in,
             cerr << " reading bsp3 " << "[" << objName << "]" << endl;
             in >> steps;
             curves.push_back( evalBspline(cpsToAdd = readCps(in, 3), steps) );
+            curveNames.push_back(objName);
+            dims.push_back(3);
+            if (named) curveIndex[objName] = dims.size()-1;
+        }
+        else if (objType == "cr3")
+        {
+            cerr << " reading cr3 " << "[" << objName << "]" << endl;
+            float tau;
+            in >> tau >> steps;
+            curves.push_back(evalCatmullRom(cpsToAdd = readCps(in, 3), steps, tau));
             curveNames.push_back(objName);
             dims.push_back(3);
             if (named) curveIndex[objName] = dims.size()-1;
