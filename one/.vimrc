@@ -5,7 +5,9 @@ set path+=../vecmath/include
 " .gl_tags: generated from `ctags -f .gl_tags --c++-kinds=+p  -R /usr/include/GL/`
 set tags+=.gl_tags
 
-nnoremap <F4> :w<cr>:AsyncRun make DEBUG=1<cr>
-nnoremap <F5> :w<cr>:AsyncRun make DEBUG=1 && ./a1 swp/core.swp<CR>
-nnoremap <F6> :w<cr>:AsyncRun make DEBUG=1 && ./a1 swp/mycore.swp<CR>
-" nnoremap <F6> :w<cr>:AsyncRun make && ./a0 < garg.obj<CR>
+let $ARGS = "swp/core.swp"
+let $MYARGS = "swp/mycore.swp"
+let $DEBUG = 1
+nnoremap <F4> :AsyncRun -save=1 -auto= make DEBUG=$DEBUG && echo "DEBUG="$DEBUG<cr>
+nnoremap <F5> :AsyncRun -save=1 -program=make -auto= DEBUG=$DEBUG && ./a1 $ARGS<cr>
+nnoremap <F6> :AsyncRun -save=1 -program=make -auto= DEBUG=$DEBUG && ./a1 $MYARGS<cr>
