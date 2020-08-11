@@ -25,7 +25,8 @@ int main( int argc, char* argv[] )
 	if( argc < 2 )
 	{
 		cout << "Usage: " << argv[ 0 ] << " PREFIX" << endl;
-		cout << "For example, if you're trying to load data/cheb.skel, data/cheb.obj, and data/cheb.attach, run with: " << argv[ 0 ] << " data/cheb" << endl;
+		cout << "For example, if you're trying to load data/cheb.skel, data/cheb.obj, and data/cheb.attach, run with: " 
+            << argv[ 0 ] << " data/cheb" << endl;
 		return -1;
 	}
 
@@ -42,7 +43,11 @@ int main( int argc, char* argv[] )
 	const int NUM_JOINTS = 18;
 
 	ModelerControl controls[ NUM_JOINTS*3 ];
-	string jointNames[NUM_JOINTS]={ "Root", "Chest", "Waist", "Neck", "Right hip", "Right leg", "Right knee", "Right foot", "Left hip", "Left leg", "Left knee", "Left foot", "Right collarbone", "Right shoulder", "Right elbow", "Left collarbone", "Left shoulder", "Left elbow" };
+	string jointNames[NUM_JOINTS] ={ 
+        "Root", "Chest", "Waist", "Neck", "Right hip", "Right leg", "Right knee", 
+        "Right foot", "Left hip", "Left leg", "Left knee", "Left foot", "Right collarbone", 
+        "Right shoulder", "Right elbow", "Left collarbone", "Left shoulder", "Left elbow" 
+    };
 	for(unsigned int i = 0; i < NUM_JOINTS; i++)
 	{
 		char buf[255];

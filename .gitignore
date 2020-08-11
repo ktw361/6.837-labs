@@ -6,10 +6,13 @@ contents/assignments/*.tgz
 
 .tags
 
-# For assignment 0
+# Assignment 0
 zero/a0
 zero/.gl_tags
 zero/.gdb_history
 
 # Assignment 1
 one/a1
+
+# Assignment 2
+two/a2
