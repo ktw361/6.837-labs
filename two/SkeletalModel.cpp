@@ -202,6 +202,15 @@ void SkeletalModel::computeBindWorldToJointTransforms()
 	//
 	// This method should update each joint's bindWorldToJointTransform.
 	// You will need to add a recursive helper function to traverse the joint hierarchy.
+    std::function<void(Joint*)> bfs = [&, this](Joint *jt) -> void {
+        m_matrixStack.push(jt->transform);
+        // bindWorldToJointTransform = B^-1
+        jt->bindWorldToJointTransform = m_matrixStack.top().inverse();
+        for (auto it = jt->children.begin(); it != jt->children.end(); ++it) 
+            bfs(*it);
+        m_matrixStack.pop();
+    };
+    bfs(m_rootJoint);
 }
 
 void SkeletalModel::updateCurrentJointToWorldTransforms()
@@ -214,6 +223,15 @@ void SkeletalModel::updateCurrentJointToWorldTransforms()
 	//
 	// This method should update each joint's bindWorldToJointTransform.
 	// You will need to add a recursive helper function to traverse the joint hierarchy.
+    std::function<void(Joint*)> bfs = [&, this](Joint *jt) -> void {
+        m_matrixStack.push(jt->transform);
+        // bindWorldToJointTransform = B^-1
+        jt->bindWorldToJointTransform = m_matrixStack.top();
+        for (auto it = jt->children.begin(); it != jt->children.end(); ++it) 
+            bfs(*it);
+        m_matrixStack.pop();
+    };
+    bfs(m_rootJoint);
 }
 
 void SkeletalModel::updateMesh()
