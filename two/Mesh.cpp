@@ -56,9 +56,9 @@ void Mesh::draw()
         Vector3f v12 = v2 - v1, v13 = v3 - v1, 
                  v21 = -v12, v23 = v3 - v2,
                  v31 = -v13, v32 = -v23,
-                 vn1 = Vector3f::cross(v12, v13),
-                 vn2 = Vector3f::cross(v23, v21),
-                 vn3 = Vector3f::cross(v31, v32);
+                 vn1 = Vector3f::cross(v12, v13).normalized(),
+                 vn2 = Vector3f::cross(v23, v21).normalized(),
+                 vn3 = Vector3f::cross(v31, v32).normalized();
         ::glNormal(vn1);
         ::glVertex(v1);
         ::glNormal(vn2);
