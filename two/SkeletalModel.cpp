@@ -124,11 +124,13 @@ void SkeletalModel::drawSkeleton( )
 	// Draw boxes between the joints. 
     // You will need to add a recursive helper function to traverse the joint hierarchy.
     std::function<void(Joint*)> bfs = [&, this](Joint *jt) -> void {
-        m_matrixStack.push(jt->transform);
         Vector3f offset = jt->transform.getCol(3).xyz(); // from parent to jt
-        // There're two ways, one is by rotation, another one is by Matrix of Basis,
-        // we use the latter.
         float dis = offset.abs();
+        // There're two ways, one is by rotation, another one is by Matrix of Basis,
+        // we use the Change of Basis.
+        // 
+        // We're still at parent's transform frame,
+        // new Z-axis points from parent to children
         auto new_frame = Matrix4f::identity();
         Vector3f rnd(0, 0, 1.0f),
                  z = offset.normalized(),
@@ -137,7 +139,6 @@ void SkeletalModel::drawSkeleton( )
         new_frame.setSubmatrix3x3(0, 0, Matrix3f(x, y, z, true));
         auto scale = Matrix4f::scaling(0.05f, 0.05f, dis),
              trans = Matrix4f::translation(0, 0, 0.5f);
-        m_matrixStack.push(Matrix4f::translation(-offset));
         m_matrixStack.push(new_frame);
         m_matrixStack.push(scale);
         m_matrixStack.push(trans);
@@ -146,21 +147,22 @@ void SkeletalModel::drawSkeleton( )
         m_matrixStack.pop();
         m_matrixStack.pop();
         m_matrixStack.pop();
-        m_matrixStack.pop();
         //
-        // The `rotation` way
+        // The `rotation` way, somewhat different result
         //
         // Vector3f origin(0, 0, 1.0f);
         // auto dir = Vector3f::cross(origin, offset);
         // float radians = acos(Vector3f::dot(origin.normalized(), offset.normalized()));
-        // m_matrixStack.push(Matrix4f::translation(-offset / 2));
         // m_matrixStack.push(Matrix4f::rotation(dir, radians));
         // m_matrixStack.push(Matrix4f::scaling(0.05f, 0.05f, dis));
+        // m_matrixStack.push(Matrix4f::translation(0, 0, 0.5f));
         // glLoadMatrixf(m_matrixStack.top());
         // glutSolidCube(1.0f);
         // m_matrixStack.pop();
         // m_matrixStack.pop();
         // m_matrixStack.pop();
+
+        m_matrixStack.push(jt->transform);
         for (auto it = jt->children.begin(); it != jt->children.end(); ++it)
             bfs(*it);
         m_matrixStack.pop();
@@ -176,6 +178,17 @@ void SkeletalModel::setJointTransform(int jointIndex, float rX, float rY, float 
 {
 	// Set the rotation part of the joint's transformation matrix 
     // based on the passed in Euler angles.
+    static auto tuned = vector<bool>(m_joints.size(), false);
+    static auto ori_trans = vector<Matrix4f>(m_joints.size(), Matrix4f::identity());
+    if (!tuned[jointIndex]) {
+        ori_trans[jointIndex] = m_joints[jointIndex]->transform;
+        tuned[jointIndex] = true;
+    }
+    auto Rx = Matrix4f::rotateX(rX),
+         Ry = Matrix4f::rotateY(rY),
+         Rz = Matrix4f::rotateZ(rZ);
+    m_joints[jointIndex]->transform = 
+        ori_trans[jointIndex] * Rx * Ry * Rz;
 }
 
 
