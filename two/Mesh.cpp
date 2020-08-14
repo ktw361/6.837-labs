@@ -3,8 +3,6 @@
 using namespace std;
 
 namespace {
-    const size_t numJoints = 18;
-
     // These are convenience functions which allow us to call OpenGL 
     // methods on Vec3d objects
     inline void glVertex(const Vector3f &a) 
@@ -84,7 +82,7 @@ void Mesh::loadAttachments( const char* filename, int numJoints )
     while(getline(istrm, buf)) {
         stringstream ss(buf);
         vector<float> at(numJoints, 0);
-        for (size_t i = 0; i != numJoints-1; ++i)
+        for (int i = 0; i != numJoints-1; ++i)
             ss >> at[i+1];
         attachments.push_back(at);
     }

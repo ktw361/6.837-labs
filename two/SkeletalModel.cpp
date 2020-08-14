@@ -63,15 +63,6 @@ void SkeletalModel::loadSkeleton( const char* filename )
         joint->transform = Matrix4f::translation(f1, f2, f3);
         // Assuming joints occurs in accending order!
         if (index == -1) {
-            joint->currentJointToWorldTransform = joint->transform;
-#ifdef DEBUG
-            bool isSingular;
-            joint->bindWorldToJointTransform = 
-                joint->transform.inverse(&isSingular);
-            assert(!isSingular);
-#else
-            join->bindWorldToJointTransform = joint->transform.inverse();
-#endif
             m_rootJoint = joint;
         } else {
 #ifdef DEBUG
@@ -80,17 +71,6 @@ void SkeletalModel::loadSkeleton( const char* filename )
             Joint *parent = m_joints[index];
 #endif
             parent->children.push_back(joint);
-            joint->currentJointToWorldTransform = 
-                parent->currentJointToWorldTransform * joint->transform;
-#ifdef DEBUG
-            bool isSingular;
-            joint->bindWorldToJointTransform = 
-                joint->currentJointToWorldTransform.inverse(&isSingular);
-            assert(!isSingular);
-#else
-            joint->bindWorldToJointTransform = 
-                joint->currentJointToWorldTransform.inverse();
-#endif
         }
         m_joints.push_back(joint);
     }
@@ -116,6 +96,7 @@ void SkeletalModel::drawJoints( )
             bfs(*it);
         m_matrixStack.pop();
     };
+    // We have cameraMatrix here, hence we must not clear()
     bfs(m_rootJoint);
 }
 
@@ -167,6 +148,7 @@ void SkeletalModel::drawSkeleton( )
             bfs(*it);
         m_matrixStack.pop();
     };
+    // We have cameraMatrix here, hence we must not clear()
     m_matrixStack.push(m_rootJoint->transform);
     for (auto it = m_rootJoint->children.begin();
             it != m_rootJoint->children.end();
@@ -210,6 +192,7 @@ void SkeletalModel::computeBindWorldToJointTransforms()
             bfs(*it);
         m_matrixStack.pop();
     };
+    m_matrixStack.clear(); // We don't need the cameraMatrix
     bfs(m_rootJoint);
 }
 
@@ -221,16 +204,17 @@ void SkeletalModel::updateCurrentJointToWorldTransforms()
 	// The current pose is defined by the rotations you've applied to the
 	// joints and hence needs to be *updated* every time the joint angles change.
 	//
-	// This method should update each joint's bindWorldToJointTransform.
+	// This method should update each joint's bindWorldToJointTransform
+    // (*fix*: currentJointToWorldTransform).
 	// You will need to add a recursive helper function to traverse the joint hierarchy.
     std::function<void(Joint*)> bfs = [&, this](Joint *jt) -> void {
         m_matrixStack.push(jt->transform);
-        // bindWorldToJointTransform = B^-1
-        jt->bindWorldToJointTransform = m_matrixStack.top();
+        jt->currentJointToWorldTransform = m_matrixStack.top();
         for (auto it = jt->children.begin(); it != jt->children.end(); ++it) 
             bfs(*it);
         m_matrixStack.pop();
     };
+    m_matrixStack.clear(); // We don't need the cameraMatrix
     bfs(m_rootJoint);
 }
 
@@ -241,5 +225,28 @@ void SkeletalModel::updateMesh()
 	// given the current state of the skeleton.
 	// You will need both the bind pose world --> joint transforms.
 	// and the current joint --> world transforms.
+
+    // Some notes:
+    //  1. Matrix4f does not support `+`, also no scalar multiplication.
+    //  2. Distinguish between point( [x,y,z,1] ) and vector ( [x,y,z,0] )
+    const size_t numVertices = m_mesh.bindVertices.size();
+    const size_t numJoints = m_joints.size();
+    for (size_t i = 0; i != numVertices; ++i) {
+        Vector4f p_bind(m_mesh.bindVertices[i], 1.0f); // 1.0f indicats a POINT
+        // p_i = \sum_j w_ij T_j * B^-1_j * p_i
+        Vector4f b1, b2, b3, b4; 
+        for (size_t j = 0; j != numJoints; ++j) {
+            float wij = m_mesh.attachments[i][j];
+            Matrix4f bind2Joint = m_joints[j]->bindWorldToJointTransform,
+                     joint2World = m_joints[j]->currentJointToWorldTransform;
+            Matrix4f M = joint2World * bind2Joint;
+            b1 = b1 + wij * M.getCol(0);
+            b2 = b2 + wij * M.getCol(1);
+            b3 = b3 + wij * M.getCol(2);
+            b4 = b4 + wij * M.getCol(3);
+        }
+        Vector4f deform = Matrix4f(b1, b2, b3, b4) * p_bind; 
+        m_mesh.currentVertices[i] = deform.xyz();
+    }
 }
 
