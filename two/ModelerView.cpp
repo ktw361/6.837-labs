@@ -22,7 +22,11 @@ ModelerView::ModelerView(int x, int y, int w, int h,
     m_camera->SetCenter( Vector3f( 0.5, 0.5, 0.5 ) );
 
 	m_drawAxes = true;
+#ifdef DEBUG
+	m_drawSkeleton = false;
+#else
 	m_drawSkeleton = true;
+#endif
 }
 
 // If you want to load files, etc, do that here.

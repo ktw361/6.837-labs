@@ -51,48 +51,48 @@ void SkeletalModel::loadSkeleton( const char* filename )
     std::ifstream istrm(filename, std::ios::in);
     if (!istrm.is_open()) {
         std::cerr << "Failed to open " << filename << std::endl;
-    } else {
-        string buf;
-        while(getline(istrm, buf)) {
-            stringstream ss(buf);
-            float f1, f2, f3;
-            int index;
-            ss >> f1 >> f2 >> f3 >> index;
-            Joint *joint = new Joint;
-            joint->transform = Matrix4f::translation(f1, f2, f3);
-            // Assuming joints occurs in accending order!
-            if (index == -1) {
-                joint->currentJointToWorldTransform = joint->transform;
+        return;
+    }
+    string buf;
+    while(getline(istrm, buf)) {
+        stringstream ss(buf);
+        float f1, f2, f3;
+        int index;
+        ss >> f1 >> f2 >> f3 >> index;
+        Joint *joint = new Joint;
+        joint->transform = Matrix4f::translation(f1, f2, f3);
+        // Assuming joints occurs in accending order!
+        if (index == -1) {
+            joint->currentJointToWorldTransform = joint->transform;
 #ifdef DEBUG
-                bool isSingular;
-                joint->bindWorldToJointTransform = 
-                    joint->transform.inverse(&isSingular);
-                assert(!isSingular);
+            bool isSingular;
+            joint->bindWorldToJointTransform = 
+                joint->transform.inverse(&isSingular);
+            assert(!isSingular);
 #else
-                join->bindWorldToJointTransform = joint->transform.inverse();
+            join->bindWorldToJointTransform = joint->transform.inverse();
 #endif
-                m_rootJoint = joint;
-            } else {
+            m_rootJoint = joint;
+        } else {
 #ifdef DEBUG
-                Joint *parent = m_joints.at(index);
+            Joint *parent = m_joints.at(index);
 #else
-                Joint *parent = m_joints[index];
+            Joint *parent = m_joints[index];
 #endif
-                parent->children.push_back(joint);
-                joint->currentJointToWorldTransform = 
-                    parent->currentJointToWorldTransform * joint->transform;
+            parent->children.push_back(joint);
+            joint->currentJointToWorldTransform = 
+                parent->currentJointToWorldTransform * joint->transform;
 #ifdef DEBUG
-                bool isSingular;
-                joint->bindWorldToJointTransform = 
-                    joint->currentJointToWorldTransform.inverse(&isSingular);
-                assert(!isSingular);
+            bool isSingular;
+            joint->bindWorldToJointTransform = 
+                joint->currentJointToWorldTransform.inverse(&isSingular);
+            assert(!isSingular);
 #else
-                joint->bindWorldToJointTransform = 
-                    joint->currentJointToWorldTransform.inverse();
+            joint->bindWorldToJointTransform = 
+                joint->currentJointToWorldTransform.inverse();
 #endif
-            }
-            m_joints.push_back(joint);
         }
+        m_joints.push_back(joint);
     }
 }
 
