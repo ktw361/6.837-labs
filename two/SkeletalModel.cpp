@@ -26,16 +26,19 @@ void SkeletalModel::draw(Matrix4f cameraMatrix, bool skeletonVisible)
 	// (after an update() occurs, when the camera moves, the window is resized, etc)
 
 	m_matrixStack.clear();
-	m_matrixStack.push(cameraMatrix);
+    this->cameraMatrix = cameraMatrix;
 
 	if( skeletonVisible )
 	{
+        m_matrixStack.push(cameraMatrix);
 		drawJoints();
-
 		drawSkeleton();
+        m_matrixStack.pop();
 	}
 	else
 	{
+        m_matrixStack.push(this->cameraMatrix);
+
 		// Clear out any weird matrix we may have been using 
         // for drawing the bones and revert to the camera matrix.
 		glLoadMatrixf(m_matrixStack.top());
@@ -64,6 +67,7 @@ void SkeletalModel::loadSkeleton( const char* filename )
         // Assuming joints occurs in accending order!
         if (index == -1) {
             m_rootJoint = joint;
+            ini_root_trans = joint->transform;
         } else {
 #ifdef DEBUG
             Joint *parent = m_joints.at(index);
@@ -73,6 +77,7 @@ void SkeletalModel::loadSkeleton( const char* filename )
             parent->children.push_back(joint);
         }
         m_joints.push_back(joint);
+        ini_trans.push_back(joint->transform);
     }
 }
 
@@ -160,17 +165,19 @@ void SkeletalModel::setJointTransform(int jointIndex, float rX, float rY, float 
 {
 	// Set the rotation part of the joint's transformation matrix 
     // based on the passed in Euler angles.
-    static auto tuned = vector<bool>(m_joints.size(), false);
-    static auto ori_trans = vector<Matrix4f>(m_joints.size(), Matrix4f::identity());
-    if (!tuned[jointIndex]) {
-        ori_trans[jointIndex] = m_joints[jointIndex]->transform;
-        tuned[jointIndex] = true;
-    }
     auto Rx = Matrix4f::rotateX(rX),
          Ry = Matrix4f::rotateY(rY),
          Rz = Matrix4f::rotateZ(rZ);
     m_joints[jointIndex]->transform = 
-        ori_trans[jointIndex] * Rx * Ry * Rz;
+        ini_trans[jointIndex] * Rx * Ry * Rz;
+}
+
+void SkeletalModel::setRootTranslation(float tX, float tY, float tZ)
+{
+	// Set the rotation part of the joint's transformation matrix 
+    // based on the passed in Euler angles.
+    auto T = Matrix4f::translation(tX, tY, tZ);
+    ini_trans[0] = ini_root_trans * T;
 }
 
 
@@ -192,7 +199,7 @@ void SkeletalModel::computeBindWorldToJointTransforms()
             bfs(*it);
         m_matrixStack.pop();
     };
-    m_matrixStack.clear(); // We don't need the cameraMatrix
+    m_matrixStack.clear();
     bfs(m_rootJoint);
 }
 
@@ -214,7 +221,7 @@ void SkeletalModel::updateCurrentJointToWorldTransforms()
             bfs(*it);
         m_matrixStack.pop();
     };
-    m_matrixStack.clear(); // We don't need the cameraMatrix
+    m_matrixStack.clear();
     bfs(m_rootJoint);
 }
 

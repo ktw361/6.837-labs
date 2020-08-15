@@ -52,6 +52,9 @@ public:
 	// changes in the slider values
 	void setJointTransform( int jointIndex, float rX, float rY, float rZ );
 
+    // Extra credit. 
+	void setRootTranslation( float tX, float tY, float tZ );
+
 	// Part 2: Skeletal Subspace Deformation
 
 	// 2.3. Implement SSD
@@ -73,10 +76,16 @@ public:
 
 private:
 
+    // Cache cameraMatrix for redrawing joints and bones
+    Matrix4f cameraMatrix;
+
 	// pointer to the root joint
 	Joint* m_rootJoint;
 	// the list of joints.
 	std::vector< Joint* > m_joints;
+    // Initial Joint transform
+    Matrix4f ini_root_trans;
+    std::vector< Matrix4f > ini_trans;
 
 	Mesh m_mesh;
 

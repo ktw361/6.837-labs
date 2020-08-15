@@ -39,7 +39,8 @@ public:
 	void drawAxes();
 
     Camera *m_camera;
-	SkeletalModel model;
+    vector<SkeletalModel*> models;
+	/* SkeletalModel model; */
 
 	bool m_drawAxes;
 	bool m_drawSkeleton;		// if false, the mesh is drawn instead.

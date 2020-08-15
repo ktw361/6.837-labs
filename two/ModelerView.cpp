@@ -31,16 +31,22 @@ void ModelerView::loadModel(int argc, char* argv[])
 	glutInit( &argc, argv );
 
 	// Load the model based on the command-line arguments
-	string prefix = argv[ 1 ];
-	string skeletonFile = prefix + ".skel";
-	string meshFile = prefix + ".obj";
-	string attachmentsFile = prefix + ".attach";
+    for (int i = 1; i != argc; ++i) {
+        string prefix = argv[ i ];
+        string skeletonFile = prefix + ".skel";
+        string meshFile = prefix + ".obj";
+        string attachmentsFile = prefix + ".attach";
 
-	model.load(skeletonFile.c_str(), meshFile.c_str(), attachmentsFile.c_str());
+        SkeletalModel *mod = new SkeletalModel();
+        mod->load(skeletonFile.c_str(), meshFile.c_str(), attachmentsFile.c_str());
+        models.push_back(mod);
+    }
 }
 
 ModelerView::~ModelerView()
 {
+    for (size_t i = 0; i != models.size(); ++i)
+        delete models[i];
     delete m_camera;
 }
 
@@ -115,23 +121,38 @@ void ModelerView::update()
 	// update the skeleton from sliders
 	updateJoints();
 
-	// Update the bone to world transforms for SSD.
-	model.updateCurrentJointToWorldTransforms();
-
-	// update the mesh given the new skeleton
-	model.updateMesh();
+    for (auto it = models.begin(); it != models.end(); ++it) {
+        // Update the bone to world transforms for SSD.
+        (*it)->updateCurrentJointToWorldTransforms();
+        // update the mesh given the new skeleton
+        (*it)->updateMesh();
+    }
 }
 
 void ModelerView::updateJoints()
 {
-	for(unsigned int jointNo = 0; jointNo < 18; jointNo++)
-	{
-		float rx = VAL( jointNo * 3 );
-		float ry = VAL( jointNo * 3 + 1 );
-		float rz = VAL( jointNo * 3 + 2 );
+    const size_t numModels =  models.size();
+    const size_t numJoints = 18; 
 
-		model.setJointTransform(jointNo, rx, ry, rz);
-	}
+    // Follows the hierarchy, update root first.
+    //
+    for (size_t i = 0; i != numModels; ++i) {
+        float tx = VAL( numModels * numJoints * 3 + i * 3 );
+        float ty = VAL( numModels * numJoints * 3 + i * 3 + 1 );
+        float tz = VAL( numModels * numJoints * 3 + i * 3 + 2 );
+
+        models[i]->setRootTranslation(tx, ty, tz);
+    }
+
+    for (size_t i = 0; i != numModels; ++i) {
+        for(size_t jointNo = 0; jointNo < numJoints; jointNo++) {
+            float rx = VAL( i * numJoints * 3 + jointNo * 3 );
+            float ry = VAL( i * numJoints * 3 + jointNo * 3 + 1 );
+            float rz = VAL( i * numJoints * 3 + jointNo * 3 + 2 );
+
+            models[i]->setJointTransform(jointNo, rx, ry, rz);
+        }
+    }
 }
 
 // Call the draw function of the parent.  This sets up the
@@ -189,7 +210,8 @@ void ModelerView::draw()
     	drawAxes();
     }
 
-    model.draw( m_camera->viewMatrix(), m_drawSkeleton );
+    for (auto it = models.begin(); it != models.end(); ++it)
+        (*it)->draw( m_camera->viewMatrix(), m_drawSkeleton );
 }
 
 void ModelerView::drawAxes()
