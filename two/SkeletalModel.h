@@ -73,10 +73,15 @@ public:
 
 private:
 
+    // Cache cameraMatrix for redrawing joints and bones
+    Matrix4f cameraMatrix;
+
 	// pointer to the root joint
 	Joint* m_rootJoint;
 	// the list of joints.
 	std::vector< Joint* > m_joints;
+    // Initial Joint transform
+    std::vector< Matrix4f > ori_trans;
 
 	Mesh m_mesh;
 
