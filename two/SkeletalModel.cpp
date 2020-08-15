@@ -66,6 +66,7 @@ void SkeletalModel::loadSkeleton( const char* filename )
         // Assuming joints occurs in accending order!
         if (index == -1) {
             m_rootJoint = joint;
+            ini_root_trans = joint->transform;
         } else {
 #ifdef DEBUG
             Joint *parent = m_joints.at(index);
@@ -75,7 +76,7 @@ void SkeletalModel::loadSkeleton( const char* filename )
             parent->children.push_back(joint);
         }
         m_joints.push_back(joint);
-        ori_trans.push_back(joint->transform);
+        ini_trans.push_back(joint->transform);
     }
 }
 
@@ -171,7 +172,18 @@ void SkeletalModel::setJointTransform(int jointIndex, float rX, float rY, float 
          Ry = Matrix4f::rotateY(rY),
          Rz = Matrix4f::rotateZ(rZ);
     m_joints[jointIndex]->transform = 
-        ori_trans[jointIndex] * Rx * Ry * Rz;
+        ini_trans[jointIndex] * Rx * Ry * Rz;
+}
+
+void SkeletalModel::setRootTranslation(float tX, float tY, float tZ)
+{
+	// Set the rotation part of the joint's transformation matrix 
+    // based on the passed in Euler angles.
+    auto T = Matrix4f::translation(tX, tY, tZ);
+    ini_trans[0] = ini_root_trans * T;
+
+    // Now update and mesh
+    // TODO
 }
 
 

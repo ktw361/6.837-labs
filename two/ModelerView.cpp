@@ -131,8 +131,20 @@ void ModelerView::update()
 
 void ModelerView::updateJoints()
 {
-    const int numJoints = 18; 
-    for (size_t i = 0; i != models.size(); ++i) {
+    const size_t numModels =  models.size();
+    const size_t numJoints = 18; 
+
+    // Follows the hierarchy, update root first.
+    //
+    for (size_t i = 0; i != numModels; ++i) {
+        float tx = VAL( numModels * numJoints * 3 + i * 3 );
+        float ty = VAL( numModels * numJoints * 3 + i * 3 + 1 );
+        float tz = VAL( numModels * numJoints * 3 + i * 3 + 2 );
+
+        models[i]->setRootTranslation(tx, ty, tz);
+    }
+
+    for (size_t i = 0; i != numModels; ++i) {
         for(size_t jointNo = 0; jointNo < numJoints; jointNo++) {
             float rx = VAL( i * numJoints * 3 + jointNo * 3 );
             float ry = VAL( i * numJoints * 3 + jointNo * 3 + 1 );

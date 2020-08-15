@@ -41,9 +41,9 @@ int main( int argc, char* argv[] )
     // - initial slider value
 
 	const int NUM_JOINTS = 18;
-    int numModels = argc - 1;
+    size_t numModels = argc - 1;
 
-    ModelerControl *controls = new ModelerControl[numModels*NUM_JOINTS*3];
+    ModelerControl *controls = new ModelerControl[numModels*NUM_JOINTS*3 + numModels*3];
 	string jointNames[NUM_JOINTS] ={ 
         "Root", "Chest", "Waist", "Neck", "Right hip", "Right leg", "Right knee", 
         "Right foot", "Left hip", "Left leg", "Left knee", "Left foot", "Right collarbone", 
@@ -52,20 +52,33 @@ int main( int argc, char* argv[] )
     for (size_t i = 0; i < numModels; ++i) {
         for(size_t j = 0; j < NUM_JOINTS; ++j) {
             char buf[255];
-            sprintf(buf, "m[%u] %s X", i, jointNames[j].c_str());
+            sprintf(buf, "m[%lu] %s X", i, jointNames[j].c_str());
             controls[i*NUM_JOINTS*3 + j*3] = ModelerControl(buf, -M_PI, M_PI, 0.1f, 0);
-            sprintf(buf, "m[%u] %s Y", i, jointNames[j].c_str());
+            sprintf(buf, "m[%lu] %s Y", i, jointNames[j].c_str());
             controls[i*NUM_JOINTS*3 + j*3+1] = ModelerControl(buf, -M_PI, M_PI, 0.1f, 0);
-            sprintf(buf, "m[%u] %s Z", i, jointNames[j].c_str());
+            sprintf(buf, "m[%lu] %s Z", i, jointNames[j].c_str());
             controls[i*NUM_JOINTS*3 + j*3+2] = ModelerControl(buf, -M_PI, M_PI, 0.1f, 0);
         }
+    }
+    const float maxTranslation = 1.0f;
+    for (size_t i = 0; i < numModels; ++i) {
+        char buf[255];
+        sprintf(buf, "m[%lu] Translation X", i);
+        controls[numModels*NUM_JOINTS*3 + i*3] = ModelerControl(
+                buf, -maxTranslation, maxTranslation, 0.1f, 0);
+        sprintf(buf, "m[%lu] Translation Y", i);
+        controls[numModels*NUM_JOINTS*3 + i*3+1] = ModelerControl(
+                buf, -maxTranslation, maxTranslation, 0.1f, 0);
+        sprintf(buf, "m[%lu] Translation Z", i);
+        controls[numModels*NUM_JOINTS*3 + i*3+2] = ModelerControl(
+                buf, -maxTranslation, maxTranslation, 0.1f, 0);
     }
 
     ModelerApplication::Instance()->Init
 	(
 		argc, argv,
 		controls,
-		numModels*NUM_JOINTS*3
+		numModels*NUM_JOINTS*3 + numModels*3
 	);
 
     // Run the modeler application.
