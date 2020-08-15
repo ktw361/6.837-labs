@@ -30,9 +30,10 @@ void SkeletalModel::draw(Matrix4f cameraMatrix, bool skeletonVisible)
 
 	if( skeletonVisible )
 	{
+        m_matrixStack.push(cameraMatrix);
 		drawJoints();
-
 		drawSkeleton();
+        m_matrixStack.pop();
 	}
 	else
 	{
@@ -101,9 +102,7 @@ void SkeletalModel::drawJoints( )
         m_matrixStack.pop();
     };
     // We have cameraMatrix here, hence we must not clear()
-    m_matrixStack.push(cameraMatrix);
     bfs(m_rootJoint);
-    m_matrixStack.pop();
 }
 
 void SkeletalModel::drawSkeleton( )
@@ -155,12 +154,10 @@ void SkeletalModel::drawSkeleton( )
         m_matrixStack.pop();
     };
     // We have cameraMatrix here, hence we must not clear()
-    m_matrixStack.push(cameraMatrix);
     m_matrixStack.push(m_rootJoint->transform);
     for (auto it = m_rootJoint->children.begin();
             it != m_rootJoint->children.end();
             ++it) bfs(*it);
-    m_matrixStack.pop();
     m_matrixStack.pop();
 }
 
@@ -181,9 +178,6 @@ void SkeletalModel::setRootTranslation(float tX, float tY, float tZ)
     // based on the passed in Euler angles.
     auto T = Matrix4f::translation(tX, tY, tZ);
     ini_trans[0] = ini_root_trans * T;
-
-    // Now update and mesh
-    // TODO
 }
 
 
