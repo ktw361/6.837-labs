@@ -8,7 +8,7 @@
 #include <vecmath.h>
 #include "camera.h"
 
-///TODO: include more headers if necessary
+///DONE: include more headers if necessary
 
 #include "TimeStepper.hpp"
 #include "simpleSystem.h"
@@ -21,15 +21,42 @@ namespace
 
     ParticleSystem *system;
     TimeStepper * timeStepper;
+    float stepSize = 0.04f;
 
   // initialize your particle systems
-  ///TODO: read argv here. set timestepper , step size etc
+  ///DONE: read argv here. set timestepper , step size etc
   void initSystem(int argc, char * argv[])
   {
     // seed the random number generator with the current time
     srand( time( NULL ) );
     system = new SimpleSystem();
-    timeStepper = new RK4();		
+    if (argc == 1) {
+        cout << "Use RK4 by default" << endl;
+        return;
+    }
+
+    string method(argv[1]);
+    if (method == "e") {
+        cout << "Integrator: EULER" << endl;
+        timeStepper = new ForwardEuler();
+    }
+    else if (method == "t") {
+        cout << "Integrator: TRAPEZOIDAL" << endl;
+        timeStepper = new Trapzoidal();
+    }
+    else if (method == "r") {
+        cout << "Integrator: RK4" << endl;
+        timeStepper = new RK4();
+    }
+    else {
+        cerr << "TimeStepper not understood" << endl;
+        exit(0);
+    }
+    if (argc > 2) {
+        stepSize = std::atof(argv[2]);
+        cout << "Step size: " << stepSize << endl;
+
+    }
   }
 
   // Take a step forward for the particle shower
@@ -37,10 +64,9 @@ namespace
   ///and switch between different timeSteppers
   void stepSystem()
   {
-      ///TODO The stepsize should change according to commandline arguments
-    const float h = 0.04f;
+      ///DONE The stepsize should change according to commandline arguments
     if(timeStepper!=0){
-      timeStepper->takeStep(system,h);
+      timeStepper->takeStep(system, stepSize);
     }
   }
 
