@@ -48,6 +48,10 @@ namespace
         cout << "Integrator: RK4" << endl;
         timeStepper = new RK4();
     }
+    else if (method == "mr") {
+        cout << "Integrator: MyRK4" << endl;
+        timeStepper = new RK4();
+    }
     else {
         cerr << "TimeStepper not understood" << endl;
         exit(0);
