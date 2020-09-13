@@ -80,7 +80,7 @@ namespace
   }
 
   // Take a step forward for the particle shower
-  ///TODO: Optional. modify this function to display various particle systems
+  ///DONE: Optional. modify this function to display various particle systems
   ///and switch between different timeSteppers
   void stepSystem()
   {

@@ -8,7 +8,7 @@ SimpleSystem::SimpleSystem()
     m_vVecState.push_back(Vector3f(1.0f, 0, 0));
 }
 
-// TODO: implement evalF
+// DONE: implement evalF
 // for a given state, evaluate f(X,t)
 vector<Vector3f> SimpleSystem::evalF(vector<Vector3f> state)
 {

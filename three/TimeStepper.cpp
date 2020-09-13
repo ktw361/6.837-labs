@@ -32,8 +32,7 @@ void Trapzoidal::takeStep(ParticleSystem* particleSystem, float stepSize)
     particleSystem->setState(state);
 }
 
-// TODO check differences
-void MyRK4::TimeStepper::takeStep(ParticleSystem* particleSystem, float stepSize)
+void MyRK4::takeStep(ParticleSystem* particleSystem, float stepSize)
 {
     stateType state, x1=state, x2=state, x3=state,
               k1, k2, k3, k4;

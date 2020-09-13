@@ -32,7 +32,7 @@ PendulumSystem::PendulumSystem(int numParticles):ParticleSystem(numParticles)
 	}
 }
 
-// TODO: implement evalF
+// DONE: implement evalF
 // for a given state, evaluate f(X,t)
 vector<Vector3f> PendulumSystem::evalF(vector<Vector3f> state)
 {
