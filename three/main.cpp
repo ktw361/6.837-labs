@@ -12,14 +12,29 @@
 
 #include "TimeStepper.hpp"
 #include "simpleSystem.h"
+#include "pendulumSystem.h"
 
 using namespace std;
 
 // Globals here.
 namespace
 {
+    class SystemCollections {
+    public:
+        void addSys(ParticleSystem *sys) { sys_list.push_back(sys); }
+        void draw() const {
+            for (size_t i = 0; i != sys_list.size(); ++i)
+                sys_list[i]->draw();
+        }
+        void sysStep(TimeStepper *stepper, float stepSize) {
+            for (size_t i = 0; i != sys_list.size(); ++i)
+                stepper->takeStep(sys_list[i], stepSize);
+        }
+    private:
+        vector<ParticleSystem*> sys_list;
+    };
 
-    ParticleSystem *system;
+    SystemCollections sys_collections;
     TimeStepper * timeStepper;
     float stepSize = 0.04f;
 
@@ -29,7 +44,8 @@ namespace
   {
     // seed the random number generator with the current time
     srand( time( NULL ) );
-    system = new SimpleSystem();
+    sys_collections.addSys(new SimpleSystem());
+    sys_collections.addSys(new PendulumSystem(4));
     if (argc == 1) {
         cout << "Use RK4 by default" << endl;
         return;
@@ -70,7 +86,7 @@ namespace
   {
       ///DONE The stepsize should change according to commandline arguments
     if(timeStepper!=0){
-      timeStepper->takeStep(system, stepSize);
+        sys_collections.sysStep(timeStepper, stepSize);
     }
   }
 
@@ -86,7 +102,7 @@ namespace
     
     glutSolidSphere(0.1f,10.0f,10.0f);
     
-    system->draw();
+    sys_collections.draw();
     
     
     glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, floorColor);
