@@ -1,4 +1,5 @@
 command! MakeTags :AsyncRun ctags -f .tags -R . --c++-kinds=+p
+command! MakeClean :AsyncRun make clean
 
 set path+=../vecmath/include
 
@@ -7,7 +8,8 @@ set tags+=.gl_tags
 
 let $DEBUG = 1
 let $ARGS1 = "e"
-let $ARGS2 = "0.1"
+let $ARGS2 = "0.02"
+let $ARGS3 = "1"
 " nnoremap <F4> :AsyncRun -save=1 -auto= make DEBUG=$DEBUG && echo "DEBUG="$DEBUG<cr>
 nnoremap <F4> :AsyncRun -save=1 -mode=term -focus=0 -pos=right -cols=80 -program=make -auto= DEBUG=$DEBUG<cr>
-nnoremap <F5> :AsyncRun -save=1 -mode=term -focus=0 -pos=right -cols=80 -program=make -auto= DEBUG=$DEBUG && ./a3 $ARGS1 $ARGS2<cr>
+nnoremap <F5> :AsyncRun -save=1 -mode=term -focus=0 -pos=right -cols=80 -program=make -auto= DEBUG=$DEBUG && ./a3 $ARGS1 $ARGS2 $ARGS3<cr>

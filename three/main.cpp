@@ -10,6 +10,7 @@
 
 ///DONE: include more headers if necessary
 
+#include "config.h"
 #include "TimeStepper.hpp"
 #include "simpleSystem.h"
 #include "pendulumSystem.h"
@@ -36,6 +37,7 @@ namespace
 
     SystemCollections sys_collections;
     TimeStepper * timeStepper;
+    int vis_index = -1;
     float stepSize = 0.04f;
 
   // initialize your particle systems
@@ -44,8 +46,6 @@ namespace
   {
     // seed the random number generator with the current time
     srand( time( NULL ) );
-    sys_collections.addSys(new SimpleSystem());
-    sys_collections.addSys(new PendulumSystem(4));
     if (argc == 1) {
         cout << "Use RK4 by default" << endl;
         return;
@@ -77,6 +77,15 @@ namespace
         cout << "Step size: " << stepSize << endl;
 
     }
+    if (argc > 3) {
+        vis_index = std::atoi(argv[3]);
+        if (vis_index != -1)
+            cout << "Visualize particle index: " << vis_index << endl;
+    }
+
+    sys_collections.addSys(new SimpleSystem());
+    sys_collections.addSys(
+            new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index));
   }
 
   // Take a step forward for the particle shower

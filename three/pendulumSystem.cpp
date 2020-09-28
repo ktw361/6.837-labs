@@ -1,14 +1,10 @@
 #include "pendulumSystem.h"
-
-#define GravityConst 9.8f
-
-#define LENGTH 0.5f
-#define STIFFNESS 50.0f
-#define MASS 1.5f
-#define DragConst 4.0f
+#include "config.h"
+#include "common.h"
 
 // e.g, m = 4: 0, 0.5, 1.0, 1.5
-PendulumSystem::PendulumSystem(int numParticles):ParticleSystem(numParticles)
+PendulumSystem::PendulumSystem(int numParticles, int visIndex):
+    ParticleSystem(numParticles), visIndex(visIndex)
 {
 	m_numParticles = numParticles;
 
@@ -79,4 +75,13 @@ void PendulumSystem::draw()
 		glutSolidSphere(0.075f,10.0f,10.0f);
 		glPopMatrix();
 	}
+    // Draw springs 
+    if (visIndex == -1) return;
+    Vector3f start_point = getPosition(visIndex);
+    vector<int> spr_inds = particles[visIndex].spr_inds;
+    for (size_t i = 0; i != spr_inds.size(); ++i) {
+        int end_ind = springs[spr_inds[i]].getOpposite(visIndex);
+        Vector3f end_point = getPosition(end_ind);
+        drawConnectionLine(start_point, end_point);
+    }
 }

@@ -21,6 +21,9 @@ struct Spring {
     }
 };
 
+/*
+ * Each Particle stores list of spring indexes 
+ */
 struct Particle {
     float mass;
     vector<int> spr_inds;
@@ -30,13 +33,15 @@ struct Particle {
 class PendulumSystem: public ParticleSystem
 {
 public:
-	PendulumSystem(int numParticles);
+	PendulumSystem(int numParticles, int visIndex = -1);
 
 	vector<Vector3f> evalF(vector<Vector3f> state);
 	
 	void draw();
 
 private:
+    int visIndex; // Visible particle index supplied by user.
+                     //  -1 indicates none
     vector<Particle> particles;
     vector<Spring> springs;
 
