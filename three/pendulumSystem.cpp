@@ -16,14 +16,10 @@ PendulumSystem::PendulumSystem(int numParticles, int visIndex):
         m_vVecState.push_back(pos);
         m_vVecState.push_back(vel);
 
-        Particle ptl(MASS);
-        particles.push_back(ptl);
+        particles.particleAdd(MASS);
 
         if (i > 0) {
-            Spring spr(LENGTH, STIFFNESS, i-1, i);
-            particles[i-1].spr_inds.push_back(springs.size());
-            particles[i].spr_inds.push_back(springs.size());
-            springs.push_back(spr);
+            particles.springAdd(i-1, i, LENGTH, STIFFNESS);
         }
 	}
 }
@@ -43,19 +39,17 @@ vector<Vector3f> PendulumSystem::evalF(vector<Vector3f> state)
         Vector3f fx = getVelocity(i);
         Vector3f fv = Vector3f::ZERO;
 
-        fv.y() += - particles[i].mass * GravityConst;
+        fv.y() += - particles.massGet(i) * GravityConst;
         fv += - DragConst * getVelocity(i);
 
         Vector3f sprForce = Vector3f::ZERO;
-        for (size_t j = 0; j != particles[i].spr_inds.size(); ++j) {
-            Spring &spr = springs[particles[i].spr_inds[j]];
-            int ind2 = spr.getOpposite(i);
-            Vector3f d = getPosition(i) - getPosition(ind2);
-            float d_abs = d.abs();
-            sprForce += - spr.k * (d_abs - spr.r) * d.normalized();
+        vector<int> connects = particles.connects(i);
+        for (size_t j = 0; j != connects.size(); ++j) {
+            int ind2 = connects[j];
+            sprForce += particles.force(i, ind2, getPosition(i), getPosition(ind2));
         }
         fv += sprForce;
-        fv = fv / particles[i].mass;
+        fv = fv / particles.massGet(i);
         
         f.push_back(fx);
         f.push_back(fv);
@@ -78,10 +72,8 @@ void PendulumSystem::draw()
     // Draw springs 
     if (visIndex == -1) return;
     Vector3f start_point = getPosition(visIndex);
-    vector<int> spr_inds = particles[visIndex].spr_inds;
-    for (size_t i = 0; i != spr_inds.size(); ++i) {
-        int end_ind = springs[spr_inds[i]].getOpposite(visIndex);
-        Vector3f end_point = getPosition(end_ind);
-        drawConnectionLine(start_point, end_point);
+    vector<int> connects = particles.connects(visIndex);
+    for (size_t i = 0; i != connects.size(); ++i) {
+        drawConnectionLine(start_point, getPosition(connects[i]));
     }
 }
