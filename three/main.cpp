@@ -70,8 +70,8 @@ namespace
         timeStepper = new RK4();
     }
     else {
-        cerr << "TimeStepper not understood" << endl;
-        exit(0);
+        cout << "Use RK4 by default" << endl;
+        timeStepper = new RK4();
     }
     if (argc > 2) {
         stepSize = std::atof(argv[2]);
@@ -84,8 +84,8 @@ namespace
             cout << "Visualize particle index: " << vis_index << endl;
     }
 
-    /* sys_collections.addSys(new SimpleSystem()); */
-    /* sys_collections.addSys(new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index)); */
+    sys_collections.addSys(new SimpleSystem());
+    sys_collections.addSys(new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index));
     sys_collections.addSys(new ClothSystem(HEIGHT, WIDTH));
   }
 

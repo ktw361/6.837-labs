@@ -40,7 +40,7 @@ vector<Vector3f> PendulumSystem::evalF(vector<Vector3f> state)
         Vector3f fv = Vector3f::ZERO;
 
         fv.y() += - particles.massGet(i) * GravityConst;
-        fv += - DragConst * getVelocity(i);
+        fv += - VISCOUS * getVelocity(i);
 
         Vector3f sprForce = Vector3f::ZERO;
         vector<int> const &connects = particles.connects(i);
