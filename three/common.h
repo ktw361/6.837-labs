@@ -24,7 +24,7 @@ inline void display_modelview(GLfloat mat[16])
     }
 }
 
-inline void drawConnectionLine(Vector3f const &start, Vector3f const &end) {
+inline void drawSpring(Vector3f const &start, Vector3f const &end) {
     // Change of Basis.
     // 
     // new Z-axis points from start to end

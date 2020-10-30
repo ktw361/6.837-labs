@@ -20,9 +20,11 @@
 
 // Don't change 
 #define PARTICLE_INTERVAL 0.2f
+#define CLO_LENGTH PARTICLE_INTERVAL
+#define CLO_STIFFNESS 50.0f
 // End of Don't change
 
 // Size of cloth
 // TODO 3-> 13
-#define HEIGHT (3*PARTICLE_INTERVAL)
-#define WIDTH  (3*PARTICLE_INTERVAL)
+#define HEIGHT (2*PARTICLE_INTERVAL)
+#define WIDTH  (2*PARTICLE_INTERVAL)

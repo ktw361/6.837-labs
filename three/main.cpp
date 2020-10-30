@@ -14,6 +14,7 @@
 #include "TimeStepper.hpp"
 #include "simpleSystem.h"
 #include "pendulumSystem.h"
+#include "ClothSystem.h"
 
 using namespace std;
 
@@ -83,9 +84,9 @@ namespace
             cout << "Visualize particle index: " << vis_index << endl;
     }
 
-    sys_collections.addSys(new SimpleSystem());
-    sys_collections.addSys(
-            new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index));
+    /* sys_collections.addSys(new SimpleSystem()); */
+    /* sys_collections.addSys(new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index)); */
+    sys_collections.addSys(new ClothSystem(HEIGHT, WIDTH));
   }
 
   // Take a step forward for the particle shower

@@ -74,6 +74,6 @@ void PendulumSystem::draw()
     Vector3f start_point = getPosition(visIndex);
     vector<int> const &connects = particles.connects(visIndex);
     for (size_t i = 0; i != connects.size(); ++i) {
-        drawConnectionLine(start_point, getPosition(connects[i]));
+        drawSpring(start_point, getPosition(connects[i]));
     }
 }
