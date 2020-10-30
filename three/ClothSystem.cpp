@@ -110,9 +110,9 @@ vector<Vector3f> ClothSystem::evalF(vector<Vector3f> state)
             // if so, reproject back to surface, and set dv, dx to zero
             Vector3f pos = getPosition(indexOf(i,j));
             if (checkCollision(pos)) {
+                getPosition(indexOf(i,j)) = reProject(pos);
                 /* fx = Vector3f::ZERO; */
                 /* fv = Vector3f::ZERO; */
-                getPosition(indexOf(i,j)) = reProject(pos);
             }
 
             f.push_back(fx);
@@ -131,10 +131,11 @@ bool ClothSystem::checkCollision(Vector3f pos) {
 
 Vector3f ClothSystem::reProject(Vector3f pos) {
     Vector3f dir = (pos - myball.xyz()).normalized();
-    return myball.xyz() + dir * myball.w();
+    return myball.xyz() + dir * (myball.w());
 }
 
 
+float thr = 0.35f;
 // render the system
 void ClothSystem::draw() {
     // First, draw a ball for collision
@@ -144,7 +145,7 @@ void ClothSystem::draw() {
     GLfloat diff[] = {0.5, 0.9 , 0.3, 1.0};
     glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diff);
     glTranslatef(myball.x(), myball.y(), myball.z());
-    glutSolidSphere(myball.w(), 25.0f, 25.0f);
+    glutSolidSphere(myball.w()-thr, 50.0f, 50.0f);
     glPopMatrix();
 
     if (render)
@@ -154,6 +155,11 @@ void ClothSystem::draw() {
 }
 
 void ClothSystem::drawFrame() {
+    // Coloring
+    glColorMaterial( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
+    GLfloat diff[] = {0.5, 0.5 , 0.9, 1.0};
+    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diff);
+
 	for (int i = 0; i < m_numParticles; i++) {
 		Vector3f pos; //  position of particle i. YOUR CODE HERE
         pos = getPosition(i);
