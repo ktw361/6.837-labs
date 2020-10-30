@@ -12,7 +12,7 @@ PendulumSystem::PendulumSystem(int numParticles, int visIndex):
 	for (int i = 0; i < m_numParticles; i++) {
 		
 		// for this system, we care about the position and the velocity
-        Vector3f pos(LENGTH * i, 0, 0), vel(0, 0, 0);
+        Vector3f pos(PARTICLE_START_DIST * i, 0, 0), vel(0, 0, 0);
         m_vVecState.push_back(pos);
         m_vVecState.push_back(vel);
 
