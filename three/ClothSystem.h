@@ -8,6 +8,7 @@
 #include "particleSystem.h"
 #include "common.h"
 
+
 class ClothSystem: public ParticleSystem
 {
 ///ADD MORE FUNCTION AND FIELDS HERE
@@ -28,8 +29,8 @@ private:
 
     // Helper functions
     //
-    Vector3f getPosition(int ind) { return m_vVecState[2*ind]; }
-    Vector3f getVelocity(int ind) { return m_vVecState[2*ind+1]; }
+    Vector3f &getPosition(int ind) { return m_vVecState[2*ind]; }
+    Vector3f &getVelocity(int ind) { return m_vVecState[2*ind+1]; }
 
     int indexOf(size_t i, size_t j) {
         if (i < 0 || i >= num_rows || j < 0 || j >= num_cols) {
@@ -45,6 +46,12 @@ private:
     bool wind;
 	void drawFrame();
 	void drawCloth();
+
+    // Collision system
+    Vector4f myball;
+    bool checkCollision(Vector3f pos);
+    //  re-project onto surface of ball, given the position of a particle
+    Vector3f reProject(Vector3f pos);
 };
 
 #endif

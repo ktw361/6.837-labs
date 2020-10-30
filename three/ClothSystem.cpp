@@ -1,5 +1,5 @@
 #include <cstdio>
-#include "vecmath.h"
+#include <vecmath.h>
 
 #include "ClothSystem.h"
 #include "config.h"
@@ -9,13 +9,13 @@
 ClothSystem::ClothSystem(float height, float width):
     num_rows(static_cast<size_t>(height/PARTICLE_INTERVAL + 1)),
     num_cols(static_cast<size_t>(width/PARTICLE_INTERVAL + 1)),
-    render(true), swing(false), wind(false)
+    render(true), swing(false), wind(false),
+    myball(Vector4f(BALL_X, BALL_Y, BALL_Z, BALL_SIZE))
 {
     m_numParticles = num_rows * num_cols;
 
     for (size_t i = 0; i < num_rows; ++i) {
         for (size_t j = 0; j < num_cols; ++j) {
-
             Vector3f pos(PARTICLE_INTERVAL * j, 0, PARTICLE_INTERVAL * i),
                      vel(0, 0, 0);
             m_vVecState.push_back(pos);
@@ -53,7 +53,6 @@ ClothSystem::ClothSystem(float height, float width):
             if (j > 1)
                 particles.springAdd(indexOf(i,j-2), indexOf(i,j), 
                         flex_len, CLO_STF_FLX);
-
         }
     }
 }
@@ -72,7 +71,7 @@ vector<Vector3f> ClothSystem::evalF(vector<Vector3f> state)
                     static Vector3f swing_vec = Vector3f(0, 0, SWING_SPEED);
                     if (pos.z() > SWING_Z_LIM)
                         swing_vec = Vector3f(0, 0, - SWING_SPEED);
-                    else if (pos.z() < 0)
+                    else if (pos.z() < - SWING_Z_LIM)
                         swing_vec = Vector3f(0, 0, SWING_SPEED);
                     f.push_back(swing_vec);
                 }
@@ -107,6 +106,15 @@ vector<Vector3f> ClothSystem::evalF(vector<Vector3f> state)
             fv += sprForce;
             fv = fv / particles.massGet(ind1);
 
+            // Check for collision, 
+            // if so, reproject back to surface, and set dv, dx to zero
+            Vector3f pos = getPosition(indexOf(i,j));
+            if (checkCollision(pos)) {
+                /* fx = Vector3f::ZERO; */
+                /* fv = Vector3f::ZERO; */
+                getPosition(indexOf(i,j)) = reProject(pos);
+            }
+
             f.push_back(fx);
             f.push_back(fv);
         }
@@ -114,8 +122,31 @@ vector<Vector3f> ClothSystem::evalF(vector<Vector3f> state)
     return f;
 }
 
+bool ClothSystem::checkCollision(Vector3f pos) {
+    if ((myball.xyz() - pos).abs() <= myball.w())
+        return true;
+    else 
+        return false;
+}
+
+Vector3f ClothSystem::reProject(Vector3f pos) {
+    Vector3f dir = (pos - myball.xyz()).normalized();
+    return myball.xyz() + dir * myball.w();
+}
+
+
 // render the system
 void ClothSystem::draw() {
+    // First, draw a ball for collision
+    glPushMatrix();
+    // Coloring
+    glColorMaterial( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
+    GLfloat diff[] = {0.5, 0.9 , 0.3, 1.0};
+    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diff);
+    glTranslatef(myball.x(), myball.y(), myball.z());
+    glutSolidSphere(myball.w(), 25.0f, 25.0f);
+    glPopMatrix();
+
     if (render)
         this->drawCloth();
     else
@@ -127,7 +158,7 @@ void ClothSystem::drawFrame() {
 		Vector3f pos; //  position of particle i. YOUR CODE HERE
         pos = getPosition(i);
 		glPushMatrix();
-		glTranslatef(pos[0], pos[1], pos[2] );
+		glTranslatef(pos[0], pos[1], pos[2]);
 		glutSolidSphere(0.050f,10.0f,10.0f);
 		glPopMatrix();
 	}
@@ -202,6 +233,11 @@ void ClothSystem::drawCloth() {
             vns.push_back(vn);
         }
     }
+
+    // Coloring
+    glColorMaterial( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
+    GLfloat diff[] = {0.5, 0.5 , 0.9, 1.0};
+    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diff);
 
     // a--b
     // | /|    face 1 (a-c-b) on the left; face 2 (b-c-d) on the right

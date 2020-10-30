@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "vecmath.h"
+#include <vecmath.h>
 #include <GL/glut.h>
 
 #include <map>

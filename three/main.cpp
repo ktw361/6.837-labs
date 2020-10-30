@@ -24,6 +24,11 @@ namespace
     class SystemCollections {
     public:
         SystemCollections(): cloth_ind(-1) {};
+        void setup(int vis_index) {
+            addSys(new SimpleSystem());
+            addSys(new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index));
+            addSys(new ClothSystem(HEIGHT, WIDTH), true);
+        }
         void addSys(ParticleSystem *sys, bool is_cloth=false) { 
             if (is_cloth)
                 cloth_ind = sys_list.size();
@@ -44,6 +49,11 @@ namespace
         void sysStep(TimeStepper *stepper, float stepSize) {
             for (size_t i = 0; i != sys_list.size(); ++i)
                 stepper->takeStep(sys_list[i], stepSize);
+        }
+        void clear() {
+            for (size_t i = 0; i != sys_list.size(); ++i)
+                delete sys_list[i];
+            sys_list.clear();
         }
     private:
         vector<ParticleSystem*> sys_list;
@@ -102,9 +112,7 @@ namespace
             cout << "Visualize particle index: " << vis_index << endl;
     }
 
-    sys_collections.addSys(new SimpleSystem());
-    sys_collections.addSys(new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index));
-    sys_collections.addSys(new ClothSystem(HEIGHT, WIDTH), true);
+    sys_collections.setup(vis_index);
   }
 
   // Take a step forward for the particle shower
@@ -176,6 +184,13 @@ namespace
             Matrix4f eye = Matrix4f::identity();
             camera.SetRotation( eye );
             camera.SetCenter( Vector3f::ZERO );
+            break;
+        }
+
+        case 'r':
+        {
+            sys_collections.clear();
+            sys_collections.setup(vis_index);
             break;
         }
 

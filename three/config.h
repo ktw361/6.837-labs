@@ -34,3 +34,9 @@
 #define SWING_SPEED         0.5f
 
 #define WIND_FORCE          0.25f
+
+// Ball for collision
+#define BALL_SIZE           1.0f
+#define BALL_X              0.5f
+#define BALL_Y              -2.25f
+#define BALL_Z              0
