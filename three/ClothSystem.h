@@ -16,6 +16,9 @@ public:
 	vector<Vector3f> evalF(vector<Vector3f> state);
 	
 	void draw();
+    void set_render(bool r) { render = r; }
+    void set_swing(bool sw) { swing = sw; }
+    void set_wind(bool w) { wind = w; }
 
 private:
     size_t num_rows;
@@ -36,6 +39,12 @@ private:
         }
         return i * num_cols + j;
     }
+
+    bool render;
+    bool swing;
+    bool wind;
+	void drawFrame();
+	void drawCloth();
 };
 
 #endif

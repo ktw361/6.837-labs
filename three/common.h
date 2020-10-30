@@ -13,6 +13,14 @@
 
 typedef std::vector<Vector3f> stateType;
 
+// Inline functions to help with drawing
+inline void glVertex( const Vector3f& a )
+{ glVertex3fv(a); }
+
+inline void glNormal( const Vector3f& a ) 
+{ glNormal3fv(a); }
+
+
 inline void display_modelview(GLfloat mat[16])
 {
     // Column-based

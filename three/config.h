@@ -29,3 +29,8 @@
 #define NUM_INTERVALS       10
 #define HEIGHT (NUM_INTERVALS*PARTICLE_INTERVAL)
 #define WIDTH  (NUM_INTERVALS*PARTICLE_INTERVAL)
+
+#define SWING_Z_LIM         2.0f
+#define SWING_SPEED         0.5f
+
+#define WIND_FORCE          0.25f

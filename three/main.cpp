@@ -23,10 +23,23 @@ namespace
 {
     class SystemCollections {
     public:
-        void addSys(ParticleSystem *sys) { sys_list.push_back(sys); }
+        SystemCollections(): cloth_ind(-1) {};
+        void addSys(ParticleSystem *sys, bool is_cloth=false) { 
+            if (is_cloth)
+                cloth_ind = sys_list.size();
+            sys_list.push_back(sys); 
+        }
         void draw() const {
             for (size_t i = 0; i != sys_list.size(); ++i)
                 sys_list[i]->draw();
+        }
+        ClothSystem * const getClothSys() const {
+            if (!hasCloth()) return NULL;
+            return dynamic_cast<ClothSystem*>(sys_list[cloth_ind]);
+        }
+        bool hasCloth() const {
+            if (cloth_ind == -1) return false;
+            else return true;
         }
         void sysStep(TimeStepper *stepper, float stepSize) {
             for (size_t i = 0; i != sys_list.size(); ++i)
@@ -34,12 +47,17 @@ namespace
         }
     private:
         vector<ParticleSystem*> sys_list;
+        int cloth_ind;
     };
 
     SystemCollections sys_collections;
     TimeStepper * timeStepper;
     int vis_index = -1;
     float stepSize = 0.04f;
+    // Cloth System
+    bool render = true;
+    bool wind = false;
+    bool swing = false;
 
   // initialize your particle systems
   ///DONE: read argv here. set timestepper , step size etc
@@ -86,7 +104,7 @@ namespace
 
     sys_collections.addSys(new SimpleSystem());
     sys_collections.addSys(new PendulumSystem(PENDSYS_NUM_PARTICLES, vis_index));
-    sys_collections.addSys(new ClothSystem(HEIGHT, WIDTH));
+    sys_collections.addSys(new ClothSystem(HEIGHT, WIDTH), true);
   }
 
   // Take a step forward for the particle shower
@@ -160,6 +178,37 @@ namespace
             camera.SetCenter( Vector3f::ZERO );
             break;
         }
+
+        case 'w':
+        {
+            render = !render;
+            if (sys_collections.hasCloth())
+                sys_collections.getClothSys()->set_render(render);
+            break;
+        }
+
+        case 'd':
+        {
+            wind = !wind;
+            if (sys_collections.hasCloth())
+                sys_collections.getClothSys()->set_wind(wind);
+            if (wind) 
+                cout << "wind on" << endl;
+            else 
+                cout << "wind off" << endl;
+            break;
+        }
+
+        case 's':
+        {
+            swing = !swing;
+            if (sys_collections.hasCloth())
+                sys_collections.getClothSys()->set_swing(swing);
+            if (swing) cout << "swing on" << endl;
+            else cout << "swing off" << endl;
+            break;
+        }
+
         default:
             cout << "Unhandled key press " << key << "." << endl;        
         }
