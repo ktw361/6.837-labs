@@ -43,7 +43,7 @@ vector<Vector3f> PendulumSystem::evalF(vector<Vector3f> state)
         fv += - DragConst * getVelocity(i);
 
         Vector3f sprForce = Vector3f::ZERO;
-        vector<int> connects = particles.connects(i);
+        vector<int> const &connects = particles.connects(i);
         for (size_t j = 0; j != connects.size(); ++j) {
             int ind2 = connects[j];
             sprForce += particles.force(i, ind2, getPosition(i), getPosition(ind2));
@@ -72,7 +72,7 @@ void PendulumSystem::draw()
     // Draw springs 
     if (visIndex == -1) return;
     Vector3f start_point = getPosition(visIndex);
-    vector<int> connects = particles.connects(visIndex);
+    vector<int> const &connects = particles.connects(visIndex);
     for (size_t i = 0; i != connects.size(); ++i) {
         drawConnectionLine(start_point, getPosition(connects[i]));
     }

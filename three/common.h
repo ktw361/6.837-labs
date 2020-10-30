@@ -53,7 +53,8 @@ inline void drawConnectionLine(Vector3f const &start, Vector3f const &end) {
 //  2. Add Spring that connects particle (i,j);
 //  3. Get mass of a particle;
 //  4. Get a list of 'j' that connect to 'i';
-//  5. Compute force on 'i' position, given 'j' position.
+//  5. Get (i,j) pairs of all springs;
+//  6. Compute force on 'i' position, given 'j' position.
 class SpringParticle {
 
 private:
@@ -74,8 +75,11 @@ private:
     // Each Particle stores list of spring indexes 
     struct Particle {
         float mass;
-        vector<int> spr_inds;
-        Particle(float _mass) : mass(_mass) {};
+        vector<int> _connects;
+        Particle(float _mass) : mass(_mass), _connects(vector<int>()) {};
+
+        void link(int j) { _connects.push_back(j); }
+        vector<int> const& connects() const { return _connects; }
     };
 
 public:
@@ -99,32 +103,35 @@ public:
                 << endl;
             return -1;
         }
+
         Spring spr(length, stiffness, i, j);
         int spr_ind = springs.size();
-        particles[i].spr_inds.push_back(spr_ind);
-        particles[j].spr_inds.push_back(spr_ind);
+
+        // connects_list
+        particles[i].link(j);
+        particles[j].link(i);
+        // pair_map
         pair_map[std::make_pair(i, j)] = spr_ind;
         pair_map[std::make_pair(j, i)] = spr_ind;
+        // all_pairs
+        all_pairs.push_back(std::make_pair(i, j));
+
         springs.push_back(spr);
+
         return spr_ind;
     }
 
     // Get mass of a particle
     float 
-    massGet(int i) {
-        return particles[i].mass;
-    }
+    massGet(int i) { return particles[i].mass; }
 
     //  Get a list of 'j' that connect to 'i'
-    vector<int> 
-    connects(int i) const {
-        vector<int> opposites;
-        for (size_t j = 0; j != particles[i].spr_inds.size(); ++j) {
-            Spring const &spr = springs[particles[i].spr_inds[j]];
-            opposites.push_back(spr.getOpposite(i));
-        }
-        return opposites;
-    }
+    vector<int> const &
+    connects(int i) const { return particles[i].connects(); }
+
+    //  Get (i,j) pairs of all springs;
+    vector<std::pair<int, int> > const &
+    allPairs() const { return all_pairs; }
 
     //  Compute force on 'i' position, given 'j' position.
     Vector3f 
@@ -142,8 +149,11 @@ public:
         return - spr.k * (d_abs - spr.r) * d.normalized();
     }
 
+
 private:
     vector<Particle> particles;
     vector<Spring> springs;
     std::map<std::pair<int, int>, int> pair_map;
+
+    vector<std::pair<int, int> > all_pairs;
 };

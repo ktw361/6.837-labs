@@ -26,7 +26,6 @@ private:
 
     Vector3f getPosition(int ind) { return m_vVecState[2*ind]; }
     Vector3f getVelocity(int ind) { return m_vVecState[2*ind+1]; }
-	
 };
 
 #endif
