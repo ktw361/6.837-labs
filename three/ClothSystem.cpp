@@ -135,7 +135,7 @@ Vector3f ClothSystem::reProject(Vector3f pos) {
 }
 
 
-float thr = 0.35f;
+#define THR     0.36f
 // render the system
 void ClothSystem::draw() {
     // First, draw a ball for collision
@@ -145,7 +145,7 @@ void ClothSystem::draw() {
     GLfloat diff[] = {0.5, 0.9 , 0.3, 1.0};
     glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, diff);
     glTranslatef(myball.x(), myball.y(), myball.z());
-    glutSolidSphere(myball.w()-thr, 50.0f, 50.0f);
+    glutSolidSphere(myball.w()-THR, 30.0f, 30.0f);
     glPopMatrix();
 
     if (render)
